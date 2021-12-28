@@ -68,14 +68,44 @@ The source to everything will be available as I write it, most likely licensed a
 
 Here's what I'd like to accomplish today:
 
-** TODO Create a basic C application that loads Guile Scheme engine
-** TODO Start a REPL and get it loading inside of Emacs
-** TODO Set up SDL so that we can start drawing things to the screen
-** TODO Start building the "language" for describing graphics scenes
+** DONE Create a basic C application that loads Guile Scheme engine
+CLOSED: [2021-12-28 Tue 16:06]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-28 Tue 16:06]
+:END:
+** DONE Start a REPL and get it loading inside of Emacs
+CLOSED: [2021-12-28 Tue 16:46]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-28 Tue 16:46]
+:END:
+** DONE Start building the "language" for describing graphics scenes
+CLOSED: [2021-12-28 Tue 17:59]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-28 Tue 17:59]
+:END:
+** DONE Set up SDL so that we can start drawing things to the screen
+CLOSED: [2021-12-28 Tue 17:59]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-28 Tue 17:59]
+:END:
+** DONE Figure out how to use =guix shell= to create a reproducible dev environment
+CLOSED: [2021-12-28 Tue 17:59]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-28 Tue 17:59]
+:END:
 ** TODO Get something rendering on the screen!
-** TODO Figure out how to use =guix shell= to create a reproducible dev environment for it
 ** TODO Push the initial code to GitHub
 
 * Notes
 
+- https://serenityos.org/
+- https://www.gnu.org/software/guile/manual/html_node/A-Sample-Guile-Main-Program.html
+- https://gigi.nullneuron.net/gigilabs/showing-an-empty-window-in-sdl2/
+- https://www.ibm.com/docs/en/i/7.2?topic=ssw_ibm_i_72/apis/users_14.htm
+
 * Next Steps
+
+** TODO Don't show Guile Scheme banner when starting =flux-studio=
+** TODO Figure out why =init-graphics= can't be accessed in =flux graphics= module
+** TODO Figure out why =init-graphics= is crashing the process, can we come up with a good debugging strategy (running via gdb)
+** TODO Get something rendering on the screen!
