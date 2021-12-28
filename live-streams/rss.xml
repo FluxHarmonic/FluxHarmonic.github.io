@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Simple Blog</title>
+    <atom:link
+      href=""
+      rel="self" type="application/rss+xml" />
+    <link></link>
+    <description><![CDATA[]]></description>
+    <language>en</language>
+    <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+    <lastBuildDate>Tue, 28 Dec 2021 09:48:01 +0000</lastBuildDate>
+    <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
+    <image>
+      <url>media/img/8bitme.png</url>
+      <title>Flux Harmonic</title>
+      <link></link>
+    </image>
+
+    
+    <item>
+      <title>Laying the Foundation</title>
+      <link></link>
+      <author>author@mail.com (Blog Author)</author>
+      <guid isPermaLink="false"></guid>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+<div id="outline-container-the-plan" class="outline-2">
+<h2 id="the-plan">The Plan</h2>
+<div class="outline-text-2">
+<p>
+The overall goal of this channel is to create an audiovisual playground that I use to create music, videos, graphics, and even games live on stream!
+</p>
+
+<p>
+All tools will be purpose-built for myself.  I don't intend for others to use my tools at first, but over time I might be able to add a level of polish that would enable others to use them.
+</p>
+</div>
+
+<div id="outline-container-audio-tools" class="outline-3">
+<h3 id="audio-tools">Audio Tools</h3>
+<div class="outline-text-3">
+<ul class="org-ul">
+<li>Synthesizers of various types (additive, subtractive, FM, wavetable, sampler)</li>
+<li>Effects processors of various types (compressor, limiter, noise gate, reverb, chorus, flanger, etc)</li>
+<li>Custom music creation environment on Linux powered by JACK or Pipewire (DAW)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-visual-tools" class="outline-3">
+<h3 id="visual-tools">Visual Tools</h3>
+<div class="outline-text-3">
+<ul class="org-ul">
+<li>Custom video creation and editing environment</li>
+<li>Visual effects processors of various types</li>
+<li>Audio visualizations of various types</li>
+<li>Motion graphics tools for video animations and still graphics (video thumbnails, etc)</li>
+<li>Whiteboard tool for drawing diagrams live in streams (and possibly for videos)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-programming" class="outline-3">
+<h3 id="programming">Programming</h3>
+<div class="outline-text-3">
+<ul class="org-ul">
+<li>Low-level custom C libraries (the core of all tools will be written in C!)</li>
+<li>Custom programming tools for quick live programming of native applications and audio plugins</li>
+<li>Custom Scheme-inspired scripting language that powers the various tools and serves as an authoring and data format</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-streaming" class="outline-3">
+<h3 id="streaming">Streaming</h3>
+<div class="outline-text-3">
+<ul class="org-ul">
+<li>Custom live streaming software that integrates the various tools I make</li>
+<li>Live-rendered scenes, video filters, generated graphics, viewer-interactable components, etc</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-why" class="outline-2">
+<h2 id="why">Why?</h2>
+<div class="outline-text-2">
+<p>
+I enjoy programming for the creative value and to see what I can accomplish.
+</p>
+
+<ul class="org-ul">
+<li>Create background music and graphics for my YouTube channels</li>
+<li>Produce a full album of music created with my own tools</li>
+<li>Design a really unique streaming experience</li>
+<li>Create Free Software games</li>
+</ul>
+
+<p>
+I want to do all this while making the experience of watching it fun and interesting!
+</p>
+
+<p>
+All of this won't be achievable in the short term: I see it as a long-term adventure in creativity.
+</p>
+</div>
+</div>
+
+<div id="outline-container-the-design" class="outline-2">
+<h2 id="the-design">The Design</h2>
+<div class="outline-text-2">
+<p>
+To accomplish all of this, I've got a specific design in mind:
+</p>
+
+<ul class="org-ul">
+<li>Write all multimedia components in C (or similar low-level language)</li>
+<li>Use Guile Scheme as the interactivity layer (at first)</li>
+<li>Create an Emacs package to facilitate interactivity and rapid development</li>
+<li>Use GNU Guix as the orchestrator for development, distribute tools via a channel</li>
+<li>Be pragmatic, but ultimately write things as "from scratch" as I can!</li>
+</ul>
+
+<p>
+The source to everything will be available as I write it, most likely licensed as GPL 3.0.
+</p>
+</div>
+</div>
+
+<div id="outline-container-the-starting-point" class="outline-2">
+<h2 id="the-starting-point">The Starting Point</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>Get the basic infrastructure set up for the C core with the Guile Scheme layer</li>
+<li>Set up a SDL window to start experimenting with graphics (later write our own graphics layer)</li>
+<li>Start building a graphics tool to make video thumbnails and stream graphics</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2">
+<p>
+Here's what I'd like to accomplish today:
+</p>
+</div>
+
+<div id="outline-container-create-a-basic-c-application-that-loads-guile-scheme-engine" class="outline-3">
+<h3 id="create-a-basic-c-application-that-loads-guile-scheme-engine"><span class="todo TODO">TODO</span> Create a basic C application that loads Guile Scheme engine</h3>
+</div>
+<div id="outline-container-start-a-repl-and-get-it-loading-inside-of-emacs" class="outline-3">
+<h3 id="start-a-repl-and-get-it-loading-inside-of-emacs"><span class="todo TODO">TODO</span> Start a REPL and get it loading inside of Emacs</h3>
+</div>
+<div id="outline-container-set-up-sdl-so-that-we-can-start-drawing-things-to-the-screen" class="outline-3">
+<h3 id="set-up-sdl-so-that-we-can-start-drawing-things-to-the-screen"><span class="todo TODO">TODO</span> Set up SDL so that we can start drawing things to the screen</h3>
+</div>
+<div id="outline-container-start-building-the-language-for-describing-graphics-scenes" class="outline-3">
+<h3 id="start-building-the-language-for-describing-graphics-scenes"><span class="todo TODO">TODO</span> Start building the "language" for describing graphics scenes</h3>
+</div>
+<div id="outline-container-get-something-rendering-on-the-screen" class="outline-3">
+<h3 id="get-something-rendering-on-the-screen"><span class="todo TODO">TODO</span> Get something rendering on the screen!</h3>
+</div>
+<div id="outline-container-figure-out-how-to-use-guix-shell-to-create-a-reproducible-dev-environment-for-it" class="outline-3">
+<h3 id="figure-out-how-to-use-guix-shell-to-create-a-reproducible-dev-environment-for-it"><span class="todo TODO">TODO</span> Figure out how to use <code>guix shell</code> to create a reproducible dev environment for it</h3>
+</div>
+<div id="outline-container-push-the-initial-code-to-github" class="outline-3">
+<h3 id="push-the-initial-code-to-github"><span class="todo TODO">TODO</span> Push the initial code to GitHub</h3>
+</div>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+</div>
+
+<div id="outline-container-next-steps" class="outline-2">
+<h2 id="next-steps">Next Steps</h2>
+</div>
+]]></description>
+    </item>
+    
+
+  </channel>
+</rss>

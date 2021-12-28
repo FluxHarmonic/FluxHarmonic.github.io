@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+html {
+  font-family: "Cabin", sans-serif;
+}
+
+body {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+a {
+  color: #f88c00;
+}
+
+a:hover {
+  color: #ffc300;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  max-width: 40%;
+}
+
+header {
+  text-align: center;
+}
+
+nav > ul {
+  list-style: none;
+  padding: unset;
+}
+
+nav > ul > li {
+  float: left;
+  padding-right: 0.5em;
+  list-style: none;
+}
+
+nav::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 1.3em;
+  }
+
+  body {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .logo {
+    max-width: 30%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
