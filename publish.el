@@ -114,3 +114,6 @@
 
 ;; Export the site
 (weblorg-export)
+
+;; Copy the CNAME file
+(copy-file "CNAME" "public/CNAME")
