@@ -1,0 +1,7 @@
+#+title: How To Help
+
+If you'd like to support the work I do on my various projects and the live streams, the best way to do that right now is to become a sponsor on GitHub:
+
+https://github.com/sponsors/daviwil/
+
+I'll be adding more ways to help here soon!

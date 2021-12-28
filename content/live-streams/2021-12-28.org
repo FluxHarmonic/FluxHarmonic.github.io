@@ -1,0 +1,81 @@
+#+title: Laying the Foundation
+#+date: [2021-12-28 Tue]
+#+slug: 2021-12-28
+
+* The Plan
+
+The overall goal of this channel is to create an audiovisual playground that I use to create music, videos, graphics, and even games live on stream!
+
+All tools will be purpose-built for myself.  I don't intend for others to use my tools at first, but over time I might be able to add a level of polish that would enable others to use them.
+
+** Audio Tools
+
+- Synthesizers of various types (additive, subtractive, FM, wavetable, sampler)
+- Effects processors of various types (compressor, limiter, noise gate, reverb, chorus, flanger, etc)
+- Custom music creation environment on Linux powered by JACK or Pipewire (DAW)
+
+** Visual Tools
+
+- Custom video creation and editing environment
+- Visual effects processors of various types
+- Audio visualizations of various types
+- Motion graphics tools for video animations and still graphics (video thumbnails, etc)
+- Whiteboard tool for drawing diagrams live in streams (and possibly for videos)
+
+** Programming
+
+- Low-level custom C libraries (the core of all tools will be written in C!)
+- Custom programming tools for quick live programming of native applications and audio plugins
+- Custom Scheme-inspired scripting language that powers the various tools and serves as an authoring and data format
+
+** Streaming
+
+- Custom live streaming software that integrates the various tools I make
+- Live-rendered scenes, video filters, generated graphics, viewer-interactable components, etc
+
+* Why?
+
+I enjoy programming for the creative value and to see what I can accomplish.
+
+- Create background music and graphics for my YouTube channels
+- Produce a full album of music created with my own tools
+- Design a really unique streaming experience
+- Create Free Software games
+
+I want to do all this while making the experience of watching it fun and interesting!
+
+All of this won't be achievable in the short term: I see it as a long-term adventure in creativity.
+
+* The Design
+
+To accomplish all of this, I've got a specific design in mind:
+
+- Write all multimedia components in C (or similar low-level language)
+- Use Guile Scheme as the interactivity layer (at first)
+- Create an Emacs package to facilitate interactivity and rapid development
+- Use GNU Guix as the orchestrator for development, distribute tools via a channel
+- Be pragmatic, but ultimately write things as "from scratch" as I can!
+
+The source to everything will be available as I write it, most likely licensed as GPL 3.0.
+
+* The Starting Point
+
+- Get the basic infrastructure set up for the C core with the Guile Scheme layer
+- Set up a SDL window to start experimenting with graphics (later write our own graphics layer)
+- Start building a graphics tool to make video thumbnails and stream graphics
+
+* Tasks
+
+Here's what I'd like to accomplish today:
+
+** TODO Create a basic C application that loads Guile Scheme engine
+** TODO Start a REPL and get it loading inside of Emacs
+** TODO Set up SDL so that we can start drawing things to the screen
+** TODO Start building the "language" for describing graphics scenes
+** TODO Get something rendering on the screen!
+** TODO Figure out how to use =guix shell= to create a reproducible dev environment for it
+** TODO Push the initial code to GitHub
+
+* Notes
+
+* Next Steps
