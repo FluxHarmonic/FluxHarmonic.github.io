@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
 
 html {
+  font-size: 1.3em;
   font-family: "Cabin", sans-serif;
 }
 
@@ -47,9 +48,10 @@ nav::after {
   display: table;
 }
 
+/* Eventually switch this to `main` */
 body {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 /* Extra small devices (phones, 600px and down) */

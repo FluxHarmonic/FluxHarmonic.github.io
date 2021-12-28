@@ -116,4 +116,4 @@
 (weblorg-export)
 
 ;; Copy the CNAME file
-(copy-file "CNAME" "public/CNAME")
+(copy-file "CNAME" "public/CNAME" t)
