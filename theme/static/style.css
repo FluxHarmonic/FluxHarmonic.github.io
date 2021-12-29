@@ -27,6 +27,14 @@ img {
   max-width: 40%;
 }
 
+.todo {
+  color: #ffc300;
+}
+
+.done {
+  color: #c3e88d;
+}
+
 header {
   text-align: center;
 }
