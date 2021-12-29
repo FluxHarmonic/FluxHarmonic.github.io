@@ -1,0 +1,33 @@
+#+title: Creating the Graphics Layer
+#+date: [2021-12-30 Thu]
+#+slug: 2021-12-30
+
+View the code: https://github.com/FluxHarmonic/flux-compose
+
+* Graphics Layer Design
+
+Let's continue with the idea we came up with last time to see how far we can take it:
+
+- Use a [[https://en.wikipedia.org/wiki/Retained_mode][retained mode]] rendering model
+- Describe the graphics to be rendered in the Scheme layer
+- The C layer will interpret and render the complete scene or instruction list efficiently
+- The Scheme layer can replace the graphics instructions at any time (REPL-based "drawing")
+- Animations will eventually be possible by describing changes to elements in the scene over time
+
+The goal today is to get some basic things rendering in a preview window and /possibly/ save it out to a .png file.
+
+* Tasks
+
+Here's what I'd like to accomplish today:
+
+** TODO Rename the project to =flux-compose=
+** TODO Figure out why =init-graphics= can't be accessed in =flux graphics= module
+** TODO Figure out why =init-graphics= is crashing the process, can we come up with a good debugging strategy (running via gdb)
+** TODO Get something rendering on the screen!
+** TODO Transmit drawing instructions to renderer thread in some form
+** TODO Get the =basic-gfx.scm= example working
+** TODO Render the completed image to a .png file
+
+* Notes
+
+* Next Steps
