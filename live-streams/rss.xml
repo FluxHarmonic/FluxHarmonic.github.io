@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
-    <lastBuildDate>Tue, 28 Dec 2021 10:00:09 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Dec 2021 08:28:35 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -157,22 +157,32 @@ Here's what I'd like to accomplish today:
 </div>
 
 <div id="outline-container-create-a-basic-c-application-that-loads-guile-scheme-engine" class="outline-3">
-<h3 id="create-a-basic-c-application-that-loads-guile-scheme-engine"><span class="todo TODO">TODO</span> Create a basic C application that loads Guile Scheme engine</h3>
+<h3 id="create-a-basic-c-application-that-loads-guile-scheme-engine"><span class="done DONE">DONE</span> Create a basic C application that loads Guile Scheme engine</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-start-a-repl-and-get-it-loading-inside-of-emacs" class="outline-3">
-<h3 id="start-a-repl-and-get-it-loading-inside-of-emacs"><span class="todo TODO">TODO</span> Start a REPL and get it loading inside of Emacs</h3>
+<h3 id="start-a-repl-and-get-it-loading-inside-of-emacs"><span class="done DONE">DONE</span> Start a REPL and get it loading inside of Emacs</h3>
+<div class="outline-text-3">
 </div>
-<div id="outline-container-set-up-sdl-so-that-we-can-start-drawing-things-to-the-screen" class="outline-3">
-<h3 id="set-up-sdl-so-that-we-can-start-drawing-things-to-the-screen"><span class="todo TODO">TODO</span> Set up SDL so that we can start drawing things to the screen</h3>
 </div>
 <div id="outline-container-start-building-the-language-for-describing-graphics-scenes" class="outline-3">
-<h3 id="start-building-the-language-for-describing-graphics-scenes"><span class="todo TODO">TODO</span> Start building the "language" for describing graphics scenes</h3>
+<h3 id="start-building-the-language-for-describing-graphics-scenes"><span class="done DONE">DONE</span> Start building the "language" for describing graphics scenes</h3>
+<div class="outline-text-3">
+</div>
+</div>
+<div id="outline-container-set-up-sdl-so-that-we-can-start-drawing-things-to-the-screen" class="outline-3">
+<h3 id="set-up-sdl-so-that-we-can-start-drawing-things-to-the-screen"><span class="done DONE">DONE</span> Set up SDL so that we can start drawing things to the screen</h3>
+<div class="outline-text-3">
+</div>
+</div>
+<div id="outline-container-figure-out-how-to-use-guix-shell-to-create-a-reproducible-dev-environment" class="outline-3">
+<h3 id="figure-out-how-to-use-guix-shell-to-create-a-reproducible-dev-environment"><span class="done DONE">DONE</span> Figure out how to use <code>guix shell</code> to create a reproducible dev environment</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-get-something-rendering-on-the-screen" class="outline-3">
 <h3 id="get-something-rendering-on-the-screen"><span class="todo TODO">TODO</span> Get something rendering on the screen!</h3>
-</div>
-<div id="outline-container-figure-out-how-to-use-guix-shell-to-create-a-reproducible-dev-environment-for-it" class="outline-3">
-<h3 id="figure-out-how-to-use-guix-shell-to-create-a-reproducible-dev-environment-for-it"><span class="todo TODO">TODO</span> Figure out how to use <code>guix shell</code> to create a reproducible dev environment for it</h3>
 </div>
 <div id="outline-container-push-the-initial-code-to-github" class="outline-3">
 <h3 id="push-the-initial-code-to-github"><span class="todo TODO">TODO</span> Push the initial code to GitHub</h3>
@@ -181,10 +191,32 @@ Here's what I'd like to accomplish today:
 
 <div id="outline-container-notes" class="outline-2">
 <h2 id="notes">Notes</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li><a href="https://serenityos.org/">https://serenityos.org/</a></li>
+<li><a href="https://www.gnu.org/software/guile/manual/html_node/A-Sample-Guile-Main-Program.html">https://www.gnu.org/software/guile/manual/html_node/A-Sample-Guile-Main-Program.html</a></li>
+<li><a href="https://gigi.nullneuron.net/gigilabs/showing-an-empty-window-in-sdl2/">https://gigi.nullneuron.net/gigilabs/showing-an-empty-window-in-sdl2/</a></li>
+<li><a href="https://www.ibm.com/docs/en/i/7.2?topic=ssw_ibm_i_72/apis/users_14.htm">https://www.ibm.com/docs/en/i/7.2?topic=ssw_ibm_i_72/apis/users_14.htm</a></li>
+</ul>
+</div>
 </div>
 
 <div id="outline-container-next-steps" class="outline-2">
 <h2 id="next-steps">Next Steps</h2>
+<div class="outline-text-2" id="text-next-steps">
+</div>
+<div id="outline-container-don-t-show-guile-scheme-banner-when-starting-flux-studio" class="outline-3">
+<h3 id="don-t-show-guile-scheme-banner-when-starting-flux-studio"><span class="todo TODO">TODO</span> Don't show Guile Scheme banner when starting <code>flux-studio</code></h3>
+</div>
+<div id="outline-container-figure-out-why-init-graphics-can-t-be-accessed-in-flux-graphics-module" class="outline-3">
+<h3 id="figure-out-why-init-graphics-can-t-be-accessed-in-flux-graphics-module"><span class="todo TODO">TODO</span> Figure out why <code>init-graphics</code> can't be accessed in <code>flux graphics</code> module</h3>
+</div>
+<div id="outline-container-figure-out-why-init-graphics-is-crashing-the-process-can-we-come-up-with-a-good-debugging-strategy-running-via-gdb" class="outline-3">
+<h3 id="figure-out-why-init-graphics-is-crashing-the-process-can-we-come-up-with-a-good-debugging-strategy-running-via-gdb"><span class="todo TODO">TODO</span> Figure out why <code>init-graphics</code> is crashing the process, can we come up with a good debugging strategy (running via gdb)</h3>
+</div>
+<div id="outline-container-get-something-rendering-on-the-screen" class="outline-3">
+<h3 id="get-something-rendering-on-the-screen"><span class="todo TODO">TODO</span> Get something rendering on the screen!</h3>
+</div>
 </div>
 ]]></description>
     </item>
