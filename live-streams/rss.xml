@@ -17,8 +17,8 @@
     <link></link>
     <description><![CDATA[]]></description>
     <language>en</language>
-    <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
-    <lastBuildDate>Wed, 29 Dec 2021 08:44:55 +0000</lastBuildDate>
+    <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+    <lastBuildDate>Wed, 29 Dec 2021 17:43:25 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -26,6 +26,78 @@
       <link></link>
     </image>
 
+    
+    <item>
+      <title>Creating the Graphics Layer</title>
+      <link></link>
+      <author>author@mail.com (Blog Author)</author>
+      <guid isPermaLink="false"></guid>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>
+View the code: <a href="https://github.com/FluxHarmonic/flux-compose">https://github.com/FluxHarmonic/flux-compose</a>
+</p>
+
+<div id="outline-container-graphics-layer-design" class="outline-2">
+<h2 id="graphics-layer-design">Graphics Layer Design</h2>
+<div class="outline-text-2">
+<p>
+Let's continue with the idea we came up with last time to see how far we can take it:
+</p>
+
+<ul class="org-ul">
+<li>Use a <a href="https://en.wikipedia.org/wiki/Retained_mode">retained mode</a> rendering model</li>
+<li>Describe the graphics to be rendered in the Scheme layer</li>
+<li>The C layer will interpret and render the complete scene or instruction list efficiently</li>
+<li>The Scheme layer can replace the graphics instructions at any time (REPL-based "drawing")</li>
+<li>Animations will eventually be possible by describing changes to elements in the scene over time</li>
+</ul>
+
+<p>
+The goal today is to get some basic things rendering in a preview window and <i>possibly</i> save it out to a .png file.
+</p>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2">
+<p>
+Here's what I'd like to accomplish today:
+</p>
+</div>
+
+<div id="outline-container-rename-the-project-to-flux-compose" class="outline-3">
+<h3 id="rename-the-project-to-flux-compose"><span class="todo TODO">TODO</span> Rename the project to <code>flux-compose</code></h3>
+</div>
+<div id="outline-container-figure-out-why-init-graphics-can-t-be-accessed-in-flux-graphics-module" class="outline-3">
+<h3 id="figure-out-why-init-graphics-can-t-be-accessed-in-flux-graphics-module"><span class="todo TODO">TODO</span> Figure out why <code>init-graphics</code> can't be accessed in <code>flux graphics</code> module</h3>
+</div>
+<div id="outline-container-figure-out-why-init-graphics-is-crashing-the-process-can-we-come-up-with-a-good-debugging-strategy-running-via-gdb" class="outline-3">
+<h3 id="figure-out-why-init-graphics-is-crashing-the-process-can-we-come-up-with-a-good-debugging-strategy-running-via-gdb"><span class="todo TODO">TODO</span> Figure out why <code>init-graphics</code> is crashing the process, can we come up with a good debugging strategy (running via gdb)</h3>
+</div>
+<div id="outline-container-get-something-rendering-on-the-screen" class="outline-3">
+<h3 id="get-something-rendering-on-the-screen"><span class="todo TODO">TODO</span> Get something rendering on the screen!</h3>
+</div>
+<div id="outline-container-transmit-drawing-instructions-to-renderer-thread-in-some-form" class="outline-3">
+<h3 id="transmit-drawing-instructions-to-renderer-thread-in-some-form"><span class="todo TODO">TODO</span> Transmit drawing instructions to renderer thread in some form</h3>
+</div>
+<div id="outline-container-get-the-basic-gfx-scm-example-working" class="outline-3">
+<h3 id="get-the-basic-gfx-scm-example-working"><span class="todo TODO">TODO</span> Get the <code>basic-gfx.scm</code> example working</h3>
+</div>
+<div id="outline-container-render-the-completed-image-to-a-png-file" class="outline-3">
+<h3 id="render-the-completed-image-to-a-png-file"><span class="todo TODO">TODO</span> Render the completed image to a .png file</h3>
+</div>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+</div>
+
+<div id="outline-container-next-steps" class="outline-2">
+<h2 id="next-steps">Next Steps</h2>
+</div>
+]]></description>
+    </item>
     
     <item>
       <title>Laying the Foundation</title>
