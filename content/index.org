@@ -2,11 +2,17 @@
 
 Flux Harmonic is a "creative label" for the various projects of [[https://twitter.com/daviwil][David Wilson]].
 
+* Watch Live!
+
 The work on these projects is performed [[https://youtube.com/FluxHarmonicLive][live on YouTube]] *every Tuesday and Thursday from 1PM to 4PM UTC*.
 
 Notes from [[/live-streams/][all previous streams]] are also available.
 
-*Follow Social*
+* Projects
+
+- [[https://github.com/FluxHarmonic/flux-compose][Flux Compose]]: A creative composition studio for Scheme hackers.
+
+* Follow Social
 
 - https://youtube.com/FluxHarmonicLive
 - https://twitter.com/FluxHarmonic
