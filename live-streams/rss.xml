@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
-    <lastBuildDate>Wed, 29 Dec 2021 08:28:35 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Dec 2021 08:44:55 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -192,6 +192,18 @@ Here's what I'd like to accomplish today:
 <div id="outline-container-notes" class="outline-2">
 <h2 id="notes">Notes</h2>
 <div class="outline-text-2">
+<p>
+The code we created can be found at the following GitHub repository:
+</p>
+
+<p>
+<a href="https://github.com/FluxHarmonic/flux-compose">https://github.com/FluxHarmonic/flux-compose</a>
+</p>
+
+<p>
+Here are some links I gathered during the stream:
+</p>
+
 <ul class="org-ul">
 <li><a href="https://serenityos.org/">https://serenityos.org/</a></li>
 <li><a href="https://www.gnu.org/software/guile/manual/html_node/A-Sample-Guile-Main-Program.html">https://www.gnu.org/software/guile/manual/html_node/A-Sample-Guile-Main-Program.html</a></li>
