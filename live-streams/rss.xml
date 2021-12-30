@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
-    <lastBuildDate>Thu, 30 Dec 2021 12:20:14 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Dec 2021 16:07:11 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -80,17 +80,42 @@ Here's what I'd like to accomplish today:
 </div>
 
 <div id="outline-container-rename-the-project-to-flux-compose" class="outline-3">
-<h3 id="rename-the-project-to-flux-compose"><span class="todo TODO">TODO</span> Rename the project to <code>flux-compose</code></h3>
+<h3 id="rename-the-project-to-flux-compose"><span class="done DONE">DONE</span> Rename the project to <code>flux-compose</code></h3>
+<div class="outline-text-3">
+</div>
+</div>
+
+<div id="outline-container-create-a-shared-library-for-core-c-code" class="outline-3">
+<h3 id="create-a-shared-library-for-core-c-code"><span class="done DONE">DONE</span> Create a shared library for core C code</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-try-a-ffi-approach-for-calling-c-functions-from-a-shared-library" class="outline-3">
-<h3 id="try-a-ffi-approach-for-calling-c-functions-from-a-shared-library"><span class="todo TODO">TODO</span> Try a FFI approach for calling C functions from a shared library</h3>
+<h3 id="try-a-ffi-approach-for-calling-c-functions-from-a-shared-library"><span class="done DONE">DONE</span> Try a FFI approach for calling C functions from a shared library</h3>
+<div class="outline-text-3">
+</div>
+</div>
+<div id="outline-container-get-the-screen-clearing" class="outline-3">
+<h3 id="get-the-screen-clearing"><span class="done DONE">DONE</span> Get the screen clearing</h3>
+<div class="outline-text-3">
+</div>
+</div>
+<div id="outline-container-find-a-faster-way-to-iterate-on-the-native-layer" class="outline-3">
+<h3 id="find-a-faster-way-to-iterate-on-the-native-layer"><span class="done DONE">DONE</span> Find a faster way to iterate on the native layer</h3>
+<div class="outline-text-3">
+</div>
+</div>
+<div id="outline-container-get-something-simple-rendering-in-the-c-code" class="outline-3">
+<h3 id="get-something-simple-rendering-in-the-c-code"><span class="done DONE">DONE</span> Get something simple rendering in the C code</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-figure-out-why-init-graphics-is-crashing-the-process-can-we-come-up-with-a-good-debugging-strategy-running-via-gdb" class="outline-3">
-<h3 id="figure-out-why-init-graphics-is-crashing-the-process-can-we-come-up-with-a-good-debugging-strategy-running-via-gdb"><span class="todo TODO">TODO</span> Figure out why <code>init-graphics</code> is crashing the process, can we come up with a good debugging strategy (running via gdb)</h3>
+<h3 id="figure-out-why-init-graphics-is-crashing-the-process-can-we-come-up-with-a-good-debugging-strategy-running-via-gdb"><span class="done DONE">DONE</span> Figure out why <code>init-graphics</code> is crashing the process, can we come up with a good debugging strategy (running via gdb)</h3>
+<div class="outline-text-3">
 </div>
-<div id="outline-container-get-something-rendering-on-the-screen" class="outline-3">
-<h3 id="get-something-rendering-on-the-screen"><span class="todo TODO">TODO</span> Get something rendering on the screen!</h3>
 </div>
+
 <div id="outline-container-transmit-drawing-instructions-to-renderer-thread-in-some-form" class="outline-3">
 <h3 id="transmit-drawing-instructions-to-renderer-thread-in-some-form"><span class="todo TODO">TODO</span> Transmit drawing instructions to renderer thread in some form</h3>
 </div>
@@ -99,15 +124,60 @@ Here's what I'd like to accomplish today:
 </div>
 <div id="outline-container-render-the-completed-image-to-a-png-file" class="outline-3">
 <h3 id="render-the-completed-image-to-a-png-file"><span class="todo TODO">TODO</span> Render the completed image to a .png file</h3>
+<div class="outline-text-3">
+<p>
+<a href="https://stackoverflow.com/questions/34255820/save-sdl-texture-to-file">https://stackoverflow.com/questions/34255820/save-sdl-texture-to-file</a>
+</p>
+</div>
 </div>
 </div>
 
 <div id="outline-container-notes" class="outline-2">
 <h2 id="notes">Notes</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li><a href="https://www.gnu.org/software/guile/manual/html_node/Foreign-Function-Interface.html">https://www.gnu.org/software/guile/manual/html_node/Foreign-Function-Interface.html</a></li>
+<li><a href="https://www.gnu.org/software/guile/manual/html_node/Foreign-Functions.html">https://www.gnu.org/software/guile/manual/html_node/Foreign-Functions.html</a></li>
+<li><a href="https://www.gnu.org/software/guile/manual/html_node/Foreign-Structs.html">https://www.gnu.org/software/guile/manual/html_node/Foreign-Structs.html</a></li>
+<li><a href="https://www.gnu.org/software/guile/manual/html_node/Void-Pointers-and-Byte-Access.html">https://www.gnu.org/software/guile/manual/html_node/Void-Pointers-and-Byte-Access.html</a></li>
+<li><a href="https://willosborne.co.uk/coding/2019/11/16/iterators-and-for-loops-with-guile-scheme.html">https://willosborne.co.uk/coding/2019/11/16/iterators-and-for-loops-with-guile-scheme.html</a></li>
+<li><a href="https://sourceforge.net/p/sdl2gfx/code/HEAD/tree/trunk/SDL2_gfxPrimitives.h">https://sourceforge.net/p/sdl2gfx/code/HEAD/tree/trunk/SDL2_gfxPrimitives.h</a></li>
+<li><a href="https://www.ferzkopp.net/Software/SDL2_gfx/Docs/html/_s_d_l2__gfx_primitives_8h.html">https://www.ferzkopp.net/Software/SDL2_gfx/Docs/html/_s_d_l2__gfx_primitives_8h.html</a></li>
+<li><a href="https://www.gnu.org/software/guile/manual/html_node/Coding-With-Keywords.html">https://www.gnu.org/software/guile/manual/html_node/Coding-With-Keywords.html</a></li>
+</ul>
+
+<p>
+The commit for the code from this stream:
+</p>
+
+<p>
+<a href="https://github.com/FluxHarmonic/flux-compose/commit/4adf5e16fc161f23cc9b95398f006ad6fb97c3c2">https://github.com/FluxHarmonic/flux-compose/commit/4adf5e16fc161f23cc9b95398f006ad6fb97c3c2</a>
+</p>
+</div>
 </div>
 
 <div id="outline-container-next-steps" class="outline-2">
 <h2 id="next-steps">Next Steps</h2>
+<div class="outline-text-2" id="text-next-steps">
+</div>
+<div id="outline-container-try-to-finish-instantiating-a-test-scene-in-c-use-gan-s-example" class="outline-3">
+<h3 id="try-to-finish-instantiating-a-test-scene-in-c-use-gan-s-example"><span class="todo TODO">TODO</span> Try to finish instantiating a test scene in C (use Gan's example)</h3>
+</div>
+<div id="outline-container-figure-out-how-to-create-the-c-struct-representation-for-scene-objects-in-scheme" class="outline-3">
+<h3 id="figure-out-how-to-create-the-c-struct-representation-for-scene-objects-in-scheme"><span class="todo TODO">TODO</span> Figure out how to create the C struct representation for scene objects in Scheme</h3>
+</div>
+<div id="outline-container-transmit-drawing-instructions-to-renderer-thread-in-some-form-sdl-event" class="outline-3">
+<h3 id="transmit-drawing-instructions-to-renderer-thread-in-some-form-sdl-event"><span class="todo TODO">TODO</span> Transmit drawing instructions to renderer thread in some form (SDL event?)</h3>
+</div>
+<div id="outline-container-get-the-basic-gfx-scm-example-working" class="outline-3">
+<h3 id="get-the-basic-gfx-scm-example-working"><span class="todo TODO">TODO</span> Get the <code>basic-gfx.scm</code> example working</h3>
+</div>
+<div id="outline-container-make-sure-that-we-can-re-eval-the-scheme-code-to-update-the-live-preview" class="outline-3">
+<h3 id="make-sure-that-we-can-re-eval-the-scheme-code-to-update-the-live-preview"><span class="todo TODO">TODO</span> Make sure that we can re-eval the Scheme code to update the live preview</h3>
+</div>
+<div id="outline-container-render-the-completed-image-to-a-png-file" class="outline-3">
+<h3 id="render-the-completed-image-to-a-png-file"><span class="todo TODO">TODO</span> Render the completed image to a .png file</h3>
+</div>
 </div>
 ]]></description>
     </item>
