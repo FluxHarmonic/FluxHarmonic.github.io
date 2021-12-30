@@ -26,14 +26,69 @@ The goal today is to get some basic things rendering in a preview window and /po
 
 Here's what I'd like to accomplish today:
 
-** TODO Rename the project to =flux-compose=
-** TODO Try a FFI approach for calling C functions from a shared library
-** TODO Figure out why =init-graphics= is crashing the process, can we come up with a good debugging strategy (running via gdb)
-** TODO Get something rendering on the screen!
+** DONE Rename the project to =flux-compose=
+CLOSED: [2021-12-30 Thu 15:26]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-30 Thu 15:26]
+:END:
+
+** DONE Create a shared library for core C code
+CLOSED: [2021-12-30 Thu 16:17]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-30 Thu 16:17]
+:END:
+** DONE Try a FFI approach for calling C functions from a shared library
+CLOSED: [2021-12-30 Thu 16:17]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-30 Thu 16:17]
+:END:
+** DONE Get the screen clearing
+CLOSED: [2021-12-30 Thu 16:38]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-30 Thu 16:38]
+:END:
+** DONE Find a faster way to iterate on the native layer
+CLOSED: [2021-12-30 Thu 16:38]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-30 Thu 16:38]
+:END:
+** DONE Get something simple rendering in the C code
+CLOSED: [2021-12-30 Thu 17:53]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-30 Thu 17:53]
+:END:
+** DONE Figure out why =init-graphics= is crashing the process, can we come up with a good debugging strategy (running via gdb)
+CLOSED: [2021-12-30 Thu 17:54]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-30 Thu 17:54]
+:END:
+
 ** TODO Transmit drawing instructions to renderer thread in some form
 ** TODO Get the =basic-gfx.scm= example working
 ** TODO Render the completed image to a .png file
 
+https://stackoverflow.com/questions/34255820/save-sdl-texture-to-file
+
 * Notes
 
+- https://www.gnu.org/software/guile/manual/html_node/Foreign-Function-Interface.html
+- https://www.gnu.org/software/guile/manual/html_node/Foreign-Functions.html
+- https://www.gnu.org/software/guile/manual/html_node/Foreign-Structs.html
+- https://www.gnu.org/software/guile/manual/html_node/Void-Pointers-and-Byte-Access.html
+- https://willosborne.co.uk/coding/2019/11/16/iterators-and-for-loops-with-guile-scheme.html
+- https://sourceforge.net/p/sdl2gfx/code/HEAD/tree/trunk/SDL2_gfxPrimitives.h
+- https://www.ferzkopp.net/Software/SDL2_gfx/Docs/html/_s_d_l2__gfx_primitives_8h.html
+- https://www.gnu.org/software/guile/manual/html_node/Coding-With-Keywords.html
+
+The commit for the code from this stream:
+
+https://github.com/FluxHarmonic/flux-compose/commit/4adf5e16fc161f23cc9b95398f006ad6fb97c3c2
+
 * Next Steps
+
+** TODO Try to finish instantiating a test scene in C (use Gan's example)
+** TODO Figure out how to create the C struct representation for scene objects in Scheme
+** TODO Transmit drawing instructions to renderer thread in some form (SDL event?)
+** TODO Get the =basic-gfx.scm= example working
+** TODO Make sure that we can re-eval the Scheme code to update the live preview
+** TODO Render the completed image to a .png file
