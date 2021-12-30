@@ -4,6 +4,12 @@
 
 View the code: https://github.com/FluxHarmonic/flux-compose
 
+* Schedule Change!
+
+Starting *next week* I'm moving the stream start time forward by one hour.
+
+Streams will now be *Tuesday and Thursday, 2PM - 5PM UTC*!
+
 * Graphics Layer Design
 
 Let's continue with the idea we came up with last time to see how far we can take it:
@@ -21,7 +27,7 @@ The goal today is to get some basic things rendering in a preview window and /po
 Here's what I'd like to accomplish today:
 
 ** TODO Rename the project to =flux-compose=
-** TODO Figure out why =init-graphics= can't be accessed in =flux graphics= module
+** TODO Try a FFI approach for calling C functions from a shared library
 ** TODO Figure out why =init-graphics= is crashing the process, can we come up with a good debugging strategy (running via gdb)
 ** TODO Get something rendering on the screen!
 ** TODO Transmit drawing instructions to renderer thread in some form
