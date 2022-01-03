@@ -1,0 +1,23 @@
+#+title: Encoding the Scene
+#+date: [2021-01-04]
+
+* Encoding C structs from Scheme
+
+- Structs are laid out contiguously
+- Do we need to worry about memory alignment?
+- What about nested data?
+
+* Early contributions
+
+* Tasks
+
+** TODO Try to finish instantiating a test scene in C (use Gan's example)
+** TODO Figure out how to create the C struct representation for scene objects in Scheme
+** TODO Transmit drawing instructions to renderer thread in some form (SDL event?)
+** TODO Get the =basic-gfx.scm= example working
+** TODO Make sure that we can re-eval the Scheme code to update the live preview
+** TODO Render the completed image to a .png file
+
+* Notes
+
+* Next Steps
