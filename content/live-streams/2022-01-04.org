@@ -1,5 +1,6 @@
 #+title: Encoding the Scene
 #+date: [2022-01-04]
+#+slug: 2022-01-04
 
 * Encoding C structs from Scheme
 
