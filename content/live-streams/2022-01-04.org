@@ -2,22 +2,28 @@
 #+date: [2022-01-04]
 #+slug: 2022-01-04
 
+* Updates
+
+- Recieved a few issues and pull requests, thanks Christian and Felipe!
+- Improved the README with basic hacking instructions
+- Moved =lib= code, improved =Makefiles=
+- Considered Zig this weekend, will stick with C for now
+
 * Encoding C structs from Scheme
 
 - Structs are laid out contiguously
 - Do we need to worry about memory alignment?
 - What about nested data?
 
-* Early contributions
-
 * Tasks
 
-** TODO Try to finish instantiating a test scene in C (use Gan's example)
+** TODO Try to finish instantiating a test scene in C (try Felipe's fix)
 ** TODO Figure out how to create the C struct representation for scene objects in Scheme
 ** TODO Transmit drawing instructions to renderer thread in some form (SDL event?)
 ** TODO Get the =basic-gfx.scm= example working
 ** TODO Make sure that we can re-eval the Scheme code to update the live preview
 ** TODO Render the completed image to a .png file
+** TODO Load and render an image file
 
 * Notes
 
