@@ -8,6 +8,7 @@
 - Improved the README with basic hacking instructions
 - Moved =lib= code, improved =Makefiles=
 - Considered Zig this weekend, will stick with C for now
+- Didn't get the summary video out this week!
 
 * Encoding C structs from Scheme
 
@@ -17,14 +18,38 @@
 
 * Tasks
 
-** TODO Try to finish instantiating a test scene in C (try Felipe's fix)
-** TODO Figure out how to create the C struct representation for scene objects in Scheme
+** DONE Try to finish instantiating a test scene in C (try Felipe's fix)
+CLOSED: [2022-01-04 Tue 16:52]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-04 Tue 16:52]
+:END:
+** DONE Figure out how to create the C struct representation for scene objects in Scheme
+CLOSED: [2022-01-04 Tue 18:37]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-04 Tue 18:37]
+:END:
+** DONE Get the =basic-gfx.scm= example working
+CLOSED: [2022-01-04 Tue 18:37]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-04 Tue 18:37]
+:END:
 ** TODO Transmit drawing instructions to renderer thread in some form (SDL event?)
-** TODO Get the =basic-gfx.scm= example working
 ** TODO Make sure that we can re-eval the Scheme code to update the live preview
 ** TODO Render the completed image to a .png file
 ** TODO Load and render an image file
 
 * Notes
 
+- [[https://www.youtube.com/watch?v=443UNeGrFoM][Video: How I Write C (Highly Recommended)]]
+- https://wiki.libsdl.org/SDL_PushEvent
+
+The commit for the code from this stream:
+https://github.com/FluxHarmonic/flux-compose/commit/d4e4d3f849784a23669b27349d767ee503acfe6a
+
 * Next Steps
+
+** TODO Figure out why scene flipping doesn't work (event problem?)
+** TODO Transmit drawing instructions to renderer thread in some form
+** TODO Make sure that we can re-eval the Scheme code to update the live preview
+** TODO Render the completed image to a .png file
+** TODO Load and render an image file
