@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Mon, 03 Jan 2022 20:27:14 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Jan 2022 13:17:15 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -34,6 +34,18 @@
       <guid isPermaLink="false"></guid>
       <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
       <description><![CDATA[
+<div id="outline-container-updates" class="outline-2">
+<h2 id="updates">Updates</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>Recieved a few issues and pull requests, thanks Christian and Felipe!</li>
+<li>Improved the README with basic hacking instructions</li>
+<li>Moved <code>lib</code> code, improved <code>Makefiles</code></li>
+<li>Considered Zig this weekend, will stick with C for now</li>
+</ul>
+</div>
+</div>
+
 <div id="outline-container-encoding-c-structs-from-scheme" class="outline-2">
 <h2 id="encoding-c-structs-from-scheme">Encoding C structs from Scheme</h2>
 <div class="outline-text-2">
@@ -45,16 +57,12 @@
 </div>
 </div>
 
-<div id="outline-container-early-contributions" class="outline-2">
-<h2 id="early-contributions">Early contributions</h2>
-</div>
-
 <div id="outline-container-tasks" class="outline-2">
 <h2 id="tasks">Tasks</h2>
 <div class="outline-text-2" id="text-tasks">
 </div>
-<div id="outline-container-try-to-finish-instantiating-a-test-scene-in-c-use-gan-s-example" class="outline-3">
-<h3 id="try-to-finish-instantiating-a-test-scene-in-c-use-gan-s-example"><span class="todo TODO">TODO</span> Try to finish instantiating a test scene in C (use Gan's example)</h3>
+<div id="outline-container-try-to-finish-instantiating-a-test-scene-in-c-try-felipe-s-fix" class="outline-3">
+<h3 id="try-to-finish-instantiating-a-test-scene-in-c-try-felipe-s-fix"><span class="todo TODO">TODO</span> Try to finish instantiating a test scene in C (try Felipe's fix)</h3>
 </div>
 <div id="outline-container-figure-out-how-to-create-the-c-struct-representation-for-scene-objects-in-scheme" class="outline-3">
 <h3 id="figure-out-how-to-create-the-c-struct-representation-for-scene-objects-in-scheme"><span class="todo TODO">TODO</span> Figure out how to create the C struct representation for scene objects in Scheme</h3>
@@ -70,6 +78,9 @@
 </div>
 <div id="outline-container-render-the-completed-image-to-a-png-file" class="outline-3">
 <h3 id="render-the-completed-image-to-a-png-file"><span class="todo TODO">TODO</span> Render the completed image to a .png file</h3>
+</div>
+<div id="outline-container-load-and-render-an-image-file" class="outline-3">
+<h3 id="load-and-render-an-image-file"><span class="todo TODO">TODO</span> Load and render an image file</h3>
 </div>
 </div>
 
