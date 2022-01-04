@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Tue, 04 Jan 2022 13:17:15 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Jan 2022 17:12:46 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -42,6 +42,7 @@
 <li>Improved the README with basic hacking instructions</li>
 <li>Moved <code>lib</code> code, improved <code>Makefiles</code></li>
 <li>Considered Zig this weekend, will stick with C for now</li>
+<li>Didn't get the summary video out this week!</li>
 </ul>
 </div>
 </div>
@@ -62,16 +63,22 @@
 <div class="outline-text-2" id="text-tasks">
 </div>
 <div id="outline-container-try-to-finish-instantiating-a-test-scene-in-c-try-felipe-s-fix" class="outline-3">
-<h3 id="try-to-finish-instantiating-a-test-scene-in-c-try-felipe-s-fix"><span class="todo TODO">TODO</span> Try to finish instantiating a test scene in C (try Felipe's fix)</h3>
+<h3 id="try-to-finish-instantiating-a-test-scene-in-c-try-felipe-s-fix"><span class="done DONE">DONE</span> Try to finish instantiating a test scene in C (try Felipe's fix)</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-figure-out-how-to-create-the-c-struct-representation-for-scene-objects-in-scheme" class="outline-3">
-<h3 id="figure-out-how-to-create-the-c-struct-representation-for-scene-objects-in-scheme"><span class="todo TODO">TODO</span> Figure out how to create the C struct representation for scene objects in Scheme</h3>
+<h3 id="figure-out-how-to-create-the-c-struct-representation-for-scene-objects-in-scheme"><span class="done DONE">DONE</span> Figure out how to create the C struct representation for scene objects in Scheme</h3>
+<div class="outline-text-3">
+</div>
+</div>
+<div id="outline-container-get-the-basic-gfx-scm-example-working" class="outline-3">
+<h3 id="get-the-basic-gfx-scm-example-working"><span class="done DONE">DONE</span> Get the <code>basic-gfx.scm</code> example working</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-transmit-drawing-instructions-to-renderer-thread-in-some-form-sdl-event" class="outline-3">
 <h3 id="transmit-drawing-instructions-to-renderer-thread-in-some-form-sdl-event"><span class="todo TODO">TODO</span> Transmit drawing instructions to renderer thread in some form (SDL event?)</h3>
-</div>
-<div id="outline-container-get-the-basic-gfx-scm-example-working" class="outline-3">
-<h3 id="get-the-basic-gfx-scm-example-working"><span class="todo TODO">TODO</span> Get the <code>basic-gfx.scm</code> example working</h3>
 </div>
 <div id="outline-container-make-sure-that-we-can-re-eval-the-scheme-code-to-update-the-live-preview" class="outline-3">
 <h3 id="make-sure-that-we-can-re-eval-the-scheme-code-to-update-the-live-preview"><span class="todo TODO">TODO</span> Make sure that we can re-eval the Scheme code to update the live preview</h3>
@@ -86,10 +93,38 @@
 
 <div id="outline-container-notes" class="outline-2">
 <h2 id="notes">Notes</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=443UNeGrFoM">Video: How I Write C (Highly Recommended)</a></li>
+<li><a href="https://wiki.libsdl.org/SDL_PushEvent">https://wiki.libsdl.org/SDL_PushEvent</a></li>
+</ul>
+
+<p>
+The commit for the code from this stream:
+<a href="https://github.com/FluxHarmonic/flux-compose/commit/d4e4d3f849784a23669b27349d767ee503acfe6a">https://github.com/FluxHarmonic/flux-compose/commit/d4e4d3f849784a23669b27349d767ee503acfe6a</a>
+</p>
+</div>
 </div>
 
 <div id="outline-container-next-steps" class="outline-2">
 <h2 id="next-steps">Next Steps</h2>
+<div class="outline-text-2" id="text-next-steps">
+</div>
+<div id="outline-container-figure-out-why-scene-flipping-doesn-t-work-event-problem" class="outline-3">
+<h3 id="figure-out-why-scene-flipping-doesn-t-work-event-problem"><span class="todo TODO">TODO</span> Figure out why scene flipping doesn't work (event problem?)</h3>
+</div>
+<div id="outline-container-transmit-drawing-instructions-to-renderer-thread-in-some-form" class="outline-3">
+<h3 id="transmit-drawing-instructions-to-renderer-thread-in-some-form"><span class="todo TODO">TODO</span> Transmit drawing instructions to renderer thread in some form</h3>
+</div>
+<div id="outline-container-make-sure-that-we-can-re-eval-the-scheme-code-to-update-the-live-preview" class="outline-3">
+<h3 id="make-sure-that-we-can-re-eval-the-scheme-code-to-update-the-live-preview"><span class="todo TODO">TODO</span> Make sure that we can re-eval the Scheme code to update the live preview</h3>
+</div>
+<div id="outline-container-render-the-completed-image-to-a-png-file" class="outline-3">
+<h3 id="render-the-completed-image-to-a-png-file"><span class="todo TODO">TODO</span> Render the completed image to a .png file</h3>
+</div>
+<div id="outline-container-load-and-render-an-image-file" class="outline-3">
+<h3 id="load-and-render-an-image-file"><span class="todo TODO">TODO</span> Load and render an image file</h3>
+</div>
 </div>
 ]]></description>
     </item>
