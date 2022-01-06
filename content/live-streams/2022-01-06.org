@@ -4,6 +4,8 @@
 
 Today's goal: create a basic image and render it to a PNG file!
 
+[[https://youtu.be/8TdaQhoxqeQ][Watch the recording]] on YouTube!
+
 * Updates
 
 - Thanks to Ashraz, we now have lsp-mode (and eglot) working for the C code!
@@ -13,20 +15,57 @@ Today's goal: create a basic image and render it to a PNG file!
 * Looking Ahead
 
 - I /really/ want to abandon SDL2 as soon as I can
-- My goal is to use GLFW to set up rendering context, event loop, and input
 - Write my own rendering layer with OpenGL and shaders
+- My goal is to use GLFW to set up rendering context, event loop, and input
 - The plan: get some things working in SDL2 to validate the model, then drop it
 
 * Tasks
 
-** TODO Figure out why scene flipping doesn't work (event problem?)
-** TODO Flesh out the approach for calling C functions to communicate scene data
-** TODO Make sure that we can re-eval the Scheme code to update the live preview
+** DONE Figure out why scene flipping doesn't work (event problem?)
+CLOSED: [2022-01-06 Thu 16:46]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-06 Thu 16:46]
+:END:
+** DONE Flesh out the approach for calling C functions to communicate scene data
+CLOSED: [2022-01-06 Thu 17:37]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-06 Thu 17:37]
+:END:
+** DONE Make sure that we can re-eval the Scheme code to update the live preview
+CLOSED: [2022-01-06 Thu 17:37]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-06 Thu 17:37]
+:END:
+** DONE Render the image to a .png file
+CLOSED: [2022-01-06 Thu 18:51]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-06 Thu 18:51]
+:END:
 ** TODO Write a function that can convert HTML-style hex colors to RGBA
-** TODO Render the image to a .png file
 ** TODO Load and render an image file
 ** TODO Figure out how to render basic text on the image
 
+** TODO Try to clean up the old scene memory when it's no longer needed
+
 * Notes
 
+- Creating a "screenshot" of an SDL2 renderer: https://gist.github.com/malja/2193bd656fe50c203f264ce554919976
+
+* Results
+
+Here's the image we were able to save today:
+
+[[url_for:static,file=results/2022-01-06.png][Result image]]
+
+Here is the commit for the code changes from today:
+
+https://github.com/FluxHarmonic/flux-compose/commit/9ea27cdf2cf4940bd09356f8a12f1c9c702f86cf
+
 * Next Steps
+
+** TODO Figure out why the window isn't the correct size
+** TODO Figure out how to convert Scheme string to null-terminated bytevector
+** TODO Finish writing function that can convert HTML-style hex colors to RGBA
+** TODO Load and render an image file
+** TODO Figure out how to render basic text on the image
+** TODO Try to clean up the old scene memory when it's no longer needed
