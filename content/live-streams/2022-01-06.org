@@ -55,7 +55,7 @@ CLOSED: [2022-01-06 Thu 18:51]
 
 Here's the image we were able to save today:
 
-[[url_for:static,file=results/2022-01-06.png][Result image]]
+[[url_for_img:static,file=results/2022-01-06.png][Result image]]
 
 Here is the commit for the code changes from today:
 
