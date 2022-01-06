@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Thu, 06 Jan 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Thu, 06 Jan 2022 12:21:54 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Jan 2022 17:06:57 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -37,6 +37,10 @@
 Today's goal: create a basic image and render it to a PNG file!
 </p>
 
+<p>
+<a href="https://youtu.be/8TdaQhoxqeQ">Watch the recording</a> on YouTube!
+</p>
+
 <div id="outline-container-updates" class="outline-2">
 <h2 id="updates">Updates</h2>
 <div class="outline-text-2">
@@ -53,8 +57,8 @@ Today's goal: create a basic image and render it to a PNG file!
 <div class="outline-text-2">
 <ul class="org-ul">
 <li>I <i>really</i> want to abandon SDL2 as soon as I can</li>
-<li>My goal is to use GLFW to set up rendering context, event loop, and input</li>
 <li>Write my own rendering layer with OpenGL and shaders</li>
+<li>My goal is to use GLFW to set up rendering context, event loop, and input</li>
 <li>The plan: get some things working in SDL2 to validate the model, then drop it</li>
 </ul>
 </div>
@@ -65,19 +69,27 @@ Today's goal: create a basic image and render it to a PNG file!
 <div class="outline-text-2" id="text-tasks">
 </div>
 <div id="outline-container-figure-out-why-scene-flipping-doesn-t-work-event-problem" class="outline-3">
-<h3 id="figure-out-why-scene-flipping-doesn-t-work-event-problem"><span class="todo TODO">TODO</span> Figure out why scene flipping doesn't work (event problem?)</h3>
+<h3 id="figure-out-why-scene-flipping-doesn-t-work-event-problem"><span class="done DONE">DONE</span> Figure out why scene flipping doesn't work (event problem?)</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-flesh-out-the-approach-for-calling-c-functions-to-communicate-scene-data" class="outline-3">
-<h3 id="flesh-out-the-approach-for-calling-c-functions-to-communicate-scene-data"><span class="todo TODO">TODO</span> Flesh out the approach for calling C functions to communicate scene data</h3>
+<h3 id="flesh-out-the-approach-for-calling-c-functions-to-communicate-scene-data"><span class="done DONE">DONE</span> Flesh out the approach for calling C functions to communicate scene data</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-make-sure-that-we-can-re-eval-the-scheme-code-to-update-the-live-preview" class="outline-3">
-<h3 id="make-sure-that-we-can-re-eval-the-scheme-code-to-update-the-live-preview"><span class="todo TODO">TODO</span> Make sure that we can re-eval the Scheme code to update the live preview</h3>
+<h3 id="make-sure-that-we-can-re-eval-the-scheme-code-to-update-the-live-preview"><span class="done DONE">DONE</span> Make sure that we can re-eval the Scheme code to update the live preview</h3>
+<div class="outline-text-3">
+</div>
+</div>
+<div id="outline-container-render-the-image-to-a-png-file" class="outline-3">
+<h3 id="render-the-image-to-a-png-file"><span class="done DONE">DONE</span> Render the image to a .png file</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-write-a-function-that-can-convert-html-style-hex-colors-to-rgba" class="outline-3">
 <h3 id="write-a-function-that-can-convert-html-style-hex-colors-to-rgba"><span class="todo TODO">TODO</span> Write a function that can convert HTML-style hex colors to RGBA</h3>
-</div>
-<div id="outline-container-render-the-image-to-a-png-file" class="outline-3">
-<h3 id="render-the-image-to-a-png-file"><span class="todo TODO">TODO</span> Render the image to a .png file</h3>
 </div>
 <div id="outline-container-load-and-render-an-image-file" class="outline-3">
 <h3 id="load-and-render-an-image-file"><span class="todo TODO">TODO</span> Load and render an image file</h3>
@@ -85,14 +97,64 @@ Today's goal: create a basic image and render it to a PNG file!
 <div id="outline-container-figure-out-how-to-render-basic-text-on-the-image" class="outline-3">
 <h3 id="figure-out-how-to-render-basic-text-on-the-image"><span class="todo TODO">TODO</span> Figure out how to render basic text on the image</h3>
 </div>
+
+<div id="outline-container-try-to-clean-up-the-old-scene-memory-when-it-s-no-longer-needed" class="outline-3">
+<h3 id="try-to-clean-up-the-old-scene-memory-when-it-s-no-longer-needed"><span class="todo TODO">TODO</span> Try to clean up the old scene memory when it's no longer needed</h3>
+</div>
 </div>
 
 <div id="outline-container-notes" class="outline-2">
 <h2 id="notes">Notes</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>Creating a "screenshot" of an SDL2 renderer: <a href="https://gist.github.com/malja/2193bd656fe50c203f264ce554919976">https://gist.github.com/malja/2193bd656fe50c203f264ce554919976</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-results" class="outline-2">
+<h2 id="results">Results</h2>
+<div class="outline-text-2">
+<p>
+Here's the image we were able to save today:
+</p>
+
+<p>
+<a href="https://fluxharmonic.com/static/results/2022-01-06.png">Result image</a>
+</p>
+
+<p>
+Here is the commit for the code changes from today:
+</p>
+
+<p>
+<a href="https://github.com/FluxHarmonic/flux-compose/commit/9ea27cdf2cf4940bd09356f8a12f1c9c702f86cf">https://github.com/FluxHarmonic/flux-compose/commit/9ea27cdf2cf4940bd09356f8a12f1c9c702f86cf</a>
+</p>
+</div>
 </div>
 
 <div id="outline-container-next-steps" class="outline-2">
 <h2 id="next-steps">Next Steps</h2>
+<div class="outline-text-2" id="text-next-steps">
+</div>
+<div id="outline-container-figure-out-why-the-window-isn-t-the-correct-size" class="outline-3">
+<h3 id="figure-out-why-the-window-isn-t-the-correct-size"><span class="todo TODO">TODO</span> Figure out why the window isn't the correct size</h3>
+</div>
+<div id="outline-container-figure-out-how-to-convert-scheme-string-to-null-terminated-bytevector" class="outline-3">
+<h3 id="figure-out-how-to-convert-scheme-string-to-null-terminated-bytevector"><span class="todo TODO">TODO</span> Figure out how to convert Scheme string to null-terminated bytevector</h3>
+</div>
+<div id="outline-container-finish-writing-function-that-can-convert-html-style-hex-colors-to-rgba" class="outline-3">
+<h3 id="finish-writing-function-that-can-convert-html-style-hex-colors-to-rgba"><span class="todo TODO">TODO</span> Finish writing function that can convert HTML-style hex colors to RGBA</h3>
+</div>
+<div id="outline-container-load-and-render-an-image-file" class="outline-3">
+<h3 id="load-and-render-an-image-file"><span class="todo TODO">TODO</span> Load and render an image file</h3>
+</div>
+<div id="outline-container-figure-out-how-to-render-basic-text-on-the-image" class="outline-3">
+<h3 id="figure-out-how-to-render-basic-text-on-the-image"><span class="todo TODO">TODO</span> Figure out how to render basic text on the image</h3>
+</div>
+<div id="outline-container-try-to-clean-up-the-old-scene-memory-when-it-s-no-longer-needed" class="outline-3">
+<h3 id="try-to-clean-up-the-old-scene-memory-when-it-s-no-longer-needed"><span class="todo TODO">TODO</span> Try to clean up the old scene memory when it's no longer needed</h3>
+</div>
 </div>
 ]]></description>
     </item>
