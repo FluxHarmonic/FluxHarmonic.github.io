@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en-us" data-theme="dark">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Flux Harmonic
+      
+    </title>
+    
+    
+    
+    
+  <meta property="og:title" content="Creating a Scripting Language in 5 Days">
+  <meta property="og:url" content="https://fluxharmonic.com/live-streams/2022-01-13/">
+  
+  
+  <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="https://fluxharmonic.com/static/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Space+Mono&display=swap" />
+    <script defer data-domain="fluxharmonic.com" src="https://plausible.io/js/plausible.js"></script>
+    
+  </head>
+  <body>
+    
+    
+      <header>
+        <a href="https://fluxharmonic.com/">
+          <img class="logo" src="https://fluxharmonic.com/static/Flux-Harmonic-Site-Logo.png" alt="Flux Harmonic"/>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="https://fluxharmonic.com/live-streams/index.html">Live Streams</a></li>
+            <li><a href="https://fluxharmonic.com/how-to-help/">How To Help</a></li>
+            <li><a href="https://youtube.com/FluxHarmonicLive">YouTube</a></li>
+            <li><a href="https://github.com/FluxHarmonic">GitHub</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+
+    
+    <main id="main">
+      
+  <article class="post">
+    <h1 class="post__title">
+      Creating a Scripting Language in 5 Days
+    </h1>
+    <section class="post__meta">
+      
+        Jan 13, 2022
+      
+    </section>
+    <section>
+      <p>
+Today's goal: Replace Guile with a custom scripting language!
+</p>
+
+<div id="outline-container-why-create-a-language" class="outline-2">
+<h2 id="why-create-a-language">Why create a language?</h2>
+<div class="outline-text-2">
+<p>
+After the amount of time we've spent fighting with Guile Scheme to invoke C functions correctly, I started thinking about whether it would make sense to switch to a different Scheme implementation like Chibi.
+</p>
+
+<p>
+But then it occurred to me: if I'm only using Scheme as a control language that binds to the C layer, why use a full language for that?
+</p>
+
+<p>
+So this weekend I had a crazy idea: create my own Scheme-inspired control language that will be purpose-built for this project.  I won't actually call it a scripting language yet because we're going to avoid adding control flow and other typical language features as long as we can!
+</p>
+
+<p>
+And of course the most important reason: <i>because it's fun</i>!
+</p>
+</div>
+</div>
+
+<div id="outline-container-language-design" class="outline-2">
+<h2 id="language-design">Language design</h2>
+<div class="outline-text-2">
+<p>
+Since this language is being created specifically for this project, we get to choose how it works.  More importantly, we get to choose what <i>not</i> to implement!
+</p>
+
+<p>
+<b>What do we really need?</b>
+</p>
+
+<ul class="org-ul">
+<li>Specific set of primitive data types (string, integer, float, time, list)</li>
+<li>Invoke C functions, declare bindings in a convenient way</li>
+<li>Limited concept of scope for now, only module scope</li>
+<li>Make sure the language enables an interactive workflow (REPL, eval-able constructs)</li>
+<li>Ability to send individual commands from the editor (preview, transport control, project change)</li>
+</ul>
+
+<p>
+<b>What we don't need (for now)</b>
+</p>
+
+<ul class="org-ul">
+<li>Logic constructs and control flow</li>
+<li>Functions and lexical scoping</li>
+<li>Data structure definitions (complex data structures created via C functions)</li>
+<li>Macros (but maybe later if it makes sense)</li>
+<li>Library modules defined in the language (this will likely change, though)</li>
+</ul>
+
+<p>
+This is more than just a data format!  Since we can invoke functions in the C layer, it also allows us to automate behavior where necessary.
+</p>
+</div>
+</div>
+
+<div id="outline-container-an-example" class="outline-2">
+<h2 id="an-example">An example</h2>
+<div class="outline-text-2">
+<p>
+This code snippet demonstrates some of the ideas I have in mind:
+</p>
+
+<ul class="org-ul">
+<li>Symbol in first position of a list is always a function to be called, defined in C</li>
+<li>Functions will often be called with keyword arguments, but can also have positional args</li>
+<li>Time will be a first-class concept in the syntax</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-scheme">
+(define font-jost (font :family "Jost*" :weight 'medium))
+
+(define moving-circles
+  (scene :members
+	 (list (circle :name 'circle1
+		       :x 200
+		       :y 500
+		       :color (rgb 255 0 0)))
+
+	 :timeline
+	 (list (event :at 0:05
+		      :actions (list (move :target 'circle1
+					   :to (pos 400 200)
+					   :for 150ms
+					   :ease 'out)))
+	       (event :at 0:10
+		      :actions (list (fade :target 'circle1
+					   :for 1000m)))))
+
+(scene-preview moving-circles)
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
+</div>
+<div id="outline-container-implement-basic-evaluation-of-expressions" class="outline-3">
+<h3 id="implement-basic-evaluation-of-expressions"><span class="todo TODO">TODO</span> Implement basic evaluation of expressions</h3>
+</div>
+<div id="outline-container-enable-special-form-function-registration" class="outline-3">
+<h3 id="enable-special-form-function-registration"><span class="todo TODO">TODO</span> Enable special form (function) registration</h3>
+</div>
+<div id="outline-container-evaluate-call-expressions" class="outline-3">
+<h3 id="evaluate-call-expressions"><span class="todo TODO">TODO</span> Evaluate call expressions</h3>
+</div>
+<div id="outline-container-port-previous-guile-interface-code-over-to-the-new-language" class="outline-3">
+<h3 id="port-previous-guile-interface-code-over-to-the-new-language"><span class="todo TODO">TODO</span> Port previous Guile interface code over to the new language</h3>
+</div>
+<div id="outline-container-finish-writing-the-render-to-file-function" class="outline-3">
+<h3 id="finish-writing-the-render-to-file-function"><span class="todo TODO">TODO</span> Finish writing the <code>render-to-file</code> function</h3>
+</div>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+</div>
+
+<div id="outline-container-next-steps" class="outline-2">
+<h2 id="next-steps">Next Steps</h2>
+<div class="outline-text-2" id="text-next-steps">
+</div>
+<div id="outline-container-get-back-to-the-tasks-from-the-previous-stream" class="outline-3">
+<h3 id="get-back-to-the-tasks-from-the-previous-stream"><span class="todo TODO">TODO</span> Get back to the tasks from the previous stream!</h3>
+</div>
+</div>
+
+    </section>
+  </article>
+
+    </main>
+
+    
+    
+      <footer>&copy; 2021 Flux Harmonic</footer>
+    
+
+  </body>
+</html>
