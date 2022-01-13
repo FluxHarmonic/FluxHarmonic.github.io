@@ -1,0 +1,84 @@
+#+title: Creating a Scripting Language in 5 Days
+#+date: [2022-01-13]
+#+slug: 2022-01-06
+
+Today's goal: Replace Guile with a custom scripting language!
+
+* Why create a language?
+
+After the amount of time we've spent fighting with Guile Scheme to invoke C functions correctly, I started thinking about whether it would make sense to switch to a different Scheme implementation like Chibi.
+
+But then it occurred to me: if I'm only using Scheme as a control language that binds to the C layer, why use a full language for that?
+
+So this weekend I had a crazy idea: create my own Scheme-inspired control language that will be purpose-built for this project.  I won't actually call it a scripting language yet because we're going to avoid adding control flow and other typical language features as long as we can!
+
+And of course the most important reason: /because it's fun/!
+
+* Language design
+
+Since this language is being created specifically for this project, we get to choose how it works.  More importantly, we get to choose what /not/ to implement!
+
+*What do we really need?*
+
+- Specific set of primitive data types (string, integer, float, time, list)
+- Invoke C functions, declare bindings in a convenient way
+- Limited concept of scope for now, only module scope
+- Make sure the language enables an interactive workflow (REPL, eval-able constructs)
+- Ability to send individual commands from the editor (preview, transport control, project change)
+
+*What we don't need (for now)*
+
+- Logic constructs and control flow
+- Functions and lexical scoping
+- Data structure definitions (complex data structures created via C functions)
+- Macros (but maybe later if it makes sense)
+- Library modules defined in the language (this will likely change, though)
+
+This is more than just a data format!  Since we can invoke functions in the C layer, it also allows us to automate behavior where necessary.
+
+* An example
+
+This code snippet demonstrates some of the ideas I have in mind:
+
+- Symbol in first position of a list is always a function to be called, defined in C
+- Functions will often be called with keyword arguments, but can also have positional args
+- Time will be a first-class concept in the syntax
+
+#+begin_src scheme
+
+  (define font-jost (font :family "Jost*" :weight 'medium))
+
+  (define moving-circles
+    (scene :members
+           (list (circle :name 'circle1
+                         :x 200
+                         :y 500
+                         :color (rgb 255 0 0)))
+
+           :timeline
+           (list (event :at 0:05
+                        :actions (list (move :target 'circle1
+                                             :to (pos 400 200)
+                                             :for 150ms
+                                             :ease 'out)))
+                 (event :at 0:10
+                        :actions (list (fade :target 'circle1
+                                             :for 1000m)))))
+
+  (scene-preview moving-circles)
+
+#+end_src
+
+* Tasks
+
+** TODO Implement basic evaluation of expressions
+** TODO Enable special form (function) registration
+** TODO Evaluate call expressions
+** TODO Port previous Guile interface code over to the new language
+** TODO Finish writing the =render-to-file= function
+
+* Notes
+
+* Next Steps
+
+** TODO Get back to the tasks from the previous stream!
