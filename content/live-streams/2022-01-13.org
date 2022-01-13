@@ -14,7 +14,7 @@ But then it occurred to me: if I'm only using Scheme as a control language that 
 
 So this weekend I had a crazy idea: create my own Scheme-inspired control language that will be purpose-built for this project.  I won't actually call it a scripting language yet because we're going to avoid adding control flow and other typical language features as long as we can!
 
-Another benefit is that I get complete control over memory management and how code execution is integrated with the language.  We might not need a separate execution thread anymore!
+Another benefit is that I get complete control over memory management and how code execution is integrated with the runtime.  We might not need a separate execution thread anymore!
 
 And of course the most important reason: /because it's fun/!
 
@@ -67,7 +67,7 @@ This code snippet demonstrates some of the ideas I have in mind:
                                              :ease 'out)))
                  (event :at 0:10
                         :actions (list (fade :target 'circle1
-                                             :for 1000m)))))
+                                             :for 1000ms)))))
 
   (scene-preview moving-circles)
 
@@ -75,14 +75,30 @@ This code snippet demonstrates some of the ideas I have in mind:
 
 * Tasks
 
-** TODO Implement basic evaluation of expressions
+** DONE Implement basic evaluation of expressions
+CLOSED: [2022-01-13 Thu 18:43]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-13 Thu 18:43]
+:END:
 ** TODO Enable special form (function) registration
+** TODO Fix issue with setting integer values
 ** TODO Evaluate call expressions
 ** TODO Port previous Guile interface code over to the new language
 ** TODO Finish writing the =render-to-file= function
 
 * Notes
 
+Here is the commit for what we accomplished today: https://github.com/FluxHarmonic/flux-compose/commit/dd3e2ccf8e30f94acc4808dfe5c120066b6afbc7
+
+Documentation on setting watchpoints in memory with gdb: https://sourceware.org/gdb/download/onlinedocs/gdb/Set-Watchpoints.html
+
 * Next Steps
 
+** TODO Clean up some of the repeated patterns in the code
+** TODO Use gdb watch to figure out why token kinds are being overwritten
+** TODO Enable special form (function) registration
+** TODO Fix issue with setting integer values
+** TODO Evaluate call expressions
+** TODO Port previous Guile interface code over to the new language
+** TODO Finish writing the =render-to-file= function
 ** TODO Get back to the tasks from the previous stream!
