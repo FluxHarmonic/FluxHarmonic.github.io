@@ -49,6 +49,26 @@
   (package-install 'weblorg))
 (require 'weblorg)
 
+(defvar yt-iframe-format
+  ;; TODO: Create CSS Classes for responsive video display
+  (concat "<div class=\"embed-responsive embed-responsive-16by9\">"
+          " <iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/%s\" allowfullscreen></iframe>"
+          " </div>"))
+
+(org-link-set-parameters
+ "yt"
+ :follow
+ (lambda (handle)
+   (browse-url
+    (concat "https://www.youtube.com/watch?v="
+            handle)))
+
+ :export
+ (lambda (path desc backend channel)
+   (when (eq backend 'html)
+     (format yt-iframe-format
+             path (or desc "")))))
+
 ;; Configure the site
 (setq flux-site (weblorg-site
                  :name "flux"

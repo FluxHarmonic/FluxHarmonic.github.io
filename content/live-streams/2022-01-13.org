@@ -4,6 +4,8 @@
 
 Today's goal: Replace Guile with a custom scripting language!
 
+[[yt:2KdBbEtqpY0][Video Link]]
+
 * Why create a language?
 
 After the amount of time we've spent fighting with Guile Scheme to invoke C functions correctly, I started thinking about whether it would make sense to switch to a different Scheme implementation like Chibi.
