@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Thu, 13 Jan 2022 04:41:08 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Jan 2022 13:33:01 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -54,6 +54,10 @@ But then it occurred to me: if I'm only using Scheme as a control language that 
 
 <p>
 So this weekend I had a crazy idea: create my own Scheme-inspired control language that will be purpose-built for this project.  I won't actually call it a scripting language yet because we're going to avoid adding control flow and other typical language features as long as we can!
+</p>
+
+<p>
+Another benefit is that I get complete control over memory management and how code execution is integrated with the language.  We might not need a separate execution thread anymore!
 </p>
 
 <p>
