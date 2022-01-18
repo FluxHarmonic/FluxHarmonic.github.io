@@ -1,0 +1,34 @@
+#+title: Wiring Up the Scripting Language
+#+date: [2022-01-18]
+#+slug: 2022-01-18
+
+* Updates
+
+** DONE Use gdb watch to figure out why token kinds are being overwritten
+CLOSED: [2022-01-18 Tue 11:28]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-18 Tue 11:28]
+:END:
+** DONE Clean up some of the repeated patterns in the code
+CLOSED: [2022-01-18 Tue 11:28]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-18 Tue 11:28]
+:END:
+
+** DONE Fix issue with setting integer values
+CLOSED: [2022-01-18 Tue 11:28]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-18 Tue 11:28]
+:END:
+
+
+* Some Thoughts on C
+
+* Next Steps
+
+** TODO Evaluate call expressions
+** TODO Port previous Guile interface code over to the new language
+** TODO Finish writing the =render-to-file= function
+** TODO Add a basic REPL interface for live evaluation
+** TODO Hook up the REPL to Emacs
+** TODO Get back to the tasks from the previous streams!
