@@ -71,23 +71,23 @@ We're now in a solid place to start from today.
 <h3 id="offline-tasks">Offline Tasks</h3>
 <div class="outline-text-3" id="text-offline-tasks">
 </div>
-<div id="outline-container-use-gdb-watch-to-figure-out-why-token-kinds-are-being-overwritten-closed-2022-01-18-tue-11-28-logbook-state-done-from-todo-2022-01-18-tue-11-28" class="outline-4">
-<h4 id="use-gdb-watch-to-figure-out-why-token-kinds-are-being-overwritten-closed-2022-01-18-tue-11-28-logbook-state-done-from-todo-2022-01-18-tue-11-28"><span class="done DONE">DONE</span> Use gdb watch to figure out why token kinds are being overwritten CLOSED: <span class="timestamp-wrapper"><span class="timestamp">[2022-01-18 Tue 11:28] </span></span> :LOGBOOK: - State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2022-01-18 Tue 11:28]</span></span>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="END">END</span></span></h4>
+<div id="outline-container-use-gdb-watch-to-figure-out-why-token-kinds-are-being-overwritten" class="outline-4">
+<h4 id="use-gdb-watch-to-figure-out-why-token-kinds-are-being-overwritten">Use gdb watch to figure out why token kinds are being overwritten</h4>
 </div>
 <div id="outline-container-clean-up-some-of-the-repeated-patterns-in-the-code" class="outline-4">
-<h4 id="clean-up-some-of-the-repeated-patterns-in-the-code"><span class="done DONE">DONE</span> Clean up some of the repeated patterns in the code</h4>
-<div class="outline-text-4">
+<h4 id="clean-up-some-of-the-repeated-patterns-in-the-code">Clean up some of the repeated patterns in the code</h4>
 </div>
-</div>
-
 <div id="outline-container-fix-issue-with-setting-integer-values" class="outline-4">
-<h4 id="fix-issue-with-setting-integer-values"><span class="done DONE">DONE</span> Fix issue with setting integer values</h4>
-<div class="outline-text-4">
+<h4 id="fix-issue-with-setting-integer-values">Fix issue with setting integer values</h4>
+</div>
+<div id="outline-container-verify-that-call-expression-eval-from-last-time-works-after-fixes" class="outline-4">
+<h4 id="verify-that-call-expression-eval-from-last-time-works-after-fixes">Verify that call expression eval from last time works after fixes</h4>
+</div>
+<div id="outline-container-write-flux-vector-library-and-move-tokenizer-code-over-to-it" class="outline-4">
+<h4 id="write-flux-vector-library-and-move-tokenizer-code-over-to-it">Write <code>flux_vector</code> library and move tokenizer code over to it</h4>
 </div>
 </div>
 </div>
-</div>
-
 
 <div id="outline-container-some-thoughts-on-c" class="outline-2">
 <h2 id="some-thoughts-on-c">Some Thoughts on C</h2>
@@ -107,12 +107,24 @@ After dabbling with C on and off over the last couple of years and then spending
 </div>
 </div>
 
-<div id="outline-container-next-steps" class="outline-2">
-<h2 id="next-steps">Next Steps</h2>
-<div class="outline-text-2" id="text-next-steps">
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
 </div>
 <div id="outline-container-evaluate-call-expressions" class="outline-3">
-<h3 id="evaluate-call-expressions"><span class="todo TODO">TODO</span> Evaluate call expressions</h3>
+<h3 id="evaluate-call-expressions"><span class="done DONE">DONE</span> Evaluate call expressions</h3>
+<div class="outline-text-3">
+</div>
+</div>
+<div id="outline-container-add-a-basic-repl-interface-for-live-evaluation" class="outline-3">
+<h3 id="add-a-basic-repl-interface-for-live-evaluation"><span class="done DONE">DONE</span> Add a basic REPL interface for live evaluation</h3>
+<div class="outline-text-3">
+</div>
+</div>
+<div id="outline-container-hook-up-the-repl-to-emacs" class="outline-3">
+<h3 id="hook-up-the-repl-to-emacs"><span class="done DONE">DONE</span> Hook up the REPL to Emacs</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-port-previous-guile-interface-code-over-to-the-new-language" class="outline-3">
 <h3 id="port-previous-guile-interface-code-over-to-the-new-language"><span class="todo TODO">TODO</span> Port previous Guile interface code over to the new language</h3>
@@ -120,11 +132,33 @@ After dabbling with C on and off over the last couple of years and then spending
 <div id="outline-container-finish-writing-the-render-to-file-function" class="outline-3">
 <h3 id="finish-writing-the-render-to-file-function"><span class="todo TODO">TODO</span> Finish writing the <code>render-to-file</code> function</h3>
 </div>
-<div id="outline-container-add-a-basic-repl-interface-for-live-evaluation" class="outline-3">
-<h3 id="add-a-basic-repl-interface-for-live-evaluation"><span class="todo TODO">TODO</span> Add a basic REPL interface for live evaluation</h3>
+<div id="outline-container-get-back-to-the-tasks-from-the-previous-streams" class="outline-3">
+<h3 id="get-back-to-the-tasks-from-the-previous-streams"><span class="todo TODO">TODO</span> Get back to the tasks from the previous streams!</h3>
 </div>
-<div id="outline-container-hook-up-the-repl-to-emacs" class="outline-3">
-<h3 id="hook-up-the-repl-to-emacs"><span class="todo TODO">TODO</span> Hook up the REPL to Emacs</h3>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+<div class="outline-text-2">
+<p>
+Code for this stream is here:
+<a href="https://github.com/FluxHarmonic/flux-compose/commit/1e67cf3d1b1c0de27271228cded824486294e34a">https://github.com/FluxHarmonic/flux-compose/commit/1e67cf3d1b1c0de27271228cded824486294e34a</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-next-steps" class="outline-2">
+<h2 id="next-steps">Next Steps</h2>
+<div class="outline-text-2" id="text-next-steps">
+</div>
+<div id="outline-container-simplify-finding-keyword-name-value-pairs-in-function-calls" class="outline-3">
+<h3 id="simplify-finding-keyword-name-value-pairs-in-function-calls"><span class="todo TODO">TODO</span> Simplify finding keyword name/value pairs in function calls</h3>
+</div>
+<div id="outline-container-finish-porting-previous-guile-interface-code-over-to-the-new-language" class="outline-3">
+<h3 id="finish-porting-previous-guile-interface-code-over-to-the-new-language"><span class="todo TODO">TODO</span> Finish porting previous Guile interface code over to the new language</h3>
+</div>
+<div id="outline-container-finish-writing-the-render-to-file-function" class="outline-3">
+<h3 id="finish-writing-the-render-to-file-function"><span class="todo TODO">TODO</span> Finish writing the <code>render-to-file</code> function</h3>
 </div>
 <div id="outline-container-get-back-to-the-tasks-from-the-previous-streams" class="outline-3">
 <h3 id="get-back-to-the-tasks-from-the-previous-streams"><span class="todo TODO">TODO</span> Get back to the tasks from the previous streams!</h3>
