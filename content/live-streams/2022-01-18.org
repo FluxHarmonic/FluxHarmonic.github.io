@@ -10,19 +10,11 @@ We're now in a solid place to start from today.
 
 ** Offline Tasks
 
-*** DONE Use gdb watch to figure out why token kinds are being overwritten CLOSED: [2022-01-18 Tue 11:28] :LOGBOOK: - State "DONE"       from "TODO"       [2022-01-18 Tue 11:28] :END:
-*** DONE Clean up some of the repeated patterns in the code
-CLOSED: [2022-01-18 Tue 11:28]
-:LOGBOOK:
-- State "DONE"       from "TODO"       [2022-01-18 Tue 11:28]
-:END:
-
-*** DONE Fix issue with setting integer values
-CLOSED: [2022-01-18 Tue 11:28]
-:LOGBOOK:
-- State "DONE"       from "TODO"       [2022-01-18 Tue 11:28]
-:END:
-
+*** Use gdb watch to figure out why token kinds are being overwritten
+*** Clean up some of the repeated patterns in the code
+*** Fix issue with setting integer values
+*** Verify that call expression eval from last time works after fixes
+*** Write =flux_vector= library and move tokenizer code over to it
 
 * Some Thoughts on C
 
@@ -35,11 +27,34 @@ After dabbling with C on and off over the last couple of years and then spending
 - It does more than you think it does, but with the right balance of abstraction
 - I /really/ want to master this language
 
-* Next Steps
-
-** TODO Evaluate call expressions
+* Tasks
+** DONE Evaluate call expressions
+CLOSED: [2022-01-18 Tue 18:11]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-18 Tue 18:11]
+:END:
+** DONE Add a basic REPL interface for live evaluation
+CLOSED: [2022-01-18 Tue 18:33]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-18 Tue 18:33]
+:END:
+** DONE Hook up the REPL to Emacs
+CLOSED: [2022-01-18 Tue 18:33]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-18 Tue 18:33]
+:END:
 ** TODO Port previous Guile interface code over to the new language
 ** TODO Finish writing the =render-to-file= function
-** TODO Add a basic REPL interface for live evaluation
-** TODO Hook up the REPL to Emacs
+** TODO Get back to the tasks from the previous streams!
+
+* Notes
+
+Code for this stream is here:
+https://github.com/FluxHarmonic/flux-compose/commit/1e67cf3d1b1c0de27271228cded824486294e34a
+
+* Next Steps
+
+** TODO Simplify finding keyword name/value pairs in function calls
+** TODO Finish porting previous Guile interface code over to the new language
+** TODO Finish writing the =render-to-file= function
 ** TODO Get back to the tasks from the previous streams!
