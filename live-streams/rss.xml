@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Tue, 18 Jan 2022 09:31:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Jan 2022 13:30:00 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -36,22 +36,33 @@
       <description><![CDATA[
 <div id="outline-container-updates" class="outline-2">
 <h2 id="updates">Updates</h2>
-<div class="outline-text-2" id="text-updates">
+<div class="outline-text-2">
+<p>
+I took some time to squash some bugs and clean up some of the scripting language code since last stream!
+</p>
+
+<p>
+We're now in a solid place to start from today.
+</p>
 </div>
-<div id="outline-container-use-gdb-watch-to-figure-out-why-token-kinds-are-being-overwritten" class="outline-3">
-<h3 id="use-gdb-watch-to-figure-out-why-token-kinds-are-being-overwritten"><span class="done DONE">DONE</span> Use gdb watch to figure out why token kinds are being overwritten</h3>
-<div class="outline-text-3">
+
+<div id="outline-container-offline-tasks" class="outline-3">
+<h3 id="offline-tasks">Offline Tasks</h3>
+<div class="outline-text-3" id="text-offline-tasks">
 </div>
+<div id="outline-container-use-gdb-watch-to-figure-out-why-token-kinds-are-being-overwritten-closed-2022-01-18-tue-11-28-logbook-state-done-from-todo-2022-01-18-tue-11-28" class="outline-4">
+<h4 id="use-gdb-watch-to-figure-out-why-token-kinds-are-being-overwritten-closed-2022-01-18-tue-11-28-logbook-state-done-from-todo-2022-01-18-tue-11-28"><span class="done DONE">DONE</span> Use gdb watch to figure out why token kinds are being overwritten CLOSED: <span class="timestamp-wrapper"><span class="timestamp">[2022-01-18 Tue 11:28] </span></span> :LOGBOOK: - State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2022-01-18 Tue 11:28]</span></span>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="END">END</span></span></h4>
 </div>
-<div id="outline-container-clean-up-some-of-the-repeated-patterns-in-the-code" class="outline-3">
-<h3 id="clean-up-some-of-the-repeated-patterns-in-the-code"><span class="done DONE">DONE</span> Clean up some of the repeated patterns in the code</h3>
-<div class="outline-text-3">
+<div id="outline-container-clean-up-some-of-the-repeated-patterns-in-the-code" class="outline-4">
+<h4 id="clean-up-some-of-the-repeated-patterns-in-the-code"><span class="done DONE">DONE</span> Clean up some of the repeated patterns in the code</h4>
+<div class="outline-text-4">
 </div>
 </div>
 
-<div id="outline-container-fix-issue-with-setting-integer-values" class="outline-3">
-<h3 id="fix-issue-with-setting-integer-values"><span class="done DONE">DONE</span> Fix issue with setting integer values</h3>
-<div class="outline-text-3">
+<div id="outline-container-fix-issue-with-setting-integer-values" class="outline-4">
+<h4 id="fix-issue-with-setting-integer-values"><span class="done DONE">DONE</span> Fix issue with setting integer values</h4>
+<div class="outline-text-4">
+</div>
 </div>
 </div>
 </div>
@@ -59,6 +70,20 @@
 
 <div id="outline-container-some-thoughts-on-c" class="outline-2">
 <h2 id="some-thoughts-on-c">Some Thoughts on C</h2>
+<div class="outline-text-2">
+<p>
+After dabbling with C on and off over the last couple of years and then spending a lot more time learning and using it recently, I've had the following thoughts:
+</p>
+
+<ul class="org-ul">
+<li>Immense power that requires good practices and tools</li>
+<li>It seems possible to design decent abstractions</li>
+<li>Possibly the most portable and transferrable language</li>
+<li>A fantastic basis for building your own platform or "universe"</li>
+<li>It does more than you think it does, but with the right balance of abstraction</li>
+<li>I <i>really</i> want to master this language</li>
+</ul>
+</div>
 </div>
 
 <div id="outline-container-next-steps" class="outline-2">
