@@ -1,0 +1,25 @@
+#+title: The Return of the Circles
+#+date: [2022-01-20]
+#+slug: 2022-01-20
+
+*Today's goal:* wire up the scripting language enough to get our circles rendering again!
+
+* Updates
+
+Starting next week, the Tuesday / Thursday streams will start at *3PM UTC* and run for *2 hours* each!
+
+I'm still experimenting with how to make the streams and channel more interesting and sustainable.  I'd love to hear your feedback!
+
+* Tasks
+
+** TODO Simplify finding keyword name/value pairs in function calls
+** TODO Finish porting previous Guile interface code over to the new language
+** TODO Finish writing the =render-to-file= function
+** TODO Get back to the tasks from the previous streams!
+
+* Notes
+
+Code for this stream is here:
+
+* Next Steps
+
