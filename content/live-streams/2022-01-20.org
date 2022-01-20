@@ -12,14 +12,22 @@ I'm still experimenting with how to make the streams and channel more interestin
 
 * Tasks
 
+** DONE Finish porting parser to vector API
+CLOSED: [2022-01-20 Thu 18:54]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-20 Thu 18:54]
+:END:
 ** TODO Simplify finding keyword name/value pairs in function calls
 ** TODO Finish porting previous Guile interface code over to the new language
 ** TODO Finish writing the =render-to-file= function
 ** TODO Get back to the tasks from the previous streams!
 
+
 * Notes
 
 Code for this stream is here:
+https://github.com/FluxHarmonic/flux-compose/commit/8d80270e1274513ba246c4dee92aa7518485e7cc
 
 * Next Steps
 
+Next time we'll take a break from the scripting side of things and talk about converting the app to use GLFW and raw OpenGL instead of SDL2.
