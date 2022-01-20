@@ -17,8 +17,8 @@
     <link></link>
     <description><![CDATA[]]></description>
     <language>en</language>
-    <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Tue, 18 Jan 2022 17:04:09 +0000</lastBuildDate>
+    <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
+    <lastBuildDate>Thu, 20 Jan 2022 08:46:05 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -26,6 +26,62 @@
       <link></link>
     </image>
 
+    
+    <item>
+      <title>The Return of the Circles</title>
+      <link></link>
+      <author>author@mail.com (Blog Author)</author>
+      <guid isPermaLink="false"></guid>
+      <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>
+<b>Today's goal:</b> wire up the scripting language enough to get our circles rendering again!
+</p>
+
+<div id="outline-container-updates" class="outline-2">
+<h2 id="updates">Updates</h2>
+<div class="outline-text-2">
+<p>
+Starting next week, the Tuesday / Thursday streams will start at <b>3PM UTC</b> and run for <b>2 hours</b> each!
+</p>
+
+<p>
+I'm still experimenting with how to make the streams and channel more interesting and sustainable.  I'd love to hear your feedback!
+</p>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
+</div>
+<div id="outline-container-simplify-finding-keyword-name-value-pairs-in-function-calls" class="outline-3">
+<h3 id="simplify-finding-keyword-name-value-pairs-in-function-calls"><span class="todo TODO">TODO</span> Simplify finding keyword name/value pairs in function calls</h3>
+</div>
+<div id="outline-container-finish-porting-previous-guile-interface-code-over-to-the-new-language" class="outline-3">
+<h3 id="finish-porting-previous-guile-interface-code-over-to-the-new-language"><span class="todo TODO">TODO</span> Finish porting previous Guile interface code over to the new language</h3>
+</div>
+<div id="outline-container-finish-writing-the-render-to-file-function" class="outline-3">
+<h3 id="finish-writing-the-render-to-file-function"><span class="todo TODO">TODO</span> Finish writing the <code>render-to-file</code> function</h3>
+</div>
+<div id="outline-container-get-back-to-the-tasks-from-the-previous-streams" class="outline-3">
+<h3 id="get-back-to-the-tasks-from-the-previous-streams"><span class="todo TODO">TODO</span> Get back to the tasks from the previous streams!</h3>
+</div>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+<div class="outline-text-2">
+<p>
+Code for this stream is here:
+</p>
+</div>
+</div>
+
+<div id="outline-container-next-steps" class="outline-2">
+<h2 id="next-steps">Next Steps</h2>
+</div>
+]]></description>
+    </item>
     
     <item>
       <title>Wiring Up the Scripting Language</title>
