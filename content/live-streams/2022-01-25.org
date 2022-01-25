@@ -1,0 +1,35 @@
+#+title: Improving the Graphics Layer
+#+date: [2022-01-25]
+#+slug: 2022-01-25
+
+*Today's goal:* Switch from SDL2 to GLFW and get something rendering!
+
+* Updates
+
+- Special thanks to *Felipe Balbi* for spending a lot of time improving the quality of the code and build!
+
+* Switching to GLFW
+
+Today we're going to spend some time moving the graphics layer from SDL2 to GLFW.
+
+*Benefits*
+
+- Direct access to OpenGL rendering APIs without bringing in everything else SDL2 offers
+- No unnecessary code for playing sounds and other game-specific functionality
+- We can write our own APIs that wrap what GLFW and OpenGL
+
+At some point we might even get rid of GLFW, but we'll stick with this path for a while :)
+
+* Tasks
+
+** TODO Figure out a good pattern for starting the render/event loop
+** TODO Add SIGTERM handler for cleaning up graphics resources
+** TODO Add basic event loop
+** TODO Add screen clearing function
+** TODO Add rect rendering function
+
+* Notes
+
+- [[https://www.glfw.org/docs/latest/quick_guide.html][GLFW Getting Started]]
+
+* Next Steps
