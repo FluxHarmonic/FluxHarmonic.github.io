@@ -12,24 +12,58 @@
 
 Today we're going to spend some time moving the graphics layer from SDL2 to GLFW.
 
+At some point we might even get rid of GLFW, but we'll stick with this path for a while :)
+
 *Benefits*
 
 - Direct access to OpenGL rendering APIs without bringing in everything else SDL2 offers
 - No unnecessary code for playing sounds and other game-specific functionality
-- We can write our own APIs that wrap what GLFW and OpenGL
+- We can write our own APIs that wrap what GLFW and OpenGL provide
 
-At some point we might even get rid of GLFW, but we'll stick with this path for a while :)
+*Drawbacks*
+
+- Have to write our own image loading code
+- Have to write our own font handling code
+- Have to write optimized rendering routines
+
+But as I've said before, /that's the point/ :)
 
 * Tasks
 
-** TODO Figure out a good pattern for starting the render/event loop
-** TODO Add SIGTERM handler for cleaning up graphics resources
-** TODO Add basic event loop
-** TODO Add screen clearing function
-** TODO Add rect rendering function
-
+** DONE Figure out a good pattern for starting the render/event loop
+CLOSED: [2022-01-25 Tue 17:53]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-25 Tue 17:53]
+:END:
+** DONE Add basic event loop
+CLOSED: [2022-01-25 Tue 18:18]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-25 Tue 18:18]
+:END:
+** DONE Add screen clearing function
+CLOSED: [2022-01-25 Tue 18:44]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-25 Tue 18:44]
+:END:
+** DONE Add rect rendering function
+CLOSED: [2022-01-25 Tue 18:44]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-25 Tue 18:44]
+:END:
+** DONE Delete SDL2 code and dependencies
+CLOSED: [2022-01-25 Tue 19:01]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-25 Tue 19:01]
+:END:
 * Notes
+
+The code for this stream can be found here:
+https://github.com/FluxHarmonic/flux-compose/commit/6c53c3893dcd9e224c71cb7658575fe440783aad
 
 - [[https://www.glfw.org/docs/latest/quick_guide.html][GLFW Getting Started]]
 
 * Next Steps
+
+** TODO Try to add PNG loading/rendering
+** TODO See if we can render the OpenGL context back to a PNG
+** TODO (Maybe) Add SIGTERM handler for cleaning up graphics resources
