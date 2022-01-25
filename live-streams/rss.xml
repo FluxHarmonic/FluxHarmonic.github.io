@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Tue, 25 Jan 2022 06:27:10 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Jan 2022 17:06:55 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -54,17 +54,31 @@ Today we're going to spend some time moving the graphics layer from SDL2 to GLFW
 </p>
 
 <p>
+At some point we might even get rid of GLFW, but we'll stick with this path for a while :)
+</p>
+
+<p>
 <b>Benefits</b>
 </p>
 
 <ul class="org-ul">
 <li>Direct access to OpenGL rendering APIs without bringing in everything else SDL2 offers</li>
 <li>No unnecessary code for playing sounds and other game-specific functionality</li>
-<li>We can write our own APIs that wrap what GLFW and OpenGL</li>
+<li>We can write our own APIs that wrap what GLFW and OpenGL provide</li>
 </ul>
 
 <p>
-At some point we might even get rid of GLFW, but we'll stick with this path for a while :)
+<b>Drawbacks</b>
+</p>
+
+<ul class="org-ul">
+<li>Have to write our own image loading code</li>
+<li>Have to write our own font handling code</li>
+<li>Have to write optimized rendering routines</li>
+</ul>
+
+<p>
+But as I've said before, <i>that's the point</i> :)
 </p>
 </div>
 </div>
@@ -74,25 +88,39 @@ At some point we might even get rid of GLFW, but we'll stick with this path for 
 <div class="outline-text-2" id="text-tasks">
 </div>
 <div id="outline-container-figure-out-a-good-pattern-for-starting-the-render-event-loop" class="outline-3">
-<h3 id="figure-out-a-good-pattern-for-starting-the-render-event-loop"><span class="todo TODO">TODO</span> Figure out a good pattern for starting the render/event loop</h3>
+<h3 id="figure-out-a-good-pattern-for-starting-the-render-event-loop"><span class="done DONE">DONE</span> Figure out a good pattern for starting the render/event loop</h3>
+<div class="outline-text-3">
 </div>
-<div id="outline-container-add-sigterm-handler-for-cleaning-up-graphics-resources" class="outline-3">
-<h3 id="add-sigterm-handler-for-cleaning-up-graphics-resources"><span class="todo TODO">TODO</span> Add SIGTERM handler for cleaning up graphics resources</h3>
 </div>
 <div id="outline-container-add-basic-event-loop" class="outline-3">
-<h3 id="add-basic-event-loop"><span class="todo TODO">TODO</span> Add basic event loop</h3>
+<h3 id="add-basic-event-loop"><span class="done DONE">DONE</span> Add basic event loop</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-add-screen-clearing-function" class="outline-3">
-<h3 id="add-screen-clearing-function"><span class="todo TODO">TODO</span> Add screen clearing function</h3>
+<h3 id="add-screen-clearing-function"><span class="done DONE">DONE</span> Add screen clearing function</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-add-rect-rendering-function" class="outline-3">
-<h3 id="add-rect-rendering-function"><span class="todo TODO">TODO</span> Add rect rendering function</h3>
+<h3 id="add-rect-rendering-function"><span class="done DONE">DONE</span> Add rect rendering function</h3>
+<div class="outline-text-3">
 </div>
 </div>
-
+<div id="outline-container-delete-sdl2-code-and-dependencies" class="outline-3">
+<h3 id="delete-sdl2-code-and-dependencies"><span class="done DONE">DONE</span> Delete SDL2 code and dependencies</h3>
+<div class="outline-text-3">
+</div>
+</div>
+</div>
 <div id="outline-container-notes" class="outline-2">
 <h2 id="notes">Notes</h2>
 <div class="outline-text-2">
+<p>
+The code for this stream can be found here:
+<a href="https://github.com/FluxHarmonic/flux-compose/commit/6c53c3893dcd9e224c71cb7658575fe440783aad">https://github.com/FluxHarmonic/flux-compose/commit/6c53c3893dcd9e224c71cb7658575fe440783aad</a>
+</p>
+
 <ul class="org-ul">
 <li><a href="https://www.glfw.org/docs/latest/quick_guide.html">GLFW Getting Started</a></li>
 </ul>
@@ -101,6 +129,17 @@ At some point we might even get rid of GLFW, but we'll stick with this path for 
 
 <div id="outline-container-next-steps" class="outline-2">
 <h2 id="next-steps">Next Steps</h2>
+<div class="outline-text-2" id="text-next-steps">
+</div>
+<div id="outline-container-try-to-add-png-loading-rendering" class="outline-3">
+<h3 id="try-to-add-png-loading-rendering"><span class="todo TODO">TODO</span> Try to add PNG loading/rendering</h3>
+</div>
+<div id="outline-container-see-if-we-can-render-the-opengl-context-back-to-a-png" class="outline-3">
+<h3 id="see-if-we-can-render-the-opengl-context-back-to-a-png"><span class="todo TODO">TODO</span> See if we can render the OpenGL context back to a PNG</h3>
+</div>
+<div id="outline-container-maybe-add-sigterm-handler-for-cleaning-up-graphics-resources" class="outline-3">
+<h3 id="maybe-add-sigterm-handler-for-cleaning-up-graphics-resources"><span class="todo TODO">TODO</span> (Maybe) Add SIGTERM handler for cleaning up graphics resources</h3>
+</div>
 </div>
 ]]></description>
     </item>
