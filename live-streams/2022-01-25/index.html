@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-us" data-theme="dark">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Flux Harmonic
+      
+    </title>
+    
+    
+    
+    
+  <meta property="og:title" content="Improving the Graphics Layer">
+  <meta property="og:url" content="https://fluxharmonic.com/live-streams/2022-01-25/">
+  
+  
+  <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="https://fluxharmonic.com/static/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Space+Mono&display=swap" />
+    <script defer data-domain="fluxharmonic.com" src="https://plausible.io/js/plausible.js"></script>
+    
+  </head>
+  <body>
+    
+    
+      <header>
+        <a href="https://fluxharmonic.com/">
+          <img class="logo" src="https://fluxharmonic.com/static/Flux-Harmonic-Site-Logo.png" alt="Flux Harmonic"/>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="https://fluxharmonic.com/live-streams/index.html">Live Streams</a></li>
+            <li><a href="https://fluxharmonic.com/how-to-help/">How To Help</a></li>
+            <li><a href="https://youtube.com/FluxHarmonicLive">YouTube</a></li>
+            <li><a href="https://github.com/FluxHarmonic">GitHub</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+
+    
+    <main id="main">
+      
+  <article class="post">
+    <h1 class="post__title">
+      Improving the Graphics Layer
+    </h1>
+    <section class="post__meta">
+      
+        Jan 25, 2022
+      
+    </section>
+    <section>
+      <p>
+<b>Today's goal:</b> Switch from SDL2 to GLFW and get something rendering!
+</p>
+
+<div id="outline-container-updates" class="outline-2">
+<h2 id="updates">Updates</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>Special thanks to <b>Felipe Balbi</b> for spending a lot of time improving the quality of the code and build!</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-switching-to-glfw" class="outline-2">
+<h2 id="switching-to-glfw">Switching to GLFW</h2>
+<div class="outline-text-2">
+<p>
+Today we're going to spend some time moving the graphics layer from SDL2 to GLFW.
+</p>
+
+<p>
+<b>Benefits</b>
+</p>
+
+<ul class="org-ul">
+<li>Direct access to OpenGL rendering APIs without bringing in everything else SDL2 offers</li>
+<li>No unnecessary code for playing sounds and other game-specific functionality</li>
+<li>We can write our own APIs that wrap what GLFW and OpenGL</li>
+</ul>
+
+<p>
+At some point we might even get rid of GLFW, but we'll stick with this path for a while :)
+</p>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
+</div>
+<div id="outline-container-figure-out-a-good-pattern-for-starting-the-render-event-loop" class="outline-3">
+<h3 id="figure-out-a-good-pattern-for-starting-the-render-event-loop"><span class="todo TODO">TODO</span> Figure out a good pattern for starting the render/event loop</h3>
+</div>
+<div id="outline-container-add-sigterm-handler-for-cleaning-up-graphics-resources" class="outline-3">
+<h3 id="add-sigterm-handler-for-cleaning-up-graphics-resources"><span class="todo TODO">TODO</span> Add SIGTERM handler for cleaning up graphics resources</h3>
+</div>
+<div id="outline-container-add-basic-event-loop" class="outline-3">
+<h3 id="add-basic-event-loop"><span class="todo TODO">TODO</span> Add basic event loop</h3>
+</div>
+<div id="outline-container-add-screen-clearing-function" class="outline-3">
+<h3 id="add-screen-clearing-function"><span class="todo TODO">TODO</span> Add screen clearing function</h3>
+</div>
+<div id="outline-container-add-rect-rendering-function" class="outline-3">
+<h3 id="add-rect-rendering-function"><span class="todo TODO">TODO</span> Add rect rendering function</h3>
+</div>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li><a href="https://www.glfw.org/docs/latest/quick_guide.html">GLFW Getting Started</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-next-steps" class="outline-2">
+<h2 id="next-steps">Next Steps</h2>
+</div>
+
+    </section>
+  </article>
+
+    </main>
+
+    
+    
+      <footer>&copy; 2022 Flux Harmonic</footer>
+    
+
+  </body>
+</html>
