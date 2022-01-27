@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Thu, 27 Jan 2022 06:06:28 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Jan 2022 09:06:00 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -51,7 +51,7 @@
 <h2 id="let-s-finally-start-handling-images">Let's finally start handling images</h2>
 <div class="outline-text-2">
 <p>
-We'll use the <code>lodepng</code> library (because <code>libspng</code> isn't on Guix) to decode a PNG file into an OpenGL texture and then render it to the screen.
+We'll use the <code>libspng</code> library or <code>lodepng</code> to decode a PNG file into an OpenGL texture and then render it to the screen.
 </p>
 
 <p>
@@ -82,6 +82,8 @@ Once we get that working, we'll try to render the screen to a PNG file, possibly
 <h2 id="notes">Notes</h2>
 <div class="outline-text-2">
 <ul class="org-ul">
+<li>libspng: <a href="https://github.com/randy408/libspng">https://github.com/randy408/libspng</a></li>
+<li>example.c: <a href="https://github.com/randy408/libspng/blob/v0.7.1/examples/example.c">https://github.com/randy408/libspng/blob/v0.7.1/examples/example.c</a></li>
 <li>Load a PNG to texture: <a href="https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_opengl.cpp">https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_opengl.cpp</a></li>
 <li>Save an PNG: <a href="https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_encode.c">https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_encode.c</a></li>
 <li>Optimizing PNG size: <a href="https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_optimize_png.cpp">https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_optimize_png.cpp</a></li>
