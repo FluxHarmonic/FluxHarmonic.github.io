@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en-us" data-theme="dark">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Flux Harmonic
+      
+    </title>
+    
+    
+    
+    
+  <meta property="og:title" content="Loading and Saving Images">
+  <meta property="og:url" content="https://fluxharmonic.com/live-streams/2022-01-27/">
+  
+  
+  <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="https://fluxharmonic.com/static/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Space+Mono&display=swap" />
+    <script defer data-domain="fluxharmonic.com" src="https://plausible.io/js/plausible.js"></script>
+    
+  </head>
+  <body>
+    
+    
+      <header>
+        <a href="https://fluxharmonic.com/">
+          <img class="logo" src="https://fluxharmonic.com/static/Flux-Harmonic-Site-Logo.png" alt="Flux Harmonic"/>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="https://fluxharmonic.com/live-streams/index.html">Live Streams</a></li>
+            <li><a href="https://fluxharmonic.com/how-to-help/">How To Help</a></li>
+            <li><a href="https://youtube.com/FluxHarmonicLive">YouTube</a></li>
+            <li><a href="https://github.com/FluxHarmonic">GitHub</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+
+    
+    <main id="main">
+      
+  <article class="post">
+    <h1 class="post__title">
+      Loading and Saving Images
+    </h1>
+    <section class="post__meta">
+      
+        Jan 27, 2022
+      
+    </section>
+    <section>
+      <p>
+<b>Today's goal:</b> Get an image rendering on screen and save the composition to a file!
+</p>
+
+<div id="outline-container-updates" class="outline-2">
+<h2 id="updates">Updates</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>I wired up <code>main.c</code> to load script files again!</li>
+<li><b>Felipe</b> found a better way to store a handle to the <code>FluxWindow</code> with <code>GLFWwindow</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-let-s-finally-start-handling-images" class="outline-2">
+<h2 id="let-s-finally-start-handling-images">Let's finally start handling images</h2>
+<div class="outline-text-2">
+<p>
+We'll use the <code>lodepng</code> library (because <code>libspng</code> isn't on Guix) to decode a PNG file into an OpenGL texture and then render it to the screen.
+</p>
+
+<p>
+Once we get that working, we'll try to render the screen to a PNG file, possibly with optimizations.  This will be an important step toward creating thumbnails with <code>flux-compose</code>!
+</p>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
+</div>
+<div id="outline-container-add-png-loading" class="outline-3">
+<h3 id="add-png-loading"><span class="todo TODO">TODO</span> Add PNG loading</h3>
+</div>
+<div id="outline-container-render-an-image-texture-to-the-screen" class="outline-3">
+<h3 id="render-an-image-texture-to-the-screen"><span class="todo TODO">TODO</span> Render an image texture to the screen</h3>
+</div>
+<div id="outline-container-see-if-we-can-render-the-opengl-context-back-to-a-png" class="outline-3">
+<h3 id="see-if-we-can-render-the-opengl-context-back-to-a-png"><span class="todo TODO">TODO</span> See if we can render the OpenGL context back to a PNG</h3>
+</div>
+<div id="outline-container-automate-the-process-of-rendering-an-image-file-from-the-command-line" class="outline-3">
+<h3 id="automate-the-process-of-rendering-an-image-file-from-the-command-line"><span class="todo TODO">TODO</span> Automate the process of rendering an image file from the command line</h3>
+</div>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>Load a PNG to texture: <a href="https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_opengl.cpp">https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_opengl.cpp</a></li>
+<li>Save an PNG: <a href="https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_encode.c">https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_encode.c</a></li>
+<li>Optimizing PNG size: <a href="https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_optimize_png.cpp">https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_optimize_png.cpp</a></li>
+<li><a href="https://www.intel.com/content/www/us/en/developer/articles/technical/opengl-performance-tips-power-of-two-textures-have-better-performance.html">Power of 2 textures have better performance</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-next-steps" class="outline-2">
+<h2 id="next-steps">Next Steps</h2>
+</div>
+
+    </section>
+  </article>
+
+    </main>
+
+    
+    
+      <footer>&copy; 2022 Flux Harmonic</footer>
+    
+
+  </body>
+</html>
