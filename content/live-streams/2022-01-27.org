@@ -17,12 +17,23 @@ Once we get that working, we'll try to render the screen to a PNG file, possibly
 
 * Tasks
 
-** TODO Add PNG loading
-** TODO Render an image texture to the screen
+** DONE Add PNG loading
+CLOSED: [2022-01-27 Thu 18:31]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-27 Thu 18:31]
+:END:
+** DONE Render an image texture to the screen
+CLOSED: [2022-01-27 Thu 18:31]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-01-27 Thu 18:31]
+:END:
 ** TODO See if we can render the OpenGL context back to a PNG
 ** TODO Automate the process of rendering an image file from the command line
 
 * Notes
+
+The code for this stream can be found here:
+https://github.com/FluxHarmonic/flux-compose/commit/29db69e81baf6ea81b8df61a6c15a1f84363f1ef
 
 - libspng: https://github.com/randy408/libspng
 - example.c: https://github.com/randy408/libspng/blob/v0.7.1/examples/example.c
@@ -33,3 +44,5 @@ Once we get that working, we'll try to render the screen to a PNG file, possibly
 
 * Next Steps
 
+** TODO Fix rendering of OpenGL context to a PNG
+** TODO Automate the process of rendering an image file from the command line
