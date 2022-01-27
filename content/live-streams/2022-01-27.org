@@ -1,0 +1,33 @@
+#+title: Loading and Saving Images
+#+date: [2022-01-27]
+#+slug: 2022-01-27
+
+*Today's goal:* Get an image rendering on screen and save the composition to a file!
+
+* Updates
+
+- I wired up =main.c= to load script files again!
+- *Felipe* found a better way to store a handle to the =FluxWindow= with =GLFWwindow=
+
+* Let's finally start handling images
+
+We'll use the =lodepng= library (because =libspng= isn't on Guix) to decode a PNG file into an OpenGL texture and then render it to the screen.
+
+Once we get that working, we'll try to render the screen to a PNG file, possibly with optimizations.  This will be an important step toward creating thumbnails with =flux-compose=!
+
+* Tasks
+
+** TODO Add PNG loading
+** TODO Render an image texture to the screen
+** TODO See if we can render the OpenGL context back to a PNG
+** TODO Automate the process of rendering an image file from the command line
+
+* Notes
+
+- Load a PNG to texture: https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_opengl.cpp
+- Save an PNG: https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_encode.c
+- Optimizing PNG size: https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_optimize_png.cpp
+- [[https://www.intel.com/content/www/us/en/developer/articles/technical/opengl-performance-tips-power-of-two-textures-have-better-performance.html][Power of 2 textures have better performance]]
+
+* Next Steps
+
