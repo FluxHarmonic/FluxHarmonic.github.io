@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Thu, 27 Jan 2022 09:06:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Jan 2022 18:22:14 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -65,10 +65,14 @@ Once we get that working, we'll try to render the screen to a PNG file, possibly
 <div class="outline-text-2" id="text-tasks">
 </div>
 <div id="outline-container-add-png-loading" class="outline-3">
-<h3 id="add-png-loading"><span class="todo TODO">TODO</span> Add PNG loading</h3>
+<h3 id="add-png-loading"><span class="done DONE">DONE</span> Add PNG loading</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-render-an-image-texture-to-the-screen" class="outline-3">
-<h3 id="render-an-image-texture-to-the-screen"><span class="todo TODO">TODO</span> Render an image texture to the screen</h3>
+<h3 id="render-an-image-texture-to-the-screen"><span class="done DONE">DONE</span> Render an image texture to the screen</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-see-if-we-can-render-the-opengl-context-back-to-a-png" class="outline-3">
 <h3 id="see-if-we-can-render-the-opengl-context-back-to-a-png"><span class="todo TODO">TODO</span> See if we can render the OpenGL context back to a PNG</h3>
@@ -81,6 +85,11 @@ Once we get that working, we'll try to render the screen to a PNG file, possibly
 <div id="outline-container-notes" class="outline-2">
 <h2 id="notes">Notes</h2>
 <div class="outline-text-2">
+<p>
+The code for this stream can be found here:
+<a href="https://github.com/FluxHarmonic/flux-compose/commit/29db69e81baf6ea81b8df61a6c15a1f84363f1ef">https://github.com/FluxHarmonic/flux-compose/commit/29db69e81baf6ea81b8df61a6c15a1f84363f1ef</a>
+</p>
+
 <ul class="org-ul">
 <li>libspng: <a href="https://github.com/randy408/libspng">https://github.com/randy408/libspng</a></li>
 <li>example.c: <a href="https://github.com/randy408/libspng/blob/v0.7.1/examples/example.c">https://github.com/randy408/libspng/blob/v0.7.1/examples/example.c</a></li>
@@ -94,6 +103,14 @@ Once we get that working, we'll try to render the screen to a PNG file, possibly
 
 <div id="outline-container-next-steps" class="outline-2">
 <h2 id="next-steps">Next Steps</h2>
+<div class="outline-text-2" id="text-next-steps">
+</div>
+<div id="outline-container-fix-rendering-of-opengl-context-to-a-png" class="outline-3">
+<h3 id="fix-rendering-of-opengl-context-to-a-png"><span class="todo TODO">TODO</span> Fix rendering of OpenGL context to a PNG</h3>
+</div>
+<div id="outline-container-automate-the-process-of-rendering-an-image-file-from-the-command-line" class="outline-3">
+<h3 id="automate-the-process-of-rendering-an-image-file-from-the-command-line"><span class="todo TODO">TODO</span> Automate the process of rendering an image file from the command line</h3>
+</div>
 </div>
 ]]></description>
     </item>
