@@ -11,7 +11,7 @@
 
 * Let's finally start handling images
 
-We'll use the =lodepng= library (because =libspng= isn't on Guix) to decode a PNG file into an OpenGL texture and then render it to the screen.
+We'll use the =libspng= library or =lodepng= to decode a PNG file into an OpenGL texture and then render it to the screen.
 
 Once we get that working, we'll try to render the screen to a PNG file, possibly with optimizations.  This will be an important step toward creating thumbnails with =flux-compose=!
 
@@ -24,6 +24,8 @@ Once we get that working, we'll try to render the screen to a PNG file, possibly
 
 * Notes
 
+- libspng: https://github.com/randy408/libspng
+- example.c: https://github.com/randy408/libspng/blob/v0.7.1/examples/example.c
 - Load a PNG to texture: https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_opengl.cpp
 - Save an PNG: https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_encode.c
 - Optimizing PNG size: https://raw.githubusercontent.com/lvandeve/lodepng/master/examples/example_optimize_png.cpp
