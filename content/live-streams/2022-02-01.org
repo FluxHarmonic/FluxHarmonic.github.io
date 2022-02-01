@@ -1,0 +1,42 @@
+#+title: How Hard Can Text Rendering Really Be?
+#+date: [2022-02-01]
+#+slug: 2022-02-01
+
+*Today's goal:* Lay the groundwork for TrueType font rendering!
+
+* Updates
+
+- PNG saving now works!
+- I added some code for rotating and scaling rendered textures
+- Also made the preview area center itself and be scalable
+
+* Rendering TrueType fonts with OpenGL
+
+Today we'll be using the long-lived FreeType library to load up a TrueType font so that we can extract glyphs for each letter, turn them into OpenGL textures, and render them to the screen.
+
+Things we'll probably have to deal with:
+
+- Variable-width characters
+- Kerning, to a basic degree (the space between characters)
+
+We won't be adding things like text wrapping or alignment (yet), this code will just render a string from left to right.
+
+* Tasks
+
+** TODO Use the FreeType library to load a font
+** TODO Render glyphs to OpenGL textures
+** TODO Write a function that can render a string by indexing the texture for each letter
+** TODO Improve the kerning of the text (or make it configurable)
+** TODO Maybe add a nice gradient to rendered text?
+
+* Notes
+
+The code for this stream can be found here:
+
+*References*
+
+- https://learnopengl.com/In-Practice/Text-Rendering
+- https://www.sccs.swarthmore.edu/users/03/sven/freetype_tut/
+- https://github.com/rougier/freetype-gl
+
+* Next Steps
