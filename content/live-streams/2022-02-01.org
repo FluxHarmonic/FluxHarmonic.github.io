@@ -25,15 +25,27 @@ We won't be adding things like text wrapping or alignment (yet), this code will 
 
 * Tasks
 
-** TODO Use the FreeType library to load a font
-** TODO Render glyphs to OpenGL textures
-** TODO Write a function that can render a string by indexing the texture for each letter
-** TODO Improve the kerning of the text (or make it configurable)
-** TODO Maybe add a nice gradient to rendered text?
+** DONE Use the FreeType library to load a font
+CLOSED: [2022-02-01 Tue 18:59]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-01 Tue 18:59]
+:END:
+** DONE Render glyphs to OpenGL textures
+CLOSED: [2022-02-01 Tue 18:59]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-01 Tue 18:59]
+:END:
+** DONE Write a function that can render a string by indexing the texture for each letter
+CLOSED: [2022-02-01 Tue 18:59]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-01 Tue 18:59]
+:END:
 
 * Notes
 
 The code for this stream can be found here:
+
+https://github.com/FluxHarmonic/flux-compose/commit/2bbc4e0c65ec45bf974456250f368b28b72622bf
 
 *References*
 
@@ -44,5 +56,9 @@ The code for this stream can be found here:
 
 * Next Steps
 
+
+** TODO Find out how to make the text white instead of red!
+** TODO Improve the kerning of the text (or make it configurable)
+** TODO Maybe add a nice gradient to rendered text?
 ** TODO Render all glyphs to a single texture atlas for performance
 ** TODO Possibly "bake" a texture for static strings to reduce draw calls
