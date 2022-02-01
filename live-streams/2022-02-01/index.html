@@ -62,7 +62,8 @@
 <h2 id="updates">Updates</h2>
 <div class="outline-text-2">
 <ul class="org-ul">
-<li>PNG saving now works!</li>
+<li>Created a Discord for Flux Harmonic: <a href="https://discord.gg/ryy97Rdw">https://discord.gg/ryy97Rdw</a></li>
+<li>PNG saving now works (Thanks to <code>libspng</code>'s author Randy for stopping by!)</li>
 <li>I added some code for rotating and scaling rendered textures</li>
 <li>Also made the preview area center itself and be scalable</li>
 </ul>
@@ -81,8 +82,9 @@ Things we'll probably have to deal with:
 </p>
 
 <ul class="org-ul">
-<li>Variable-width characters</li>
+<li>Storing information about characters of different sizes</li>
 <li>Kerning, to a basic degree (the space between characters)</li>
+<li>Locating fonts by name using FontConfig (probably later)</li>
 </ul>
 
 <p>
@@ -127,12 +129,21 @@ The code for this stream can be found here:
 <li><a href="https://learnopengl.com/In-Practice/Text-Rendering">https://learnopengl.com/In-Practice/Text-Rendering</a></li>
 <li><a href="https://www.sccs.swarthmore.edu/users/03/sven/freetype_tut/">https://www.sccs.swarthmore.edu/users/03/sven/freetype_tut/</a></li>
 <li><a href="https://github.com/rougier/freetype-gl">https://github.com/rougier/freetype-gl</a></li>
+<li>Getting fonts with FontConfig: <a href="https://stackoverflow.com/questions/10542832/how-to-use-fontconfig-to-get-font-list-c-c">https://stackoverflow.com/questions/10542832/how-to-use-fontconfig-to-get-font-list-c-c</a></li>
 </ul>
 </div>
 </div>
 
 <div id="outline-container-next-steps" class="outline-2">
 <h2 id="next-steps">Next Steps</h2>
+<div class="outline-text-2" id="text-next-steps">
+</div>
+<div id="outline-container-render-all-glyphs-to-a-single-texture-atlas-for-performance" class="outline-3">
+<h3 id="render-all-glyphs-to-a-single-texture-atlas-for-performance"><span class="todo TODO">TODO</span> Render all glyphs to a single texture atlas for performance</h3>
+</div>
+<div id="outline-container-possibly-bake-a-texture-for-static-strings-to-reduce-draw-calls" class="outline-3">
+<h3 id="possibly-bake-a-texture-for-static-strings-to-reduce-draw-calls"><span class="todo TODO">TODO</span> Possibly "bake" a texture for static strings to reduce draw calls</h3>
+</div>
 </div>
 
     </section>
