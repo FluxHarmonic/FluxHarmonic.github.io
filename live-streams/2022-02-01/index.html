@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en-us" data-theme="dark">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Flux Harmonic
+      
+    </title>
+    
+    
+    
+    
+  <meta property="og:title" content="How Hard Can Text Rendering Really Be?">
+  <meta property="og:url" content="https://fluxharmonic.com/live-streams/2022-02-01/">
+  
+  
+  <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="https://fluxharmonic.com/static/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Space+Mono&display=swap" />
+    <script defer data-domain="fluxharmonic.com" src="https://plausible.io/js/plausible.js"></script>
+    
+  </head>
+  <body>
+    
+    
+      <header>
+        <a href="https://fluxharmonic.com/">
+          <img class="logo" src="https://fluxharmonic.com/static/Flux-Harmonic-Site-Logo.png" alt="Flux Harmonic"/>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="https://fluxharmonic.com/live-streams/index.html">Live Streams</a></li>
+            <li><a href="https://fluxharmonic.com/how-to-help/">How To Help</a></li>
+            <li><a href="https://youtube.com/FluxHarmonicLive">YouTube</a></li>
+            <li><a href="https://github.com/FluxHarmonic">GitHub</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+
+    
+    <main id="main">
+      
+  <article class="post">
+    <h1 class="post__title">
+      How Hard Can Text Rendering Really Be?
+    </h1>
+    <section class="post__meta">
+      
+        Feb 01, 2022
+      
+    </section>
+    <section>
+      <p>
+<b>Today's goal:</b> Lay the groundwork for TrueType font rendering!
+</p>
+
+<div id="outline-container-updates" class="outline-2">
+<h2 id="updates">Updates</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>PNG saving now works!</li>
+<li>I added some code for rotating and scaling rendered textures</li>
+<li>Also made the preview area center itself and be scalable</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-rendering-truetype-fonts-with-opengl" class="outline-2">
+<h2 id="rendering-truetype-fonts-with-opengl">Rendering TrueType fonts with OpenGL</h2>
+<div class="outline-text-2">
+<p>
+Today we'll be using the long-lived FreeType library to load up a TrueType font so that we can extract glyphs for each letter, turn them into OpenGL textures, and render them to the screen.
+</p>
+
+<p>
+Things we'll probably have to deal with:
+</p>
+
+<ul class="org-ul">
+<li>Variable-width characters</li>
+<li>Kerning, to a basic degree (the space between characters)</li>
+</ul>
+
+<p>
+We won't be adding things like text wrapping or alignment (yet), this code will just render a string from left to right.
+</p>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
+</div>
+<div id="outline-container-use-the-freetype-library-to-load-a-font" class="outline-3">
+<h3 id="use-the-freetype-library-to-load-a-font"><span class="todo TODO">TODO</span> Use the FreeType library to load a font</h3>
+</div>
+<div id="outline-container-render-glyphs-to-opengl-textures" class="outline-3">
+<h3 id="render-glyphs-to-opengl-textures"><span class="todo TODO">TODO</span> Render glyphs to OpenGL textures</h3>
+</div>
+<div id="outline-container-write-a-function-that-can-render-a-string-by-indexing-the-texture-for-each-letter" class="outline-3">
+<h3 id="write-a-function-that-can-render-a-string-by-indexing-the-texture-for-each-letter"><span class="todo TODO">TODO</span> Write a function that can render a string by indexing the texture for each letter</h3>
+</div>
+<div id="outline-container-improve-the-kerning-of-the-text-or-make-it-configurable" class="outline-3">
+<h3 id="improve-the-kerning-of-the-text-or-make-it-configurable"><span class="todo TODO">TODO</span> Improve the kerning of the text (or make it configurable)</h3>
+</div>
+<div id="outline-container-maybe-add-a-nice-gradient-to-rendered-text" class="outline-3">
+<h3 id="maybe-add-a-nice-gradient-to-rendered-text"><span class="todo TODO">TODO</span> Maybe add a nice gradient to rendered text?</h3>
+</div>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+<div class="outline-text-2">
+<p>
+The code for this stream can be found here:
+</p>
+
+<p>
+<b>References</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://learnopengl.com/In-Practice/Text-Rendering">https://learnopengl.com/In-Practice/Text-Rendering</a></li>
+<li><a href="https://www.sccs.swarthmore.edu/users/03/sven/freetype_tut/">https://www.sccs.swarthmore.edu/users/03/sven/freetype_tut/</a></li>
+<li><a href="https://github.com/rougier/freetype-gl">https://github.com/rougier/freetype-gl</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-next-steps" class="outline-2">
+<h2 id="next-steps">Next Steps</h2>
+</div>
+
+    </section>
+  </article>
+
+    </main>
+
+    
+    
+      <footer>&copy; 2022 Flux Harmonic</footer>
+    
+
+  </body>
+</html>
