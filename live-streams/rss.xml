@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Thu, 03 Feb 2022 09:54:48 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Feb 2022 13:20:13 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -51,7 +51,15 @@
 <h2 id="so-about-those-opengl-apis">So about those OpenGL APIs&#x2026;</h2>
 <div class="outline-text-2">
 <p>
-[A story about my realization and rewrite journey]
+After Tuesday's stream, I looked at the OpenGL text rendering sample we were using from learnopengl.com.  I then realized why they were using shaders!
+</p>
+
+<p>
+That led me on a path to get shaders working in the engine, and then I realized I had been using deprecated OpenGL APIs since we switched from SDL to GLFW&#x2026;
+</p>
+
+<p>
+I've rewritten all of the rendering logic to now use vertex arrays and shaders!  This actually puts us in a perfect spot for future work.
 </p>
 
 <p>
