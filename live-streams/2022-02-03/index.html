@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en-us" data-theme="dark">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Flux Harmonic
+      
+    </title>
+    
+    
+    
+    
+  <meta property="og:title" content="I Rewrote The Graphics Layer...">
+  <meta property="og:url" content="https://fluxharmonic.com/live-streams/2022-02-03/">
+  
+  
+  <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="https://fluxharmonic.com/static/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Space+Mono&display=swap" />
+    <script defer data-domain="fluxharmonic.com" src="https://plausible.io/js/plausible.js"></script>
+    
+  </head>
+  <body>
+    
+    
+      <header>
+        <a href="https://fluxharmonic.com/">
+          <img class="logo" src="https://fluxharmonic.com/static/Flux-Harmonic-Site-Logo.png" alt="Flux Harmonic"/>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="https://fluxharmonic.com/live-streams/index.html">Live Streams</a></li>
+            <li><a href="https://fluxharmonic.com/how-to-help/">How To Help</a></li>
+            <li><a href="https://youtube.com/FluxHarmonicLive">YouTube</a></li>
+            <li><a href="https://github.com/FluxHarmonic">GitHub</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+
+    
+    <main id="main">
+      
+  <article class="post">
+    <h1 class="post__title">
+      I Rewrote The Graphics Layer...
+    </h1>
+    <section class="post__meta">
+      
+        Feb 03, 2022
+      
+    </section>
+    <section>
+      <p>
+<b>Today's goal:</b> Finish our initial implementation of TrueType font rendering!
+</p>
+
+<div id="outline-container-updates" class="outline-2">
+<h2 id="updates">Updates</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>Join the Discord for Flux Harmonic: <a href="https://discord.gg/ryy97Rdw">https://discord.gg/ryy97Rdw</a></li>
+<li>I rewrote the graphics layer</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-so-about-those-opengl-apis" class="outline-2">
+<h2 id="so-about-those-opengl-apis">So about those OpenGL APIs&#x2026;</h2>
+<div class="outline-text-2">
+<p>
+[A story about my realization and rewrite journey]
+</p>
+
+<p>
+<b>Benefits</b>
+</p>
+
+<ul class="org-ul">
+<li>Potential for much better rendering performance</li>
+<li>Can more efficiently pass our data structures directly to OpenGL</li>
+<li>Shaders give us <b>many</b> possibilities for rendering effects</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
+</div>
+<div id="outline-container-rewrite-glyph-renderer-using-new-opengl-apis-and-a-shader" class="outline-3">
+<h3 id="rewrite-glyph-renderer-using-new-opengl-apis-and-a-shader"><span class="todo TODO">TODO</span> Rewrite glyph renderer using new OpenGL APIs and a shader</h3>
+</div>
+<div id="outline-container-implement-proper-glyph-alignment" class="outline-3">
+<h3 id="implement-proper-glyph-alignment"><span class="todo TODO">TODO</span> Implement proper glyph alignment</h3>
+</div>
+<div id="outline-container-maybe-add-a-nice-gradient-to-rendered-text" class="outline-3">
+<h3 id="maybe-add-a-nice-gradient-to-rendered-text"><span class="todo TODO">TODO</span> Maybe add a nice gradient to rendered text?</h3>
+</div>
+<div id="outline-container-use-fontconfig-to-find-the-font-by-name" class="outline-3">
+<h3 id="use-fontconfig-to-find-the-font-by-name"><span class="todo TODO">TODO</span> Use FontConfig to find the font by name</h3>
+</div>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+<div class="outline-text-2">
+<p>
+The code for this stream can be found here:
+</p>
+
+<p>
+[updated after the stream]
+</p>
+
+<p>
+<b>References</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://learnopengl.com/In-Practice/Text-Rendering">https://learnopengl.com/In-Practice/Text-Rendering</a></li>
+<li>Getting fonts with FontConfig: <a href="https://stackoverflow.com/questions/10542832/how-to-use-fontconfig-to-get-font-list-c-c">https://stackoverflow.com/questions/10542832/how-to-use-fontconfig-to-get-font-list-c-c</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-next-steps" class="outline-2">
+<h2 id="next-steps">Next Steps</h2>
+<div class="outline-text-2" id="text-next-steps">
+</div>
+<div id="outline-container-render-all-glyphs-to-a-single-texture-atlas-for-performance" class="outline-3">
+<h3 id="render-all-glyphs-to-a-single-texture-atlas-for-performance"><span class="todo TODO">TODO</span> Render all glyphs to a single texture atlas for performance</h3>
+</div>
+<div id="outline-container-possibly-bake-a-texture-for-static-strings-to-reduce-draw-calls" class="outline-3">
+<h3 id="possibly-bake-a-texture-for-static-strings-to-reduce-draw-calls"><span class="todo TODO">TODO</span> Possibly "bake" a texture for static strings to reduce draw calls</h3>
+</div>
+</div>
+
+    </section>
+  </article>
+
+    </main>
+
+    
+    
+      <footer>&copy; 2022 Flux Harmonic</footer>
+    
+
+  </body>
+</html>
