@@ -25,23 +25,37 @@ I've rewritten all of the rendering logic to now use vertex arrays and shaders! 
 
 * Tasks
 
-** TODO Rewrite glyph renderer using new OpenGL APIs and a shader
-** TODO Implement proper glyph alignment
-** TODO Maybe add a nice gradient to rendered text?
-** TODO Use FontConfig to find the font by name
+** DONE Rewrite glyph renderer using new OpenGL APIs and a shader
+CLOSED: [2022-02-03 Thu 18:04]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-03 Thu 18:04]
+:END:
+** DONE Implement "proper" glyph alignment
+CLOSED: [2022-02-03 Thu 18:53]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-03 Thu 18:53]
+:END:
+** DONE Use FontConfig to find the font by name
+CLOSED: [2022-02-03 Thu 18:53]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-03 Thu 18:53]
+:END:
 
+** TODO Maybe add a nice gradient to rendered text?
 * Notes
 
 The code for this stream can be found here:
 
-[updated after the stream]
+https://github.com/FluxHarmonic/flux-compose/commit/4f03833978ce75b1715fccf87a64d7ca33b16580
 
 *References*
 
 - https://learnopengl.com/In-Practice/Text-Rendering
 - Getting fonts with FontConfig: https://stackoverflow.com/questions/10542832/how-to-use-fontconfig-to-get-font-list-c-c
+- Crafting Interpreters book: https://craftinginterpreters.com/
 
 * Next Steps
 
+** TODO Investigate using HarfBuzz (or Pango) to get proper kerning vectors for character pairs
 ** TODO Render all glyphs to a single texture atlas for performance
 ** TODO Possibly "bake" a texture for static strings to reduce draw calls
