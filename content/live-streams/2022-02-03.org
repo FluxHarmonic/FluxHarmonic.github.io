@@ -1,0 +1,43 @@
+#+title: I Rewrote The Graphics Layer...
+#+date: [2022-02-03]
+#+slug: 2022-02-03
+
+*Today's goal:* Finish our initial implementation of TrueType font rendering!
+
+* Updates
+
+- Join the Discord for Flux Harmonic: https://discord.gg/ryy97Rdw
+- I rewrote the graphics layer
+
+* So about those OpenGL APIs...
+
+[A story about my realization and rewrite journey]
+
+*Benefits*
+
+- Potential for much better rendering performance
+- Can more efficiently pass our data structures directly to OpenGL
+- Shaders give us *many* possibilities for rendering effects
+
+* Tasks
+
+** TODO Rewrite glyph renderer using new OpenGL APIs and a shader
+** TODO Implement proper glyph alignment
+** TODO Maybe add a nice gradient to rendered text?
+** TODO Use FontConfig to find the font by name
+
+* Notes
+
+The code for this stream can be found here:
+
+[updated after the stream]
+
+*References*
+
+- https://learnopengl.com/In-Practice/Text-Rendering
+- Getting fonts with FontConfig: https://stackoverflow.com/questions/10542832/how-to-use-fontconfig-to-get-font-list-c-c
+
+* Next Steps
+
+** TODO Render all glyphs to a single texture atlas for performance
+** TODO Possibly "bake" a texture for static strings to reduce draw calls
