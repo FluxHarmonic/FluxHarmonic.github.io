@@ -8,6 +8,7 @@
 
 - Thanks to Garjola for pointing out a bug that affected font rendering!
 - I expanded the Fontconfig code slightly
+- I've been rewriting the scripting language...
 
 * Producing a Real Thumbnail (Finally!)
 
@@ -24,16 +25,30 @@ Once we've got this working, I'll start using this code to produce the thumbnail
 
 * Tasks
 
-** TODO Move existing test render code into its own function
-** TODO Create a new function to hardcode the rendering of stream thumbnails
+** DONE Move existing test render code into its own function
+CLOSED: [2022-02-08 Tue 17:33]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-08 Tue 17:33]
+:END:
+** DONE Create a new function to hardcode the rendering of stream thumbnails
+CLOSED: [2022-02-08 Tue 19:13]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-08 Tue 19:13]
+:END:
 ** TODO Fix image renderer to create the correct size of image with appropriate output
 ** TODO Write a function to measure the pixel width of a string rendered with a specific font to use in screen centering
+** TODO Expand the font fragment shader to add a configurable drop shadow to text
 
 * Notes
 
 The code for this stream can be found here:
 
-[updated after the stream]
+https://github.com/FluxHarmonic/flux-compose/commit/cd8d51ef68555a1d334f2c9d35ee7fb92de4b5be
 
 * Next Steps
 
+** TODO Fix basic positioning of textures on screen
+** TODO Fix color blending of fill rects (Emile's gamma fix)
+** TODO Fix image renderer to create the correct size of image with appropriate output
+** TODO Write a function to measure the pixel width of a string rendered with a specific font to use in screen centering
+** TODO Expand the font fragment shader to add a configurable drop shadow to text
