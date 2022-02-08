@@ -1,4 +1,4 @@
-#+title: Hardcoding the First Thumbnail
+#+title: Hardcoding our First Video Thumbnail
 #+date: [2022-02-08]
 #+slug: 2022-02-08
 
