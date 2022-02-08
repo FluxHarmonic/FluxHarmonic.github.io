@@ -1,0 +1,39 @@
+#+title: Hardcoding the First Thumbnail
+#+date: [2022-02-08]
+#+slug: 2022-02-08
+
+*Today's goal:* Produce our first real thumbnail by replicating the one for today's stream!
+
+* Updates
+
+- Thanks to Garjola for pointing out a bug that affected font rendering!
+- I expanded the Fontconfig code slightly
+
+* Producing a Real Thumbnail (Finally!)
+
+We now have enough functionality to produce basic, usable thumbnails!
+
+- Loading and saving PNG files
+- Rendering image textures
+- Rendering text
+- Fragment shader support
+
+Today we'll use these features to hardcode a replication of the thumbnail I created for today's stream!
+
+Once we've got this working, I'll start using this code to produce the thumbnail for all future Flux Harmonic streams.
+
+* Tasks
+
+** TODO Move existing test render code into its own function
+** TODO Create a new function to hardcode the rendering of stream thumbnails
+** TODO Fix image renderer to create the correct size of image with appropriate output
+** TODO Write a function to measure the pixel width of a string rendered with a specific font to use in screen centering
+
+* Notes
+
+The code for this stream can be found here:
+
+[updated after the stream]
+
+* Next Steps
+
