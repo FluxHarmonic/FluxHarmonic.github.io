@@ -17,8 +17,8 @@
     <link></link>
     <description><![CDATA[]]></description>
     <language>en</language>
-    <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Tue, 08 Feb 2022 17:16:31 +0000</lastBuildDate>
+    <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
+    <lastBuildDate>Tue, 15 Feb 2022 13:23:38 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -26,6 +26,126 @@
       <link></link>
     </image>
 
+    
+    <item>
+      <title>Compiling Mesche to Bytecode</title>
+      <link></link>
+      <author>author@mail.com (Blog Author)</author>
+      <guid isPermaLink="false"></guid>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>
+<b>Today's goal:</b>
+</p>
+
+<div id="outline-container-updates" class="outline-2">
+<h2 id="updates">Updates</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>Thanks to Ashraz for debugging some memory issues that most likely caused corruption and segfaults!</li>
+<li>Thankfully, we won't need to fix that particular issue&#x2026;</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-what-is-mesche" class="outline-2">
+<h2 id="what-is-mesche">What is Mesche?</h2>
+<div class="outline-text-2">
+<p>
+When I started working on a scripting language for Flux Compose, I said I wasn't going to make a general purpose language&#x2026;  until I read Crafting Interpreters by Robert Nystrom!
+</p>
+
+<p>
+Mesche is the name of a Scheme-inspired language I've been working on in various forms for a year or so.  Originally the plan was to make it a compiled-to-native language that emitted x86 assembly and linked directly to C libraries, but that's a huge project!
+</p>
+
+<p>
+<b>The new plan:</b>
+</p>
+
+<p>
+Use Mesche as a C-native scripting language; build on and work well with C to leverage it fully instead of pretending to be a separate language entirely.
+</p>
+
+<p>
+This isn't meant to be a full standalone environment, it's a hacker's tool for writing better C programs!
+</p>
+</div>
+
+<div id="outline-container-what-makes-it-scheme-inspired" class="outline-3">
+<h3 id="what-makes-it-scheme-inspired">What makes it Scheme-inspired?</h3>
+<div class="outline-text-3">
+<ul class="org-ul">
+<li>First class functions with lexical scoping and closures</li>
+<li>Intended to be a minimal core that you can build on using modules and macros</li>
+<li>Will use tail recursion for looping (not implemented yet, but soon)</li>
+<li><i>Might</i> implement continuations in the future, but might add complexity</li>
+</ul>
+
+<p>
+However&#x2026;
+</p>
+
+<ul class="org-ul">
+<li>It's not intended to be used with SRFIs.  Why?  Because this is a more focused language</li>
+<li>It's doesn't follow R*RS (the Scheme spec) closely.  Freedom to specialize!</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-what-works" class="outline-3">
+<h3 id="what-works">What works?</h3>
+<div class="outline-text-3">
+<ul class="org-ul">
+<li>Compiles directly to bytecode running on a custom VM</li>
+<li>First-class functions with closures</li>
+<li>Native function registration for integrating with C APIs</li>
+<li>Supports running a VM per OS thread (untested, but designed for it)</li>
+<li>Garbage collection (mark and sweep) almost finished</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-what-comes-next" class="outline-3">
+<h3 id="what-comes-next">What comes next?</h3>
+<div class="outline-text-3">
+<ul class="org-ul">
+<li>Unhygenic (and possibly hygenic) macro definitions</li>
+<li>Build out the standard library of things that will definitely be needed (I/O, file/path APIs, process management)</li>
+<li>Defining code in modules that can be loaded into Mesche projects</li>
+<li>Defining structure types in Mesche</li>
+<li>Define bindings to C functions and structures in Mesche code, generates C bindings at compile time</li>
+<li>APIs for working with dynamic arrays of C structures, cache-friendliness</li>
+<li>Cross-platform build orchestration, dependency management, and release builds with <code>mesche build</code></li>
+<li><i>In the far future</i>, native JIT compilation and creating standalone Mesche binaries</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
+</div>
+<div id="outline-container-wire-up-mesche-to-our-existing-flux-compose-apis-to-see-if-it-works" class="outline-3">
+<h3 id="wire-up-mesche-to-our-existing-flux-compose-apis-to-see-if-it-works"><span class="todo TODO">TODO</span> Wire up Mesche to our existing Flux Compose APIs to see if it works!</h3>
+</div>
+<div id="outline-container-start-adding-some-standard-library-functions-to-enable-building-with-mesche-build" class="outline-3">
+<h3 id="start-adding-some-standard-library-functions-to-enable-building-with-mesche-build"><span class="todo TODO">TODO</span> Start adding some standard library functions to enable building with <code>mesche build</code></h3>
+</div>
+<div id="outline-container-delete-old-scripting-language-code" class="outline-3">
+<h3 id="delete-old-scripting-language-code"><span class="todo TODO">TODO</span> Delete old scripting language code?</h3>
+</div>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+</div>
+
+<div id="outline-container-next-steps" class="outline-2">
+<h2 id="next-steps">Next Steps</h2>
+</div>
+]]></description>
+    </item>
     
     <item>
       <title>Hardcoding our First Video Thumbnail</title>
