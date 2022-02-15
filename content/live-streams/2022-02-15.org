@@ -1,0 +1,63 @@
+#+title: Compiling Mesche to Bytecode
+#+date: [2022-02-15]
+#+slug: 2022-02-15
+
+*Today's goal:*
+
+* Updates
+
+- Thanks to Ashraz for debugging some memory issues that most likely caused corruption and segfaults!
+- Thankfully, we won't need to fix that particular issue...
+
+* What is Mesche?
+
+When I started working on a scripting language for Flux Compose, I said I wasn't going to make a general purpose language...  until I read Crafting Interpreters by Robert Nystrom!
+
+Mesche is the name of a Scheme-inspired language I've been working on in various forms for a year or so.  Originally the plan was to make it a compiled-to-native language that emitted x86 assembly and linked directly to C libraries, but that's a huge project!
+
+*The new plan:*
+
+Use Mesche as a C-native scripting language; build on and work well with C to leverage it fully instead of pretending to be a separate language entirely.
+
+This isn't meant to be a full standalone environment, it's a hacker's tool for writing better C programs!
+
+** What makes it Scheme-inspired?
+
+- First class functions with lexical scoping and closures
+- Intended to be a minimal core that you can build on using modules and macros
+- Will use tail recursion for looping (not implemented yet, but soon)
+- /Might/ implement continuations in the future, but might add complexity
+
+However...
+
+- It's not intended to be used with SRFIs.  Why?  Because this is a more focused language
+- It's doesn't follow R*RS (the Scheme spec) closely.  Freedom to specialize!
+
+** What works?
+
+- Compiles directly to bytecode running on a custom VM
+- First-class functions with closures
+- Native function registration for integrating with C APIs
+- Supports running a VM per OS thread (untested, but designed for it)
+- Garbage collection (mark and sweep) almost finished
+
+** What comes next?
+
+- Unhygenic (and possibly hygenic) macro definitions
+- Build out the standard library of things that will definitely be needed (I/O, file/path APIs, process management)
+- Defining code in modules that can be loaded into Mesche projects
+- Defining structure types in Mesche
+- Define bindings to C functions and structures in Mesche code, generates C bindings at compile time
+- APIs for working with dynamic arrays of C structures, cache-friendliness
+- Cross-platform build orchestration, dependency management, and release builds with =mesche build=
+- /In the far future/, native JIT compilation and creating standalone Mesche binaries
+
+* Tasks
+
+** TODO Wire up Mesche to our existing Flux Compose APIs to see if it works!
+** TODO Start adding some standard library functions to enable building with =mesche build=
+** TODO Delete old scripting language code?
+
+* Notes
+
+* Next Steps
