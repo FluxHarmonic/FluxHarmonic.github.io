@@ -55,10 +55,20 @@ However...
 
 * Tasks
 
-** TODO Wire up Mesche to our existing Flux Compose APIs to see if it works!
+** DONE Wire up Mesche to our existing Flux Compose APIs to see if it works!
+CLOSED: [2022-02-15 Tue 18:58]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-15 Tue 18:58]
+:END:
 ** TODO Start adding some standard library functions to enable building with =mesche build=
 ** TODO Delete old scripting language code?
 
 * Notes
+
+Check out the code for this stream here:
+https://github.com/FluxHarmonic/flux-compose/commit/23a3d24ac542233524b4a40c111eb4fb172c3721
+
+The Mesche compiler code is here:
+https://github.com/FluxHarmonic/flux-compose/tree/23a3d24ac542233524b4a40c111eb4fb172c3721/lib/mesche
 
 * Next Steps
