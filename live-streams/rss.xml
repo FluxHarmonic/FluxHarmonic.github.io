@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Tue, 15 Feb 2022 13:26:21 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Feb 2022 17:03:24 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -128,7 +128,9 @@ However&#x2026;
 <div class="outline-text-2" id="text-tasks">
 </div>
 <div id="outline-container-wire-up-mesche-to-our-existing-flux-compose-apis-to-see-if-it-works" class="outline-3">
-<h3 id="wire-up-mesche-to-our-existing-flux-compose-apis-to-see-if-it-works"><span class="todo TODO">TODO</span> Wire up Mesche to our existing Flux Compose APIs to see if it works!</h3>
+<h3 id="wire-up-mesche-to-our-existing-flux-compose-apis-to-see-if-it-works"><span class="done DONE">DONE</span> Wire up Mesche to our existing Flux Compose APIs to see if it works!</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-start-adding-some-standard-library-functions-to-enable-building-with-mesche-build" class="outline-3">
 <h3 id="start-adding-some-standard-library-functions-to-enable-building-with-mesche-build"><span class="todo TODO">TODO</span> Start adding some standard library functions to enable building with <code>mesche build</code></h3>
@@ -140,6 +142,17 @@ However&#x2026;
 
 <div id="outline-container-notes" class="outline-2">
 <h2 id="notes">Notes</h2>
+<div class="outline-text-2">
+<p>
+Check out the code for this stream here:
+<a href="https://github.com/FluxHarmonic/flux-compose/commit/23a3d24ac542233524b4a40c111eb4fb172c3721">https://github.com/FluxHarmonic/flux-compose/commit/23a3d24ac542233524b4a40c111eb4fb172c3721</a>
+</p>
+
+<p>
+The Mesche compiler code is here:
+<a href="https://github.com/FluxHarmonic/flux-compose/tree/23a3d24ac542233524b4a40c111eb4fb172c3721/lib/mesche">https://github.com/FluxHarmonic/flux-compose/tree/23a3d24ac542233524b4a40c111eb4fb172c3721/lib/mesche</a>
+</p>
+</div>
 </div>
 
 <div id="outline-container-next-steps" class="outline-2">
