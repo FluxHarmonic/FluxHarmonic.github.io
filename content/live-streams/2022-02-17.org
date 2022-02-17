@@ -1,0 +1,44 @@
+#+title: Rendering Thumbnails with Mesche
+#+date: [2022-02-17]
+#+slug: 2022-02-17
+
+*Today's goal:* Write the Flux Harmonic thumbnail description in Mesche!
+
+* Updates
+
+- Mark-and-sweep GC is now added!
+- Added standard Scheme-style function definitions
+- Added initial support for keyword arguments
+
+* Rendering Thumbnails with Mesche
+
+Mesche needs the ability to describe a "scene" to be rendered, like this:
+
+#+begin_src scheme
+
+  (define thumb
+    (scene :width 1000
+           :height 1000
+           :members
+           (list (circle :name 'circle1
+                         :x 200
+                         :y 500
+                         :radius 100
+                         :color (rgb 255 0 0)))))
+
+#+end_src
+
+To make this happen we'll need to define some functions both in Mesche and C to wire up this capability!
+
+Let's see if we can get enough added to describe the Flux Harmonic thumbnail image purely in Mesche so that we can remove the hardcoded C code.
+
+* Tasks
+
+** TODO Start building a set of Mesche functions to replicate what we want in the scene description
+** TODO Expose C functions for building the actual scene objects
+** TODO Add an object type for handling C pointers
+** TODO Implement a basic list object type
+
+* Notes
+
+* Next Steps
