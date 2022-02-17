@@ -34,11 +34,31 @@ Let's see if we can get enough added to describe the Flux Harmonic thumbnail ima
 
 * Tasks
 
-** TODO Start building a set of Mesche functions to replicate what we want in the scene description
-** TODO Expose C functions for building the actual scene objects
-** TODO Add an object type for handling C pointers
+** DONE Start building a set of Mesche functions to replicate what we want in the scene description
+CLOSED: [2022-02-17 Thu 19:06]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-17 Thu 19:06]
+:END:
+** DONE Expose C functions for building the actual scene objects
+CLOSED: [2022-02-17 Thu 19:06]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-17 Thu 19:06]
+:END:
+** DONE Add an object type for handling C pointers
+CLOSED: [2022-02-17 Thu 19:06]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-17 Thu 19:06]
+:END:
 ** TODO Implement a basic list object type
 
 * Notes
 
+The changes for this stream can be found here:
+
+https://github.com/FluxHarmonic/flux-compose/commit/43423b3a2f87ce1f579043e534b1e58ae2542b2c
+
 * Next Steps
+
+** TODO Implement a basic list object type
+** TODO Add APIs for displaying images and text in a scene
+** TODO Ensure that native objects are being freed correctly
