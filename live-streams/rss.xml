@@ -17,8 +17,8 @@
     <link></link>
     <description><![CDATA[]]></description>
     <language>en</language>
-    <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Thu, 17 Feb 2022 17:08:30 +0000</lastBuildDate>
+    <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+    <lastBuildDate>Tue, 22 Feb 2022 14:00:14 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -26,6 +26,101 @@
       <link></link>
     </image>
 
+    
+    <item>
+      <title>Building a Mesche Module for Graphics</title>
+      <link></link>
+      <author>author@mail.com (Blog Author)</author>
+      <guid isPermaLink="false"></guid>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>
+<b>Today's goal:</b> Continue building out the <code>flux graphics</code> module in Mesche!
+</p>
+
+<div id="outline-container-updates" class="outline-2">
+<h2 id="updates">Updates</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>Added support for cons pairs, lists, and backquoting</li>
+<li>Added initial support for modules!</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-the-mesche-module-system" class="outline-2">
+<h2 id="the-mesche-module-system">The Mesche module system</h2>
+<div class="outline-text-2">
+<p>
+Over the last few days, I wrote a new module system for Mesche that allows you to do the following:
+</p>
+
+<ul class="org-ul">
+<li>Define modules in source files</li>
+<li>Mark functions and variables to be exported from the module</li>
+<li>Import symbols exported by other modules (no load path yet!)</li>
+</ul>
+
+<p>
+Here's what it looks like:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">
+;; Define the first module
+(define-module (mesche-sample one))
+
+(define one-value 311 :export)
+
+(define (one-print str) :export
+  (display "This string comes from ")
+  (display str)
+  (display "!"))
+
+;; Define the second module
+(define-module (mesche-sample two)
+  (import (mesche-sample one)))
+
+(define (two-print str) :export
+  (one-print "(mesche-sample two)")
+  (display " ")
+  (display str))
+
+;; Switch to the user module and import something!
+(define-module (mesche-user)
+  (import (mesche-sample two)))
+
+;; Call the imported function
+(two-print "Hello modular world!")
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
+</div>
+<div id="outline-container-finish-building-out-the-functions-to-describe-the-full-thumbnail" class="outline-3">
+<h3 id="finish-building-out-the-functions-to-describe-the-full-thumbnail"><span class="todo TODO">TODO</span> Finish building out the functions to describe the full thumbnail</h3>
+</div>
+<div id="outline-container-ensure-we-can-dynamically-re-evaluate-the-scene-description" class="outline-3">
+<h3 id="ensure-we-can-dynamically-re-evaluate-the-scene-description"><span class="todo TODO">TODO</span> Ensure we can dynamically re-evaluate the scene description</h3>
+</div>
+<div id="outline-container-start-working-on-load-path-support" class="outline-3">
+<h3 id="start-working-on-load-path-support"><span class="todo TODO">TODO</span> Start working on load path support</h3>
+</div>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+</div>
+
+<div id="outline-container-next-steps" class="outline-2">
+<h2 id="next-steps">Next Steps</h2>
+</div>
+]]></description>
+    </item>
     
     <item>
       <title>Rendering Thumbnails with Mesche</title>
