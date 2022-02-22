@@ -8,6 +8,7 @@
 
 - Added support for cons pairs, lists, and backquoting
 - Added initial support for modules!
+- I'm thinking about participating in Ludum Dare April 1: https://ludumdare.com/
 
 * The Mesche module system
 
@@ -51,10 +52,23 @@ Here's what it looks like:
 
 * Tasks
 
-** TODO Finish building out the functions to describe the full thumbnail
+** DONE Finish building out the functions to describe the full thumbnail
+CLOSED: [2022-02-22 Tue 18:59]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-22 Tue 18:59]
+:END:
+
 ** TODO Ensure we can dynamically re-evaluate the scene description
 ** TODO Start working on load path support
 
 * Notes
 
+The code for this stream can be found here:
+
+https://github.com/FluxHarmonic/flux-compose/commit/8c86b7ce8aaf6b190a2f0e6029aaaf52f8e5e074
+
 * Next Steps
+
+** TODO Implement asynchronous REPL support
+** TODO Ensure we can dynamically re-evaluate the scene description
+** TODO Implement module load path support
