@@ -1,0 +1,60 @@
+#+title: Building a Mesche Module for Graphics
+#+date: [2022-02-22]
+#+slug: 2022-02-22
+
+*Today's goal:* Continue building out the =flux graphics= module in Mesche!
+
+* Updates
+
+- Added support for cons pairs, lists, and backquoting
+- Added initial support for modules!
+
+* The Mesche module system
+
+Over the last few days, I wrote a new module system for Mesche that allows you to do the following:
+
+- Define modules in source files
+- Mark functions and variables to be exported from the module
+- Import symbols exported by other modules (no load path yet!)
+
+Here's what it looks like:
+
+#+begin_src scheme
+
+  ;; Define the first module
+  (define-module (mesche-sample one))
+
+  (define one-value 311 :export)
+
+  (define (one-print str) :export
+    (display "This string comes from ")
+    (display str)
+    (display "!"))
+
+  ;; Define the second module
+  (define-module (mesche-sample two)
+    (import (mesche-sample one)))
+
+  (define (two-print str) :export
+    (one-print "(mesche-sample two)")
+    (display " ")
+    (display str))
+
+  ;; Switch to the user module and import something!
+  (define-module (mesche-user)
+    (import (mesche-sample two)))
+
+  ;; Call the imported function
+  (two-print "Hello modular world!")
+
+#+end_src
+
+* Tasks
+
+** TODO Finish building out the functions to describe the full thumbnail
+** TODO Ensure we can dynamically re-evaluate the scene description
+** TODO Start working on load path support
+
+* Notes
+
+* Next Steps
