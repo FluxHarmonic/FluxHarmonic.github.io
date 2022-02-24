@@ -7,8 +7,8 @@
 * Updates
 
 - Fixed the OpenGL threading issue from last time; scene graphics now work!
-- You can now run Mesche scripts to render thumbnails without showing the preview window
 - Implemented async REPL support in Mesche
+- You can now run Mesche scripts to render thumbnails without showing the preview window
 - Module file loading has been implemented!
 - Early stages of building Mesche's standard library
 
@@ -35,13 +35,39 @@ This is so that I can push out new binaries of the game live while I code it dur
 
 * Tasks
 
-** TODO Delete the old scripting language code and tests
-** TODO Delete old Guile Scheme code
-** TODO Move =flux= modules into their own files, add to load path
-** TODO Add blended rectangle rendering to scene library
-** TODO Add font rendering to scene library
+** DONE Delete the old scripting language code and tests
+CLOSED: [2022-02-24 Thu 17:29]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-24 Thu 17:29]
+:END:
+** DONE Delete old Guile Scheme code
+CLOSED: [2022-02-24 Thu 17:29]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-24 Thu 17:29]
+:END:
+** DONE Move =flux= modules into their own files, add to load path
+CLOSED: [2022-02-24 Thu 17:44]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-24 Thu 17:44]
+:END:
+** DONE Add blended rectangle rendering to scene library
+CLOSED: [2022-02-24 Thu 18:25]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-24 Thu 18:25]
+:END:
+** DONE Add font rendering to scene library
+CLOSED: [2022-02-24 Thu 18:52]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-24 Thu 18:52]
+:END:
 ** TODO Enable centered text rendering
 
 * Notes
 
+The code we wrote in this stream can be found here:
+
+https://github.com/FluxHarmonic/flux-compose/commit/5f624bdd323435b14f06e55433aea6b7d4adf5cd
+
 * Next Steps
+
+** TODO Start hacking on new stuff!
