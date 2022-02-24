@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en-us" data-theme="dark">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Flux Harmonic
+      
+    </title>
+    
+    
+    
+    
+  <meta property="og:title" content="Finishing the Thumbnail Renderer">
+  <meta property="og:url" content="https://fluxharmonic.com/live-streams/2022-02-24/">
+  
+  
+  <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="https://fluxharmonic.com/static/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Space+Mono&display=swap" />
+    <script defer data-domain="fluxharmonic.com" src="https://plausible.io/js/plausible.js"></script>
+    
+  </head>
+  <body>
+    
+    
+      <header>
+        <a href="https://fluxharmonic.com/">
+          <img class="logo" src="https://fluxharmonic.com/static/Flux-Harmonic-Site-Logo.png" alt="Flux Harmonic"/>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="https://fluxharmonic.com/live-streams/index.html">Live Streams</a></li>
+            <li><a href="https://fluxharmonic.com/how-to-help/">How To Help</a></li>
+            <li><a href="https://youtube.com/FluxHarmonicLive">YouTube</a></li>
+            <li><a href="https://github.com/FluxHarmonic">GitHub</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+
+    
+    <main id="main">
+      
+  <article class="post">
+    <h1 class="post__title">
+      Finishing the Thumbnail Renderer
+    </h1>
+    <section class="post__meta">
+      
+        Feb 24, 2022
+      
+    </section>
+    <section>
+      <p>
+<b>Today's goal:</b> Finish the thumbnail renderer work (for now) so that we can move on to something new!
+</p>
+
+<div id="outline-container-updates" class="outline-2">
+<h2 id="updates">Updates</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>Fixed the OpenGL threading issue from last time; scene graphics now work!</li>
+<li>You can now run Mesche scripts to render thumbnails without showing the preview window</li>
+<li>Implemented async REPL support in Mesche</li>
+<li>Module file loading has been implemented!</li>
+<li>Early stages of building Mesche's standard library</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-let-s-close-out-the-thumbnail-renderer" class="outline-2">
+<h2 id="let-s-close-out-the-thumbnail-renderer">Let's close out the thumbnail renderer</h2>
+<div class="outline-text-2">
+<p>
+We've finally reached a point where we can describe and render thumbnail images with Mesche!
+</p>
+
+<p>
+I've decided that today is the last time we'll work on the thumbnail renderer for a while.  I'll definitely be adding some improvements to it for my own uses and I'll give updates on stream if I do anything interesting.
+</p>
+
+<p>
+I think it will be more intersting to move on to bigger projects and potentially produce some software that you all can try out and give feedback on!
+</p>
+</div>
+</div>
+
+<div id="outline-container-what-s-next" class="outline-2">
+<h2 id="what-s-next">What's next?</h2>
+<div class="outline-text-2">
+<p>
+I'm really excited about the next phase of what we'll be doing on this channel:
+</p>
+
+<ul class="org-ul">
+<li>Start building the <code>mesche</code> command line tools, especially <code>mesche build</code></li>
+<li>Flesh out Mesche's capabilities for writing general applications (where Mesche is driver)</li>
+<li>Lay the groundwork for the next iteration of my <a href="https://github.com/substratic/engine">Substratic Engine</a> (move over some Flux code)</li>
+<li>Build a game on stream while writing all of this!  We'll rewrite <a href="https://github.com/substratic/crash-the-stack">Crash The Stack</a> in Mesche and C</li>
+</ul>
+
+<p>
+The ultimate goal is to build tools that enable me ship a game written with Mesche and C before the <a href="https://ludumdare.com">Ludum Dare game jam</a> on April 1.
+</p>
+
+<p>
+This is so that I can push out new binaries of the game live while I code it during the jam!
+</p>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
+</div>
+<div id="outline-container-delete-the-old-scripting-language-code-and-tests" class="outline-3">
+<h3 id="delete-the-old-scripting-language-code-and-tests"><span class="todo TODO">TODO</span> Delete the old scripting language code and tests</h3>
+</div>
+<div id="outline-container-delete-old-guile-scheme-code" class="outline-3">
+<h3 id="delete-old-guile-scheme-code"><span class="todo TODO">TODO</span> Delete old Guile Scheme code</h3>
+</div>
+<div id="outline-container-move-flux-modules-into-their-own-files-add-to-load-path" class="outline-3">
+<h3 id="move-flux-modules-into-their-own-files-add-to-load-path"><span class="todo TODO">TODO</span> Move <code>flux</code> modules into their own files, add to load path</h3>
+</div>
+<div id="outline-container-add-blended-rectangle-rendering-to-scene-library" class="outline-3">
+<h3 id="add-blended-rectangle-rendering-to-scene-library"><span class="todo TODO">TODO</span> Add blended rectangle rendering to scene library</h3>
+</div>
+<div id="outline-container-add-font-rendering-to-scene-library" class="outline-3">
+<h3 id="add-font-rendering-to-scene-library"><span class="todo TODO">TODO</span> Add font rendering to scene library</h3>
+</div>
+<div id="outline-container-enable-centered-text-rendering" class="outline-3">
+<h3 id="enable-centered-text-rendering"><span class="todo TODO">TODO</span> Enable centered text rendering</h3>
+</div>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+</div>
+
+<div id="outline-container-next-steps" class="outline-2">
+<h2 id="next-steps">Next Steps</h2>
+</div>
+
+    </section>
+  </article>
+
+    </main>
+
+    
+    
+      <footer>&copy; 2022 Flux Harmonic</footer>
+    
+
+  </body>
+</html>
