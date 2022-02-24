@@ -1,0 +1,47 @@
+#+title: Finishing the Thumbnail Renderer
+#+date: [2022-02-24]
+#+slug: 2022-02-24
+
+*Today's goal:* Finish the thumbnail renderer work (for now) so that we can move on to something new!
+
+* Updates
+
+- Fixed the OpenGL threading issue from last time; scene graphics now work!
+- You can now run Mesche scripts to render thumbnails without showing the preview window
+- Implemented async REPL support in Mesche
+- Module file loading has been implemented!
+- Early stages of building Mesche's standard library
+
+* Let's close out the thumbnail renderer
+
+We've finally reached a point where we can describe and render thumbnail images with Mesche!
+
+I've decided that today is the last time we'll work on the thumbnail renderer for a while.  I'll definitely be adding some improvements to it for my own uses and I'll give updates on stream if I do anything interesting.
+
+I think it will be more intersting to move on to bigger projects and potentially produce some software that you all can try out and give feedback on!
+
+* What's next?
+
+I'm really excited about the next phase of what we'll be doing on this channel:
+
+- Start building the =mesche= command line tools, especially =mesche build=
+- Flesh out Mesche's capabilities for writing general applications (where Mesche is driver)
+- Lay the groundwork for the next iteration of my [[https://github.com/substratic/engine][Substratic Engine]] (move over some Flux code)
+- Build a game on stream while writing all of this!  We'll rewrite [[https://github.com/substratic/crash-the-stack][Crash The Stack]] in Mesche and C
+
+The ultimate goal is to build tools that enable me ship a game written with Mesche and C before the [[https://ludumdare.com][Ludum Dare game jam]] on April 1.
+
+This is so that I can push out new binaries of the game live while I code it during the jam!
+
+* Tasks
+
+** TODO Delete the old scripting language code and tests
+** TODO Delete old Guile Scheme code
+** TODO Move =flux= modules into their own files, add to load path
+** TODO Add blended rectangle rendering to scene library
+** TODO Add font rendering to scene library
+** TODO Enable centered text rendering
+
+* Notes
+
+* Next Steps
