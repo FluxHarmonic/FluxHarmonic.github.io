@@ -109,11 +109,11 @@ Scheme-style "named let" is a very versatile pattern for writing loops.  This is
 (let list-loop ((vals '(1 2 3 4 5)))
   (if (pair? vals)
       (begin
-	(display "still not there yet: ")
+	(display "Still not there yet: ")
 	(display (car vals))
 	(newline)
 	(list-loop (cdr vals)))
-      (display "done!\n")))
+      (display "Done!\n")))
 
 ;; Because it's tail-recursive, you can loop infinitely...
 (let infinite-loop ((i 1))
@@ -132,13 +132,19 @@ Scheme-style "named let" is a very versatile pattern for writing loops.  This is
 <div class="outline-text-2" id="text-tasks">
 </div>
 <div id="outline-container-write-up-notes-for-what-we-think-the-design-should-be" class="outline-3">
-<h3 id="write-up-notes-for-what-we-think-the-design-should-be"><span class="todo TODO">TODO</span> Write up notes for what we think the design should be</h3>
+<h3 id="write-up-notes-for-what-we-think-the-design-should-be"><span class="done DONE">DONE</span> Write up notes for what we think the design should be</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-add-compiler-support-for-named-let-expressions" class="outline-3">
-<h3 id="add-compiler-support-for-named-let-expressions"><span class="todo TODO">TODO</span> Add compiler support for "named let" expressions</h3>
+<h3 id="add-compiler-support-for-named-let-expressions"><span class="done DONE">DONE</span> Add compiler support for "named let" expressions</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-add-a-unit-test-for-checking-named-let-compilation" class="outline-3">
-<h3 id="add-a-unit-test-for-checking-named-let-compilation"><span class="todo TODO">TODO</span> Add a unit test for checking named let compilation</h3>
+<h3 id="add-a-unit-test-for-checking-named-let-compilation"><span class="done DONE">DONE</span> Add a unit test for checking named let compilation</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-implement-tail-call-checks-in-the-compiler" class="outline-3">
 <h3 id="implement-tail-call-checks-in-the-compiler"><span class="todo TODO">TODO</span> Implement tail call checks in the compiler</h3>
@@ -153,10 +159,32 @@ Scheme-style "named let" is a very versatile pattern for writing loops.  This is
 
 <div id="outline-container-notes" class="outline-2">
 <h2 id="notes">Notes</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>A named let should create an entry in the locals for the function</li>
+<li>Are we checking the symbol or the value?  The symbol&#x2026;</li>
+<li>Have a heuristic for whether the block is tail recursive&#x2026;
+<ul class="org-ul">
+<li>Mark the current closure with the closest function/let local slot?</li>
+</ul></li>
+<li>At the location where the function/let name is called, we have to decide how to emit the bytecode.  Is it a jump or a function call?</li>
+</ul>
+</div>
 </div>
 
 <div id="outline-container-next-steps" class="outline-2">
 <h2 id="next-steps">Next Steps</h2>
+<div class="outline-text-2" id="text-next-steps">
+</div>
+<div id="outline-container-finish-writing-let-lambda-parsing" class="outline-3">
+<h3 id="finish-writing-let-lambda-parsing"><span class="todo TODO">TODO</span> Finish writing let/lambda parsing</h3>
+</div>
+<div id="outline-container-finish-call-offset-patching-after-lambda-is-created" class="outline-3">
+<h3 id="finish-call-offset-patching-after-lambda-is-created"><span class="todo TODO">TODO</span> Finish call offset patching after lambda is created</h3>
+</div>
+<div id="outline-container-set-function-name-based-on-let-name-will-also-work-for-declared-functions" class="outline-3">
+<h3 id="set-function-name-based-on-let-name-will-also-work-for-declared-functions"><span class="todo TODO">TODO</span> Set function name based on let name (will also work for declared functions)</h3>
+</div>
 </div>
 
     </section>
