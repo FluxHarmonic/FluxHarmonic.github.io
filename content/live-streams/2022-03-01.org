@@ -39,11 +39,11 @@ Scheme-style "named let" is a very versatile pattern for writing loops.  This is
   (let list-loop ((vals '(1 2 3 4 5)))
     (if (pair? vals)
         (begin
-          (display "still not there yet: ")
+          (display "Still not there yet: ")
           (display (car vals))
           (newline)
           (list-loop (cdr vals)))
-        (display "done!\n")))
+        (display "Done!\n")))
 
   ;; Because it's tail-recursive, you can loop infinitely...
   (let infinite-loop ((i 1))
@@ -56,13 +56,35 @@ Scheme-style "named let" is a very versatile pattern for writing loops.  This is
 
 * Tasks
 
-** TODO Write up notes for what we think the design should be
-** TODO Add compiler support for "named let" expressions
-** TODO Add a unit test for checking named let compilation
+** DONE Write up notes for what we think the design should be
+CLOSED: [2022-03-01 Tue 17:38]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-01 Tue 17:38]
+:END:
+** DONE Add compiler support for "named let" expressions
+CLOSED: [2022-03-01 Tue 19:08]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-01 Tue 19:08]
+:END:
+** DONE Add a unit test for checking named let compilation
+CLOSED: [2022-03-01 Tue 19:08]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-01 Tue 19:08]
+:END:
 ** TODO Implement tail call checks in the compiler
 ** TODO Update tests to verify that tail call checks are being compiled correctly
 ** TODO Generalize tail recursion implementation for all function definitions
 
 * Notes
 
+- A named let should create an entry in the locals for the function
+- Are we checking the symbol or the value?  The symbol...
+- Have a heuristic for whether the block is tail recursive...
+  - Mark the current closure with the closest function/let local slot?
+- At the location where the function/let name is called, we have to decide how to emit the bytecode.  Is it a jump or a function call?
+
 * Next Steps
+
+** TODO Finish writing let/lambda parsing
+** TODO Finish call offset patching after lambda is created
+** TODO Set function name based on let name (will also work for declared functions)
