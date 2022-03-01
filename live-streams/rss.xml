@@ -17,8 +17,8 @@
     <link></link>
     <description><![CDATA[]]></description>
     <language>en</language>
-    <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Thu, 24 Feb 2022 17:07:10 +0000</lastBuildDate>
+    <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+    <lastBuildDate>Tue, 01 Mar 2022 09:21:22 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -26,6 +26,119 @@
       <link></link>
     </image>
 
+    
+    <item>
+      <title>Test-Driven Tail Recursion</title>
+      <link></link>
+      <author>author@mail.com (Blog Author)</author>
+      <guid isPermaLink="false"></guid>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>
+<b>Today's goal:</b> Implement tail call optimization in Mesche to enable loops!
+</p>
+
+<div id="outline-container-updates" class="outline-2">
+<h2 id="updates">Updates</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>Mesche now lives in its own repo(s):
+<ul class="org-ul">
+<li><a href="https://github.com/mesche-lang/compiler">https://github.com/mesche-lang/compiler</a></li>
+<li><a href="https://github.com/mesche-lang/cli">https://github.com/mesche-lang/cli</a></li>
+</ul></li>
+<li>Added basic record type support to Mesche</li>
+<li>Improved the module system</li>
+<li>Created <code>project</code> record type for defining Mesche projects</li>
+<li>Created basic CLI interface for Mesche, the first Mesche program!</li>
+<li>Added basic unit tests for scanner, compiler, and VM</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-implementing-tail-recursion" class="outline-2">
+<h2 id="implementing-tail-recursion">Implementing tail recursion</h2>
+<div class="outline-text-2">
+<p>
+Mesche currently doesn't have a looping construct.
+</p>
+
+<p>
+To write a game loop (and other non-trivial code) we'll need one!
+</p>
+
+<p>
+Today we're going to attempt an implementation of tail call optimization (tail recursion) in Mesche, first by adding functionality to the compiler in a test-driven way and then by testing it with real code!
+</p>
+
+<p>
+Scheme-style "named let" is a very versatile pattern for writing loops.  This is effectively a specialization for normal tail-recursive function definitions (and is probably implemented as such in many Scheme implementations).
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">
+(let count-loop ((i 1))
+  (if (&lt;= i 5)
+      (begin
+	(display "Still not there yet: ")
+	(display i)
+	(newline)
+	(count-loop (+ i 1)))
+      (display "Done!\n")))
+
+(let list-loop ((vals '(1 2 3 4 5)))
+  (if (pair? vals)
+      (begin
+	(display "still not there yet: ")
+	(display (car vals))
+	(newline)
+	(list-loop (cdr vals)))
+      (display "done!\n")))
+
+;; Because it's tail-recursive, you can loop infinitely...
+(let infinite-loop ((i 1))
+  (display "Current value: ")
+  (display i)
+  (newline)
+  (infinite-loop (+ i 1)))
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
+</div>
+<div id="outline-container-write-up-notes-for-what-we-think-the-design-should-be" class="outline-3">
+<h3 id="write-up-notes-for-what-we-think-the-design-should-be"><span class="todo TODO">TODO</span> Write up notes for what we think the design should be</h3>
+</div>
+<div id="outline-container-add-compiler-support-for-named-let-expressions" class="outline-3">
+<h3 id="add-compiler-support-for-named-let-expressions"><span class="todo TODO">TODO</span> Add compiler support for "named let" expressions</h3>
+</div>
+<div id="outline-container-add-a-unit-test-for-checking-named-let-compilation" class="outline-3">
+<h3 id="add-a-unit-test-for-checking-named-let-compilation"><span class="todo TODO">TODO</span> Add a unit test for checking named let compilation</h3>
+</div>
+<div id="outline-container-implement-tail-call-checks-in-the-compiler" class="outline-3">
+<h3 id="implement-tail-call-checks-in-the-compiler"><span class="todo TODO">TODO</span> Implement tail call checks in the compiler</h3>
+</div>
+<div id="outline-container-update-tests-to-verify-that-tail-call-checks-are-being-compiled-correctly" class="outline-3">
+<h3 id="update-tests-to-verify-that-tail-call-checks-are-being-compiled-correctly"><span class="todo TODO">TODO</span> Update tests to verify that tail call checks are being compiled correctly</h3>
+</div>
+<div id="outline-container-generalize-tail-recursion-implementation-for-all-function-definitions" class="outline-3">
+<h3 id="generalize-tail-recursion-implementation-for-all-function-definitions"><span class="todo TODO">TODO</span> Generalize tail recursion implementation for all function definitions</h3>
+</div>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+</div>
+
+<div id="outline-container-next-steps" class="outline-2">
+<h2 id="next-steps">Next Steps</h2>
+</div>
+]]></description>
+    </item>
     
     <item>
       <title>Finishing the Thumbnail Renderer</title>
