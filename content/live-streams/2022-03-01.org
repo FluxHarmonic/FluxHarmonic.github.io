@@ -1,0 +1,68 @@
+#+title: Test-Driven Tail Recursion
+#+date: [2022-03-01]
+#+slug: 2022-03-02
+
+*Today's goal:* Implement tail call optimization in Mesche to enable loops!
+
+* Updates
+
+- Mesche now lives in its own repo(s):
+  - https://github.com/mesche-lang/compiler
+  - https://github.com/mesche-lang/cli
+- Added basic record type support to Mesche
+- Improved the module system
+- Created =project= record type for defining Mesche projects
+- Created basic CLI interface for Mesche, the first Mesche program!
+- Added basic unit tests for scanner, compiler, and VM
+
+* Implementing tail recursion
+
+Mesche currently doesn't have a looping construct.
+
+To write a game loop (and other non-trivial code) we'll need one!
+
+Today we're going to attempt an implementation of tail call optimization (tail recursion) in Mesche, first by adding functionality to the compiler in a test-driven way and then by testing it with real code!
+
+Scheme-style "named let" is a very versatile pattern for writing loops.  This is effectively a specialization for normal tail-recursive function definitions (and is probably implemented as such in many Scheme implementations).
+
+#+begin_src scheme
+
+  (let count-loop ((i 1))
+    (if (<= i 5)
+        (begin
+          (display "Still not there yet: ")
+          (display i)
+          (newline)
+          (count-loop (+ i 1)))
+        (display "Done!\n")))
+
+  (let list-loop ((vals '(1 2 3 4 5)))
+    (if (pair? vals)
+        (begin
+          (display "still not there yet: ")
+          (display (car vals))
+          (newline)
+          (list-loop (cdr vals)))
+        (display "done!\n")))
+
+  ;; Because it's tail-recursive, you can loop infinitely...
+  (let infinite-loop ((i 1))
+    (display "Current value: ")
+    (display i)
+    (newline)
+    (infinite-loop (+ i 1)))
+
+#+end_src
+
+* Tasks
+
+** TODO Write up notes for what we think the design should be
+** TODO Add compiler support for "named let" expressions
+** TODO Add a unit test for checking named let compilation
+** TODO Implement tail call checks in the compiler
+** TODO Update tests to verify that tail call checks are being compiled correctly
+** TODO Generalize tail recursion implementation for all function definitions
+
+* Notes
+
+* Next Steps
