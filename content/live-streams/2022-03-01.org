@@ -1,6 +1,6 @@
 #+title: Test-Driven Tail Recursion
 #+date: [2022-03-01]
-#+slug: 2022-03-02
+#+slug: 2022-03-01
 
 *Today's goal:* Implement tail call optimization in Mesche to enable loops!
 
