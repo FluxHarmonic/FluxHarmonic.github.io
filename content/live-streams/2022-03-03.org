@@ -4,6 +4,8 @@
 
 *Today's goal:* Set up the codebase for a new game project and get a sprite rendering!
 
+[[yt:1-fL6uF0SdM][Watch the recording on YouTube!]]
+
 * Updates
 
 - Tail call elimination, tail recursion, and "named let" is now supported!
@@ -23,10 +25,29 @@ The code repository of this project is here: https://github.com/FluxHarmonic/cra
 
 * Tasks
 
-** TODO Set up the basic project structure for the game (build script, main.msc, etc)
-** TODO Copy over the useful bits of code from Flux Compose to get an OpenGL window created
-** TODO Set up a basic game loop in Mesche
+** DONE Set up the basic project structure for the game (build script, main.msc, etc)
+CLOSED: [2022-03-03 Thu 18:35]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-03 Thu 18:35]
+:END:
+** DONE Copy over the useful bits of code from Flux Compose to get an OpenGL window created
+CLOSED: [2022-03-03 Thu 18:35]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-03 Thu 18:35]
+:END:
+** DONE Set up a basic game loop in Mesche
+CLOSED: [2022-03-03 Thu 19:13]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-03 Thu 19:13]
+:END:
 
 * Notes
 
+The code from this stream can be found here:
+
+https://github.com/FluxHarmonic/crash-the-stack/commit/ed2fd414dc30831d2b7378e7f16adbe5edf4dcff
+
 * Next Steps
+
+** TODO Get texture rendering working
+** TODO Start building basic game functionality!
