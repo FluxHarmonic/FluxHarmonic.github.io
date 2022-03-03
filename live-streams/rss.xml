@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Thu, 03 Mar 2022 14:50:46 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Mar 2022 17:17:12 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -35,6 +35,10 @@
       <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
       <description><![CDATA[<p>
 <b>Today's goal:</b> Set up the codebase for a new game project and get a sprite rendering!
+</p>
+
+<p>
+<div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1-fL6uF0SdM" allowfullscreen></iframe> </div>
 </p>
 
 <div id="outline-container-updates" class="outline-2">
@@ -77,22 +81,45 @@ The code repository of this project is here: <a href="https://github.com/FluxHar
 <div class="outline-text-2" id="text-tasks">
 </div>
 <div id="outline-container-set-up-the-basic-project-structure-for-the-game-build-script-main-msc-etc" class="outline-3">
-<h3 id="set-up-the-basic-project-structure-for-the-game-build-script-main-msc-etc"><span class="todo TODO">TODO</span> Set up the basic project structure for the game (build script, main.msc, etc)</h3>
+<h3 id="set-up-the-basic-project-structure-for-the-game-build-script-main-msc-etc"><span class="done DONE">DONE</span> Set up the basic project structure for the game (build script, main.msc, etc)</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-copy-over-the-useful-bits-of-code-from-flux-compose-to-get-an-opengl-window-created" class="outline-3">
-<h3 id="copy-over-the-useful-bits-of-code-from-flux-compose-to-get-an-opengl-window-created"><span class="todo TODO">TODO</span> Copy over the useful bits of code from Flux Compose to get an OpenGL window created</h3>
+<h3 id="copy-over-the-useful-bits-of-code-from-flux-compose-to-get-an-opengl-window-created"><span class="done DONE">DONE</span> Copy over the useful bits of code from Flux Compose to get an OpenGL window created</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-set-up-a-basic-game-loop-in-mesche" class="outline-3">
-<h3 id="set-up-a-basic-game-loop-in-mesche"><span class="todo TODO">TODO</span> Set up a basic game loop in Mesche</h3>
+<h3 id="set-up-a-basic-game-loop-in-mesche"><span class="done DONE">DONE</span> Set up a basic game loop in Mesche</h3>
+<div class="outline-text-3">
+</div>
 </div>
 </div>
 
 <div id="outline-container-notes" class="outline-2">
 <h2 id="notes">Notes</h2>
+<div class="outline-text-2">
+<p>
+The code from this stream can be found here:
+</p>
+
+<p>
+<a href="https://github.com/FluxHarmonic/crash-the-stack/commit/ed2fd414dc30831d2b7378e7f16adbe5edf4dcff">https://github.com/FluxHarmonic/crash-the-stack/commit/ed2fd414dc30831d2b7378e7f16adbe5edf4dcff</a>
+</p>
+</div>
 </div>
 
 <div id="outline-container-next-steps" class="outline-2">
 <h2 id="next-steps">Next Steps</h2>
+<div class="outline-text-2" id="text-next-steps">
+</div>
+<div id="outline-container-get-texture-rendering-working" class="outline-3">
+<h3 id="get-texture-rendering-working"><span class="todo TODO">TODO</span> Get texture rendering working</h3>
+</div>
+<div id="outline-container-start-building-basic-game-functionality" class="outline-3">
+<h3 id="start-building-basic-game-functionality"><span class="todo TODO">TODO</span> Start building basic game functionality!</h3>
+</div>
 </div>
 ]]></description>
     </item>
