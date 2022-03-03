@@ -1,0 +1,32 @@
+#+title: Creating a New Game Project!
+#+date: [2022-03-03]
+#+slug: 2022-03-03
+
+*Today's goal:* Set up the codebase for a new game project and get a sprite rendering!
+
+* Updates
+
+- Tail call elimination, tail recursion, and "named let" is now supported!
+- Unit testing is *so* worth it
+
+* Setting up our game project
+
+As I mentioned in the last couple of streams, we're going to spend all of March hacking on a game project in preparation for the Ludum Dare Game Jam on April 1st! https://ldjam.com/
+
+The goal of this project will be to build all the tools I need to write a cool game in Mesche and C which can be distributed via [[https://itch.io][Itch.io]]!
+
+The game we'll be working on is a hacking-themed variation of the tile-matching game Mahjongg.  We'll get into more details of the design as time goes on, but for now we just need to get the basic game functionality working so that we can start making it more fun and interesting later!
+
+Here's a video of what I accomplished in the previous iteration of the project in Gambit Scheme: https://twitter.com/daviwil/status/1260958704737775617
+
+The code repository of this project is here: https://github.com/FluxHarmonic/crash-the-stack
+
+* Tasks
+
+** TODO Set up the basic project structure for the game (build script, main.msc, etc)
+** TODO Copy over the useful bits of code from Flux Compose to get an OpenGL window created
+** TODO Set up a basic game loop in Mesche
+
+* Notes
+
+* Next Steps
