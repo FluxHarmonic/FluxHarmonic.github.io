@@ -1,0 +1,40 @@
+#+title: Building an Entity Component System
+#+date: [2022-03-08]
+#+slug: 2022-03-08
+
+*Today's goal:* Build the foundation of an "Entity Component System" for the game engine!
+
+* Updates
+
+- Texture rendering is now working!
+- Reorganized and renamed code in the game engine
+
+* Developing a component-based engine
+
+Today we'll be sketching out the initial design of an [[https://en.wikipedia.org/wiki/Entity_component_system][Entity Component System]] written in Mesche!
+
+This is a relatively common design in modern game engines which seeks to break down monolithic game object implementations into a more composable design:
+
+- Entity: A game object comprised of behaviors split across components (really just an ID)
+- Component: The data for an entity that a particular "system" understands
+- System: The actual code that implements a behavior across a collection of one component type
+
+What's nice about this?
+
+- Decoupling of game objects from behavior
+- Systems can be executed at any time, even on different threads
+- Enables much better performance when component data is organized appropriately (data-oriented design)
+
+We're going to start with a simple design using the language features we have so far in Mesche and then improve it as we go!
+
+* Tasks
+
+** TODO Create =entity= record to store =id=
+** TODO Create =system= record to hold system definitions (like the =update= function)
+** TODO Create =physical= component to hold position, size, and other physics attributes
+** TODO Create =renderable= component for sprite rendering
+** TODO Create =renderable-system= to draw all =renderable= components
+
+* Notes
+
+* Next Steps
