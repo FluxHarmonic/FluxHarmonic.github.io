@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Tue, 08 Mar 2022 12:20:57 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Mar 2022 17:17:09 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -35,6 +35,10 @@
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       <description><![CDATA[<p>
 <b>Today's goal:</b> Build the foundation of an "Entity Component System" for the game engine!
+</p>
+
+<p>
+<div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6Hv4S8wLYi0" allowfullscreen></iframe> </div>
 </p>
 
 <div id="outline-container-updates" class="outline-2">
@@ -84,25 +88,50 @@ We're going to start with a simple design using the language features we have so
 <h2 id="tasks">Tasks</h2>
 <div class="outline-text-2" id="text-tasks">
 </div>
+<div id="outline-container-add-new-objectarray-type-to-mesche" class="outline-3">
+<h3 id="add-new-objectarray-type-to-mesche"><span class="done DONE">DONE</span> Add new <code>ObjectArray</code> type to Mesche</h3>
+<div class="outline-text-3">
+</div>
+</div>
 <div id="outline-container-create-entity-record-to-store-id" class="outline-3">
-<h3 id="create-entity-record-to-store-id"><span class="todo TODO">TODO</span> Create <code>entity</code> record to store <code>id</code></h3>
+<h3 id="create-entity-record-to-store-id"><span class="done DONE">DONE</span> Create <code>entity</code> record to store <code>id</code></h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-create-system-record-to-hold-system-definitions-like-the-update-function" class="outline-3">
-<h3 id="create-system-record-to-hold-system-definitions-like-the-update-function"><span class="todo TODO">TODO</span> Create <code>system</code> record to hold system definitions (like the <code>update</code> function)</h3>
+<h3 id="create-system-record-to-hold-system-definitions-like-the-update-function"><span class="done DONE">DONE</span> Create <code>system</code> record to hold system definitions (like the <code>update</code> function)</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-create-physical-component-to-hold-position-size-and-other-physics-attributes" class="outline-3">
-<h3 id="create-physical-component-to-hold-position-size-and-other-physics-attributes"><span class="todo TODO">TODO</span> Create <code>physical</code> component to hold position, size, and other physics attributes</h3>
+<h3 id="create-physical-component-to-hold-position-size-and-other-physics-attributes"><span class="done DONE">DONE</span> Create <code>physical</code> component to hold position, size, and other physics attributes</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-create-renderable-component-for-sprite-rendering" class="outline-3">
-<h3 id="create-renderable-component-for-sprite-rendering"><span class="todo TODO">TODO</span> Create <code>renderable</code> component for sprite rendering</h3>
+<h3 id="create-renderable-component-for-sprite-rendering"><span class="done DONE">DONE</span> Create <code>renderable</code> component for sprite rendering</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-create-renderable-system-to-draw-all-renderable-components" class="outline-3">
-<h3 id="create-renderable-system-to-draw-all-renderable-components"><span class="todo TODO">TODO</span> Create <code>renderable-system</code> to draw all <code>renderable</code> components</h3>
+<h3 id="create-renderable-system-to-draw-all-renderable-components"><span class="done DONE">DONE</span> Create <code>renderable-system</code> to draw all <code>renderable</code> components</h3>
+<div class="outline-text-3">
+</div>
 </div>
 </div>
 
 <div id="outline-container-notes" class="outline-2">
 <h2 id="notes">Notes</h2>
+<div class="outline-text-2">
+<p>
+The code for this stream can be found here:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://github.com/FluxHarmonic/crash-the-stack/commit/76654ccb519922381c280eb1ab6ba92447e41768">https://github.com/FluxHarmonic/crash-the-stack/commit/76654ccb519922381c280eb1ab6ba92447e41768</a></li>
+<li><a href="https://github.com/mesche-lang/compiler/commit/f4bdb2d00db1cfdecc572c7a39dc704926d88e28">https://github.com/mesche-lang/compiler/commit/f4bdb2d00db1cfdecc572c7a39dc704926d88e28</a></li>
+</ul>
+</div>
 </div>
 
 <div id="outline-container-next-steps" class="outline-2">
