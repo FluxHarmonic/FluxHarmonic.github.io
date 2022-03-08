@@ -17,8 +17,8 @@
     <link></link>
     <description><![CDATA[]]></description>
     <language>en</language>
-    <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Thu, 03 Mar 2022 17:17:12 +0000</lastBuildDate>
+    <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+    <lastBuildDate>Tue, 08 Mar 2022 12:05:21 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -26,6 +26,90 @@
       <link></link>
     </image>
 
+    
+    <item>
+      <title>Building an Entity Component System</title>
+      <link></link>
+      <author>author@mail.com (Blog Author)</author>
+      <guid isPermaLink="false"></guid>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>
+<b>Today's goal:</b> Build the foundation of an "Entity Component System" for the game engine!
+</p>
+
+<div id="outline-container-updates" class="outline-2">
+<h2 id="updates">Updates</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>Texture rendering is now working!</li>
+<li>Reorganized and renamed code in the game engine</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-developing-a-component-based-engine" class="outline-2">
+<h2 id="developing-a-component-based-engine">Developing a component-based engine</h2>
+<div class="outline-text-2">
+<p>
+Today we'll be sketching out the initial design of an <a href="https://en.wikipedia.org/wiki/Entity_component_system">Entity Component System</a> written in Mesche!
+</p>
+
+<p>
+This is a relatively common design in modern game engines which seeks to break down monolithic game object implementations into a more composable design:
+</p>
+
+<ul class="org-ul">
+<li>Entity: A game object comprised of behaviors split across components (really just an ID)</li>
+<li>Component: The data for an entity that a particular "system" understands</li>
+<li>System: The actual code that implements a behavior across a collection of one component type</li>
+</ul>
+
+<p>
+What's nice about this?
+</p>
+
+<ul class="org-ul">
+<li>Decoupling of game objects from behavior</li>
+<li>Systems can be executed at any time, even on different threads</li>
+<li>Enables much better performance when component data is organized appropriately (data-oriented design)</li>
+</ul>
+
+<p>
+We're going to start with a simple design using the language features we have so far in Mesche and then improve it as we go!
+</p>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
+</div>
+<div id="outline-container-create-entity-record-to-store-id" class="outline-3">
+<h3 id="create-entity-record-to-store-id"><span class="todo TODO">TODO</span> Create <code>entity</code> record to store <code>id</code></h3>
+</div>
+<div id="outline-container-create-system-record-to-hold-system-definitions-like-the-update-function" class="outline-3">
+<h3 id="create-system-record-to-hold-system-definitions-like-the-update-function"><span class="todo TODO">TODO</span> Create <code>system</code> record to hold system definitions (like the <code>update</code> function)</h3>
+</div>
+<div id="outline-container-create-physical-component-to-hold-position-size-and-other-physics-attributes" class="outline-3">
+<h3 id="create-physical-component-to-hold-position-size-and-other-physics-attributes"><span class="todo TODO">TODO</span> Create <code>physical</code> component to hold position, size, and other physics attributes</h3>
+</div>
+<div id="outline-container-create-renderable-component-for-sprite-rendering" class="outline-3">
+<h3 id="create-renderable-component-for-sprite-rendering"><span class="todo TODO">TODO</span> Create <code>renderable</code> component for sprite rendering</h3>
+</div>
+<div id="outline-container-create-renderable-system-to-draw-all-renderable-components" class="outline-3">
+<h3 id="create-renderable-system-to-draw-all-renderable-components"><span class="todo TODO">TODO</span> Create <code>renderable-system</code> to draw all <code>renderable</code> components</h3>
+</div>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+</div>
+
+<div id="outline-container-next-steps" class="outline-2">
+<h2 id="next-steps">Next Steps</h2>
+</div>
+]]></description>
+    </item>
     
     <item>
       <title>Creating a New Game Project!</title>
