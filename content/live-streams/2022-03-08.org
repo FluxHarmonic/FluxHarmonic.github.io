@@ -4,6 +4,8 @@
 
 *Today's goal:* Build the foundation of an "Entity Component System" for the game engine!
 
+[[yt:6Hv4S8wLYi0][Watch the recording on YouTube!]]
+
 * Updates
 
 - Texture rendering is now working!
@@ -28,13 +30,42 @@ What's nice about this?
 We're going to start with a simple design using the language features we have so far in Mesche and then improve it as we go!
 
 * Tasks
-
-** TODO Create =entity= record to store =id=
-** TODO Create =system= record to hold system definitions (like the =update= function)
-** TODO Create =physical= component to hold position, size, and other physics attributes
-** TODO Create =renderable= component for sprite rendering
-** TODO Create =renderable-system= to draw all =renderable= components
+** DONE Add new =ObjectArray= type to Mesche
+CLOSED: [2022-03-08 Tue 17:35]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-08 Tue 17:35]
+:END:
+** DONE Create =entity= record to store =id=
+CLOSED: [2022-03-08 Tue 17:40]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-08 Tue 17:40]
+:END:
+** DONE Create =system= record to hold system definitions (like the =update= function)
+CLOSED: [2022-03-08 Tue 17:41]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-08 Tue 17:41]
+:END:
+** DONE Create =physical= component to hold position, size, and other physics attributes
+CLOSED: [2022-03-08 Tue 19:14]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-08 Tue 19:14]
+:END:
+** DONE Create =renderable= component for sprite rendering
+CLOSED: [2022-03-08 Tue 19:14]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-08 Tue 19:14]
+:END:
+** DONE Create =renderable-system= to draw all =renderable= components
+CLOSED: [2022-03-08 Tue 19:14]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-08 Tue 19:14]
+:END:
 
 * Notes
+
+The code for this stream can be found here:
+
+- https://github.com/FluxHarmonic/crash-the-stack/commit/76654ccb519922381c280eb1ab6ba92447e41768
+- https://github.com/mesche-lang/compiler/commit/f4bdb2d00db1cfdecc572c7a39dc704926d88e28
 
 * Next Steps
