@@ -1,0 +1,49 @@
+#+title: Setting Up the Game
+#+date: [2022-03-10]
+#+slug: 2022-03-10
+
+*Today's goal:* Write code that initializes a predefined game board and possibly make it interactive!
+
+[[yt:ZDDxWRYN6wk][Watch the recording on YouTube!]]
+
+* Updates
+
+- Fixed some issues found in the last stream
+  - =if= expressions can now emit their =else= expression
+  - Recursive function and =let= calls were not comparing the function name correctly
+  - Lambdas generated from =let= expressions weren't capturing locals!
+- Also fixed a number of issues with garbage collection which caused crashes
+- We'll postpone the ECS implementation for now to make progress
+
+* Let's make this look like a game!
+
+Today we're going to write the first part of the logic for Crash The Stack: putting organized tiles on the screen so that they can be clicked!
+
+We're going to replicate a couple of basic game boards that I created for the previous incarnation of this game.  We'll do this in two phases:
+
+- Make it possible to render game tiles in layers
+- Enable describing the game board in code using a slightly more convenient syntax
+
+Tiles on the board have their own inherent coordinate system:
+
+- Middle of the screen is =(0.0, 0.0)=
+- Full tile positions are whole numbers like =(3.0, 2.0)=
+- Half tile positions are half numbers like =(-1.5, 2.5)=
+
+Each higher layer also has an inherent pixel offset to render correctly!
+
+Stack file examples:
+
+- https://github.com/substratic/crash-the-stack/blob/master/dist/assets/stacks/test/small.scm
+- https://github.com/substratic/crash-the-stack/blob/master/dist/assets/stacks/test/gnome-easy.scm
+
+* Tasks
+
+** TODO Manually create a simple game board with layers in code
+** TODO Create a game board using a data specification written in lists
+** TODO Add basic input handling logic so that tiles can be clicked
+** TODO Try to set up render scaling to make the tiles scale to window size
+
+* Notes
+
+* Next Steps
