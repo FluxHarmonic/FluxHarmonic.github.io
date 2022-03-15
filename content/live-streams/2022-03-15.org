@@ -1,0 +1,37 @@
+#+title: Rewriting the Game Build with Mesche
+#+date: [2022-03-15]
+#+slug: 2022-03-15
+
+*Today's goal:* Convert the build for Crash The Stack and Substratic to use the new =mesche build= command!
+
+[[yt:neK34BxJz3g][Watch the recording on YouTube!]]
+
+* Updates
+
+- Fixed /a ton/ of issues in the compiler and VM by writing more code in the language
+- Added a lot of useful core APIs in the =mesche fs=, =mesche list=, =mesche string= and =mesche process= modules
+- =mesche build= is ready to be used...
+
+* Building Projects with Mesche
+
+I spent a lot of time this weekend fleshing out the Mesche language and libraries to accomplish a very important goal: the ability to build an entire C and Mesche project using my own build tool and project description format.
+
+Why?  To make it much easier to write and ship projects using Mesche!
+
+Building this tool allows me to simplify the approach I use to build my projects consistently across multiple platforms and also handle things like dependency management, release configurations, and packaging apps for distribution.
+
+Today I'll show you how it works by converting the build of Crash The Stack and the Substratic library to using =mesche build=.
+
+* Tasks
+
+** TODO Create a new =project.msc= file for Crash The Stack
+** TODO Create a new =project.msc= file for the embedded Substratic library
+** TODO Add a function to make it easy to clone a Git repository
+** TODO Add a function for downloading a file (musl-c) from the web using =wget=
+** TODO Add a function for unpacking a zip file using =unzip=
+** TODO Add a way to switch between =gcc= and =musl-c=
+** TODO Delete the old build.sh file!
+
+* Notes
+
+* Next Steps
