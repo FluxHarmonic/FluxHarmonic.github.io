@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Tue, 15 Mar 2022 12:36:05 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Mar 2022 14:47:20 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -186,7 +186,9 @@ Stack file examples:
 <div class="outline-text-2" id="text-tasks">
 </div>
 <div id="outline-container-manually-create-a-simple-game-board-with-layers-in-code" class="outline-3">
-<h3 id="manually-create-a-simple-game-board-with-layers-in-code"><span class="todo TODO">TODO</span> Manually create a simple game board with layers in code</h3>
+<h3 id="manually-create-a-simple-game-board-with-layers-in-code"><span class="done DONE">DONE</span> Manually create a simple game board with layers in code</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-create-a-game-board-using-a-data-specification-written-in-lists" class="outline-3">
 <h3 id="create-a-game-board-using-a-data-specification-written-in-lists"><span class="todo TODO">TODO</span> Create a game board using a data specification written in lists</h3>
