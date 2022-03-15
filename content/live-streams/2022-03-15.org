@@ -22,16 +22,45 @@ Building this tool allows me to simplify the approach I use to build my projects
 
 Today I'll show you how it works by converting the build of Crash The Stack and the Substratic library to using =mesche build=.
 
+If you want to check out the code:
+- https://github.com/mesche-lang/cli
+- https://github.com/mesche-lang/cli/blob/df63638008a20f2859026f2c16709f72e1d56d3e/modules/mesche/build.msc
+
 * Tasks
 
-** TODO Create a new =project.msc= file for Crash The Stack
-** TODO Create a new =project.msc= file for the embedded Substratic library
-** TODO Add a function to make it easy to clone a Git repository
-** TODO Add a function for downloading a file (musl-c) from the web using =wget=
-** TODO Add a function for unpacking a zip file using =unzip=
+** DONE Create a new =project.msc= file for Crash The Stack
+CLOSED: [2022-03-15 Tue 18:13]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-15 Tue 18:13]
+:END:
+** DONE Create a new =project.msc= file for the embedded Substratic library
+CLOSED: [2022-03-15 Tue 18:13]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-15 Tue 18:13]
+:END:
+** DONE Add a function to make it easy to clone a Git repository
+CLOSED: [2022-03-15 Tue 18:21]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-15 Tue 18:21]
+:END:
+** DONE Add a function for downloading a file (musl-c) from the web using =wget=
+CLOSED: [2022-03-15 Tue 18:31]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-15 Tue 18:31]
+:END:
+** DONE Add a function for unpacking a .tar.gz file using =tar=
+CLOSED: [2022-03-15 Tue 18:33]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-15 Tue 18:33]
+:END:
 ** TODO Add a way to switch between =gcc= and =musl-c=
 ** TODO Delete the old build.sh file!
 
 * Notes
+
+Check out the commits we made in this stream:
+
+- https://github.com/mesche-lang/cli/commit/bed3caa6d81840d7f00a369c2e5ffb7cffaa4e36
+- https://github.com/FluxHarmonic/crash-the-stack/commit/8070d3a28d3b4965096ea331515a5d11e136089c
 
 * Next Steps
