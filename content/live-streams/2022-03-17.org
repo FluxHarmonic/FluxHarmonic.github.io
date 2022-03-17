@@ -1,0 +1,30 @@
+#+title: Creating Sprites for the Game Board
+#+date: [2022-03-17]
+#+slug: 2022-03-17
+
+*Today's goal:* Create 5-10 basic tile face sprites for the game board and get them displaying in a randomized way!
+
+[[yt:cc_AlbreJSM][Watch the recording on YouTube!]]
+
+* Updates
+
+- Made a lot of progress improving =mesche build= but not ready to show yet!
+- Polished up the tile rendering for Crash The Stack since last time
+
+* Let's make this look more like a game!
+
+Today we're going to do a little bit of "poor man's" game graphics to produce some basic tile faces we can use for our "hacker Mahjongg" game Crash The Stack.
+
+After we get the basic tile faces sketched out, we'll write up the code necessary to display these tiles randomly on the simple game board that we crafted last week.
+
+If we have time, we may also start writing the code to check whether a tile at a particular position is playable.  Perhaps by next week we'll have a basic playable build of the game!
+
+* Tasks
+
+** TODO Draw up some basic tile sprites in The GIMP
+** TODO Write code to display those tiles randomly
+** TODO Start writing the code necessary to check whether tiles are playable or not
+
+* Notes
+
+* Next Steps
