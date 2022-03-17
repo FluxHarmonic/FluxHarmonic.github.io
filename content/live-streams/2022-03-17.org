@@ -21,10 +21,24 @@ If we have time, we may also start writing the code to check whether a tile at a
 
 * Tasks
 
-** TODO Draw up some basic tile sprites in The GIMP
+** DONE Draw up some basic tile sprites in The GIMP
+CLOSED: [2022-03-17 Thu 19:02]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-17 Thu 19:02]
+:END:
+** DONE Update the texture renderer to support sprite sheets
+CLOSED: [2022-03-17 Thu 19:02]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-17 Thu 19:02]
+:END:
 ** TODO Write code to display those tiles randomly
 ** TODO Start writing the code necessary to check whether tiles are playable or not
 
 * Notes
+
+Check out the commits for this stream here:
+
+- https://github.com/FluxHarmonic/crash-the-stack/commit/1fe25d68e579b7d8957c275160a1621a12d6658a
+- https://github.com/mesche-lang/compiler/commit/cbcf142f5760a365614003a2c1c5ab20277ddd7f
 
 * Next Steps
