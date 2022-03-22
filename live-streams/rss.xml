@@ -17,8 +17,8 @@
     <link></link>
     <description><![CDATA[]]></description>
     <language>en</language>
-    <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Thu, 17 Mar 2022 17:04:39 +0000</lastBuildDate>
+    <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
+    <lastBuildDate>Tue, 22 Mar 2022 15:21:43 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -26,6 +26,31 @@
       <link></link>
     </image>
 
+    
+    <item>
+      <title>Matching Tiles for Fun and Profit</title>
+      <link></link>
+      <author>author@mail.com (Blog Author)</author>
+      <guid isPermaLink="false"></guid>
+      <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+<div id="outline-container-updates" class="outline-2">
+<h2 id="updates">Updates</h2>
+</div>
+
+<div id="outline-container-let-s-add-some-game-logic" class="outline-2">
+<h2 id="let-s-add-some-game-logic">Let's add some game logic!</h2>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+</div>
+]]></description>
+    </item>
     
     <item>
       <title>Creating Sprites for the Game Board</title>
