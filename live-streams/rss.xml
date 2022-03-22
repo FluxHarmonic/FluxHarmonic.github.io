@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Tue, 22 Mar 2022 15:21:43 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Mar 2022 18:03:01 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -33,21 +33,64 @@
       <author>author@mail.com (Blog Author)</author>
       <guid isPermaLink="false"></guid>
       <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
-      <description><![CDATA[
+      <description><![CDATA[<p>
+<b>Today's goal:</b> Implement basic game logic for board tile placement and matching!
+</p>
+
+<p>
+<div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Hm9vwLWfFh4" allowfullscreen></iframe> </div>
+</p>
+
 <div id="outline-container-updates" class="outline-2">
 <h2 id="updates">Updates</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>Overhauled the <code>mesche build</code> design to make it easier to manage</li>
+<li>Split out the substratic library into a separate repo: <a href="https://github.com/substratic/engine">https://github.com/substratic/engine</a></li>
+<li>Added support for record field setters</li>
+<li>Added support for <code>:rest</code> arguments</li>
+</ul>
+</div>
 </div>
 
 <div id="outline-container-let-s-add-some-game-logic" class="outline-2">
 <h2 id="let-s-add-some-game-logic">Let's add some game logic!</h2>
+<div class="outline-text-2">
+<p>
+The rules for playable tiles are:
+</p>
+
+<ul class="org-ul">
+<li>One side on the horizontal axis must not be adjacent to another tile</li>
+<li>There must not be another tile directly on top of it (the layer above)</li>
+</ul>
+</div>
 </div>
 
 <div id="outline-container-tasks" class="outline-2">
 <h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
 </div>
+<div id="outline-container-get-randomized-tile-face-placement-working" class="outline-3">
+<h3 id="get-randomized-tile-face-placement-working"><span class="done DONE">DONE</span> Get randomized tile face placement working</h3>
+<div class="outline-text-3">
+</div>
+</div>
+</div>
+
 
 <div id="outline-container-notes" class="outline-2">
 <h2 id="notes">Notes</h2>
+<div class="outline-text-2">
+<p>
+The code for this stream can be found here:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://github.com/FluxHarmonic/crash-the-stack/commit/2b5379a1dd67cc068d607fde28f695821fed8008">https://github.com/FluxHarmonic/crash-the-stack/commit/2b5379a1dd67cc068d607fde28f695821fed8008</a></li>
+<li><a href="https://github.com/mesche-lang/compiler/commit/6c07a90ed2aa93e13c037afbcc5fb91fda190b36">https://github.com/mesche-lang/compiler/commit/6c07a90ed2aa93e13c037afbcc5fb91fda190b36</a></li>
+</ul>
+</div>
 </div>
 ]]></description>
     </item>
