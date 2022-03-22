@@ -2,10 +2,36 @@
 #+date: [2022-03-22]
 #+slug: 2022-03-22
 
+*Today's goal:* Implement basic game logic for board tile placement and matching!
+
+[[yt:Hm9vwLWfFh4][Watch the recording on YouTube!]]
+
 * Updates
+
+- Overhauled the =mesche build= design to make it easier to manage
+- Split out the substratic library into a separate repo: https://github.com/substratic/engine
+- Added support for record field setters
+- Added support for =:rest= arguments
 
 * Let's add some game logic!
 
+The rules for playable tiles are:
+
+- One side on the horizontal axis must not be adjacent to another tile
+- There must not be another tile directly on top of it (the layer above)
+
 * Tasks
 
+** DONE Get randomized tile face placement working
+CLOSED: [2022-03-22 Tue 19:16]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-22 Tue 19:16]
+:END:
+
+
 * Notes
+
+The code for this stream can be found here:
+
+- https://github.com/FluxHarmonic/crash-the-stack/commit/2b5379a1dd67cc068d607fde28f695821fed8008
+- https://github.com/mesche-lang/compiler/commit/6c07a90ed2aa93e13c037afbcc5fb91fda190b36
