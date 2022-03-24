@@ -23,9 +23,17 @@ The current builds there are old from the previous incarnation of the project!
 
 * Tasks
 
-** TODO Sync repos and clean up any mess I made from commits earlier today
+** DONE Sync repos and clean up any mess I made from commits earlier today
+CLOSED: [2022-03-24 Thu 17:28]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-24 Thu 17:28]
+:END:
+** DONE Verify that the new =pkg-config= command is working locally
+CLOSED: [2022-03-24 Thu 19:24]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-24 Thu 19:24]
+:END:
 ** TODO Download the latest build of Mesche CLI from CI
-** TODO Verify that the new =pkg-config= command is working locally
 ** TODO Use =download-mesche= CI task on GitHub Actions to install Mesche
 ** TODO Attempt to build a working distributable of the game that we can download from CI
 ** TODO Set up Butler and attempt to publish a Linux build of the game with it
