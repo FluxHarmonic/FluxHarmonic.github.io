@@ -17,8 +17,8 @@
     <link></link>
     <description><![CDATA[]]></description>
     <language>en</language>
-    <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Tue, 22 Mar 2022 18:03:01 +0000</lastBuildDate>
+    <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+    <lastBuildDate>Thu, 24 Mar 2022 14:54:27 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -26,6 +26,79 @@
       <link></link>
     </image>
 
+    
+    <item>
+      <title>Automatic Game Publishing on Itch.io</title>
+      <link></link>
+      <author>author@mail.com (Blog Author)</author>
+      <guid isPermaLink="false"></guid>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>
+<b>Today's goal:</b> Automatically publish new builds of Crash The Stack on Itch.io every time a commit is pushed to the repo!
+</p>
+
+<div id="outline-container-updates" class="outline-2">
+<h2 id="updates">Updates</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>Finished the first pass of <code>mesche build</code> design, updated all projects to use it</li>
+<li>Added new functionality for <code>mesche process</code></li>
+<li>Added new <code>mesche io</code> module</li>
+<li>Started working on porting Mesche to Windows</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-automating-game-publishing" class="outline-2">
+<h2 id="automating-game-publishing">Automating Game Publishing</h2>
+<div class="outline-text-2">
+<p>
+Today we're going to try to automate the publishing of our game project Crash The Stack on Itch.io using GitHub Actions and <code>mesche build</code>.
+</p>
+
+<p>
+Itch.io has a command line tool called Butler which makes this fairly easy: <a href="https://itch.io/docs/butler/">https://itch.io/docs/butler/</a>
+</p>
+
+<p>
+Here's the Itch.io page for the project: <a href="https://fluxharmonic.itch.io/crash-the-stack">https://fluxharmonic.itch.io/crash-the-stack</a>
+</p>
+
+<p>
+The current builds there are old from the previous incarnation of the project!
+</p>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
+</div>
+<div id="outline-container-sync-repos-and-clean-up-any-mess-i-made-from-commits-earlier-today" class="outline-3">
+<h3 id="sync-repos-and-clean-up-any-mess-i-made-from-commits-earlier-today"><span class="todo TODO">TODO</span> Sync repos and clean up any mess I made from commits earlier today</h3>
+</div>
+<div id="outline-container-download-the-latest-build-of-mesche-cli-from-ci" class="outline-3">
+<h3 id="download-the-latest-build-of-mesche-cli-from-ci"><span class="todo TODO">TODO</span> Download the latest build of Mesche CLI from CI</h3>
+</div>
+<div id="outline-container-verify-that-the-new-pkg-config-command-is-working-locally" class="outline-3">
+<h3 id="verify-that-the-new-pkg-config-command-is-working-locally"><span class="todo TODO">TODO</span> Verify that the new <code>pkg-config</code> command is working locally</h3>
+</div>
+<div id="outline-container-use-download-mesche-ci-task-on-github-actions-to-install-mesche" class="outline-3">
+<h3 id="use-download-mesche-ci-task-on-github-actions-to-install-mesche"><span class="todo TODO">TODO</span> Use <code>download-mesche</code> CI task on GitHub Actions to install Mesche</h3>
+</div>
+<div id="outline-container-attempt-to-build-a-working-distributable-of-the-game-that-we-can-download-from-ci" class="outline-3">
+<h3 id="attempt-to-build-a-working-distributable-of-the-game-that-we-can-download-from-ci"><span class="todo TODO">TODO</span> Attempt to build a working distributable of the game that we can download from CI</h3>
+</div>
+<div id="outline-container-set-up-butler-and-attempt-to-publish-a-linux-build-of-the-game-with-it" class="outline-3">
+<h3 id="set-up-butler-and-attempt-to-publish-a-linux-build-of-the-game-with-it"><span class="todo TODO">TODO</span> Set up Butler and attempt to publish a Linux build of the game with it</h3>
+</div>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+</div>
+]]></description>
+    </item>
     
     <item>
       <title>Matching Tiles for Fun and Profit</title>
