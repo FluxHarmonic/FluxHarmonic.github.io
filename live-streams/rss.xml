@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Thu, 24 Mar 2022 14:54:27 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Mar 2022 17:33:02 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -75,13 +75,17 @@ The current builds there are old from the previous incarnation of the project!
 <div class="outline-text-2" id="text-tasks">
 </div>
 <div id="outline-container-sync-repos-and-clean-up-any-mess-i-made-from-commits-earlier-today" class="outline-3">
-<h3 id="sync-repos-and-clean-up-any-mess-i-made-from-commits-earlier-today"><span class="todo TODO">TODO</span> Sync repos and clean up any mess I made from commits earlier today</h3>
+<h3 id="sync-repos-and-clean-up-any-mess-i-made-from-commits-earlier-today"><span class="done DONE">DONE</span> Sync repos and clean up any mess I made from commits earlier today</h3>
+<div class="outline-text-3">
+</div>
+</div>
+<div id="outline-container-verify-that-the-new-pkg-config-command-is-working-locally" class="outline-3">
+<h3 id="verify-that-the-new-pkg-config-command-is-working-locally"><span class="done DONE">DONE</span> Verify that the new <code>pkg-config</code> command is working locally</h3>
+<div class="outline-text-3">
+</div>
 </div>
 <div id="outline-container-download-the-latest-build-of-mesche-cli-from-ci" class="outline-3">
 <h3 id="download-the-latest-build-of-mesche-cli-from-ci"><span class="todo TODO">TODO</span> Download the latest build of Mesche CLI from CI</h3>
-</div>
-<div id="outline-container-verify-that-the-new-pkg-config-command-is-working-locally" class="outline-3">
-<h3 id="verify-that-the-new-pkg-config-command-is-working-locally"><span class="todo TODO">TODO</span> Verify that the new <code>pkg-config</code> command is working locally</h3>
 </div>
 <div id="outline-container-use-download-mesche-ci-task-on-github-actions-to-install-mesche" class="outline-3">
 <h3 id="use-download-mesche-ci-task-on-github-actions-to-install-mesche"><span class="todo TODO">TODO</span> Use <code>download-mesche</code> CI task on GitHub Actions to install Mesche</h3>
