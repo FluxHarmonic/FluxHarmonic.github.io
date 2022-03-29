@@ -29,10 +29,32 @@ For the last one, we're trying to target a low resolution (think retro games) wi
 
 * Tasks
 
-** TODO Write a function for calculating the pixel width of a string using a specific font
-** TODO Write a function for calculating the FPS, truncated to 3 decimal points
-** TODO Render the FPS counter to the top right of the window
-** TODO Render some text elsewhere on the screen
+** DONE Write a function for calculating the pixel width of a string using a specific font
+CLOSED: [2022-03-29 Tue 18:59]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-29 Tue 18:59]
+:END:
+** DONE Write a function for calculating the FPS, truncated to 3 decimal points
+CLOSED: [2022-03-29 Tue 18:59]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-29 Tue 18:59]
+:END:
+** DONE Render the FPS counter to the top right of the window
+CLOSED: [2022-03-29 Tue 18:59]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-29 Tue 18:59]
+:END:
+** DONE Render some text elsewhere on the screen
+CLOSED: [2022-03-29 Tue 19:02]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-29 Tue 19:02]
+:END:
 ** TODO Write some code to calculate the optimal viewport size and view matrix based on a target screen resolution
 
 * Notes
+
+Code from this stream:
+
+- https://github.com/FluxHarmonic/crash-the-stack/commit/eba53dc0f966922751638a6db294ac0738ca6c2b
+- https://github.com/mesche-lang/compiler/commit/e36d91bd004c46ec8a7c559a26236417722a8236
+- https://github.com/substratic/engine/commit/696709226b4c3472fd7d68a47740046ce785a8e6
