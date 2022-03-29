@@ -1,0 +1,38 @@
+#+title: Preparation for Ludum Dare 50
+#+date: [2022-03-29]
+#+slug: 2022-03-29
+
+*Today's goal:* Add some useful features to the Substratic library in preparation for Ludum Dare!
+
+[[yt:0oMPDqPJCXM][Watch the recording on YouTube!]]
+
+* Updates
+
+- Didn't have much time since last stream!
+- I have been thinking a lot about how to improve this channel
+
+* Let's polish a few things before Ludum Dare
+
+This weekend is Ludum Dare 50!  I'll be participating in the 48 hour "Compo" event.  Here are the rules:
+
+https://ldjam.com/events/ludum-dare/rules
+
+We'll talk about how I want to approach the competition in the next stream!
+
+There are a few things I'd like to add to the Substratic library before we head into Ludum Dare 50 this weekend!
+
+- Aligned text rendering (center- and right-alignment)
+- Displaying an FPS counter (how fast are we, really?)
+- Automatic screen scale calculation (to render a pixellated game screen to a consistent output size)
+
+For the last one, we're trying to target a low resolution (think retro games) within a specific viewport size, like *640x360* (16:9).  Our "logical" resolution should be scaled up to the real window size as best as possible (and centered) while still keeping size within a power of 2.
+
+* Tasks
+
+** TODO Write a function for calculating the pixel width of a string using a specific font
+** TODO Write a function for calculating the FPS, truncated to 3 decimal points
+** TODO Render the FPS counter to the top right of the window
+** TODO Render some text elsewhere on the screen
+** TODO Write some code to calculate the optimal viewport size and view matrix based on a target screen resolution
+
+* Notes
