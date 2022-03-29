@@ -17,8 +17,8 @@
     <link></link>
     <description><![CDATA[]]></description>
     <language>en</language>
-    <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Thu, 24 Mar 2022 17:33:02 +0000</lastBuildDate>
+    <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
+    <lastBuildDate>Tue, 29 Mar 2022 13:47:34 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -26,6 +26,88 @@
       <link></link>
     </image>
 
+    
+    <item>
+      <title>Preparation for Ludum Dare 50</title>
+      <link></link>
+      <author>author@mail.com (Blog Author)</author>
+      <guid isPermaLink="false"></guid>
+      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>
+<b>Today's goal:</b> Add some useful features to the Substratic library in preparation for Ludum Dare!
+</p>
+
+<p>
+<div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0oMPDqPJCXM" allowfullscreen></iframe> </div>
+</p>
+
+<div id="outline-container-updates" class="outline-2">
+<h2 id="updates">Updates</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>Didn't have much time since last stream!</li>
+<li>I have been thinking a lot about how to improve this channel</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-let-s-polish-a-few-things-before-ludum-dare" class="outline-2">
+<h2 id="let-s-polish-a-few-things-before-ludum-dare">Let's polish a few things before Ludum Dare</h2>
+<div class="outline-text-2">
+<p>
+This weekend is Ludum Dare 50!  I'll be participating in the 48 hour "Compo" event.  Here are the rules:
+</p>
+
+<p>
+<a href="https://ldjam.com/events/ludum-dare/rules">https://ldjam.com/events/ludum-dare/rules</a>
+</p>
+
+<p>
+We'll talk about how I want to approach the competition in the next stream!
+</p>
+
+<p>
+There are a few things I'd like to add to the Substratic library before we head into Ludum Dare 50 this weekend!
+</p>
+
+<ul class="org-ul">
+<li>Aligned text rendering (center- and right-alignment)</li>
+<li>Displaying an FPS counter (how fast are we, really?)</li>
+<li>Automatic screen scale calculation (to render a pixellated game screen to a consistent output size)</li>
+</ul>
+
+<p>
+For the last one, we're trying to target a low resolution (think retro games) within a specific viewport size, like <b>640x360</b> (16:9).  Our "logical" resolution should be scaled up to the real window size as best as possible (and centered) while still keeping size within a power of 2.
+</p>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
+</div>
+<div id="outline-container-write-a-function-for-calculating-the-pixel-width-of-a-string-using-a-specific-font" class="outline-3">
+<h3 id="write-a-function-for-calculating-the-pixel-width-of-a-string-using-a-specific-font"><span class="todo TODO">TODO</span> Write a function for calculating the pixel width of a string using a specific font</h3>
+</div>
+<div id="outline-container-write-a-function-for-calculating-the-fps-truncated-to-3-decimal-points" class="outline-3">
+<h3 id="write-a-function-for-calculating-the-fps-truncated-to-3-decimal-points"><span class="todo TODO">TODO</span> Write a function for calculating the FPS, truncated to 3 decimal points</h3>
+</div>
+<div id="outline-container-render-the-fps-counter-to-the-top-right-of-the-window" class="outline-3">
+<h3 id="render-the-fps-counter-to-the-top-right-of-the-window"><span class="todo TODO">TODO</span> Render the FPS counter to the top right of the window</h3>
+</div>
+<div id="outline-container-render-some-text-elsewhere-on-the-screen" class="outline-3">
+<h3 id="render-some-text-elsewhere-on-the-screen"><span class="todo TODO">TODO</span> Render some text elsewhere on the screen</h3>
+</div>
+<div id="outline-container-write-some-code-to-calculate-the-optimal-viewport-size-and-view-matrix-based-on-a-target-screen-resolution" class="outline-3">
+<h3 id="write-some-code-to-calculate-the-optimal-viewport-size-and-view-matrix-based-on-a-target-screen-resolution"><span class="todo TODO">TODO</span> Write some code to calculate the optimal viewport size and view matrix based on a target screen resolution</h3>
+</div>
+</div>
+
+<div id="outline-container-notes" class="outline-2">
+<h2 id="notes">Notes</h2>
+</div>
+]]></description>
+    </item>
     
     <item>
       <title>Automatic Game Publishing on Itch.io</title>
