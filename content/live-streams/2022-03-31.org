@@ -1,0 +1,66 @@
+#+title: Handling User Input Events
+#+date: [2022-03-31]
+#+slug: 2022-03-31
+
+*Today's goal:* Add APIs to the Substratic Engine for accessing and handling user input events and then wire it up to Crash The Stack!
+
+[[yt:0oMPDqPJCXM][Watch the recording on YouTube!]]
+
+* Updates
+
+- Finished the game loop implementation and abstracted it
+- Also fixed the frames-per-second counter!
+
+* Ludum Dare 50
+
+Ludum Dare 50 starts this weekend!  It starts around 4AM in my time zone (EEST).
+
+Check out the countdown clock here: https://ldjam.com/
+
+Here's my plan:
+
+- Start streaming somewhere around 7AM my EEST, 4AM UTC, check your time zone here: https://time.is/compare/0700_30_Apr_2022_in_Athens/UTC/ET/PT
+- Come up with a really simple game concept on stream, something I can finish in 2 days
+- Set up the project and GitHub repo
+- Start hacking!
+
+My plan is to stream *most* of my work on the game, but I might have to hack off-stream at times if streaming isn't convenient.
+
+I'll try to stream for two 3-4 hour blocks on Saturday and Sunday if all goes well.  Make sure to have notifications turned on so that you can see when I go live!
+
+* What Kind of Game?
+
+The type of game we make ultimately depends on the final theme which will be announced when the competition starts.
+
+However, here are some constraints I will try to follow:
+
+- No screen scrolling, everything has to take place on one screen
+- No sounds or music (unless I can quickly wire up something) - make it part of the concept?
+- No sprite animations, but I might animate the motion of certain game elements
+- Stick with a simple, retro pixel art style because I am not an artist!
+
+*Why so many constraints?*
+
+Since the language and game engine are still /extremely/ new, I'm keeping things simple for myself so that I can potentially write a complete game with everything I already have.
+
+In future events, my ambitions will scale to whatever we've built by that time!
+
+* Handling User Input
+
+To finish up our preparation for Ludum Dare, today we're going to work on user input so that the user can actually do something in the game!
+
+Luckily GLFW provides APIs for handling input events, so we'll wrap that using the Substratic Engine to put together something that our game code can use.
+
+For now, the goal is to take user input events and create an event data structure so that a stream of events can be handled by the game.
+
+We might also have to provide an API for accessing the state of individual keys, but for now I'll avoid it.
+
+* Tasks
+
+** TODO Write some C APIs that wrap GLFW's keyboard and mouse input APIs
+** TODO Create event data structures for keyboard and mouse events
+** TODO Provide an API for accessing the input event queue
+** TODO Wire up basic mouse and keyboard events in Crash The Stack
+
+* Notes
+
