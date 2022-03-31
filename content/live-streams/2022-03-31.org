@@ -4,7 +4,7 @@
 
 *Today's goal:* Add APIs to the Substratic Engine for accessing and handling user input events and then wire it up to Crash The Stack!
 
-[[yt:0oMPDqPJCXM][Watch the recording on YouTube!]]
+[[yt:FqTHzmX42l0][Watch the recording on YouTube!]]
 
 * Updates
 
@@ -64,3 +64,14 @@ We might also have to provide an API for accessing the state of individual keys,
 
 * Notes
 
+Here are the commits for this stream:
+
+- https://github.com/FluxHarmonic/crash-the-stack/commit/2a9ebda6820cab76fcffdd8babd9dde2a33b9f82
+- https://github.com/substratic/engine/commit/b9f7aa3f1e23898d0da2f49388eba3c442fe12c7
+- https://github.com/mesche-lang/compiler/commit/4fe5c7166b3709f03de52c71d1d95d6ea0272c2d
+
+Links:
+
+- https://gafferongames.com/post/fix_your_timestep/
+- https://www.data-structures-in-practice.com/intrusive-linked-lists/
+- https://www.glfw.org/docs/latest/input_guide.html
