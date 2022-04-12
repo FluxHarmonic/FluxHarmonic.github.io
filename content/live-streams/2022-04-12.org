@@ -1,0 +1,40 @@
+#+title: From Competition to Finished Game
+#+date: [2022-04-12]
+#+slug: 2022-04-12
+
+*Today's goal:* Continue hacking on our Ludum Dare 50 entry to turn it into a complete game!
+
+[[yt:WMwQMml2wb8][Watch the recording on YouTube!]]
+
+* Updates
+
+- Had a great time streaming during Ludum Dare 50!
+- "Silent Sypher" entry: https://ldjam.com/events/ludum-dare/50/$278582
+
+*Mesche progress:*
+
+- Fixed a couple of nasty issues I found during the game competition:
+  - Crashes when the game ends due to a strange (yet simple) GC bug
+  - Issue with =if= expressions in some functions, wasn't jumping correctly!
+- Saving compiled bytecode to object files for the purpose of bundling with the executable
+
+* The Plan
+
+Ludum Dare was a lot of fun!  It's given me the motivation to polish this game to a completed state and "release" it by the end of the year.
+
+
+
+** High Level Tasks
+
+*** TODO Polish up the main menu
+*** TODO Add a few more types of enemies
+*** TODO Add powerups that are dropped randomly
+*** TODO More weapons for the player?
+*** TODO Starfield display in the background
+*** TODO Create sprite graphics for everything and polish them over time
+
+* Tasks
+
+** TODO Fork the =ld50-silent-sypher= code to a new repository
+** TODO Move task list from previous slide to a file in the game repo
+** TODO Take a look at the current state of the game
