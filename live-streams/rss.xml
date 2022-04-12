@@ -17,8 +17,8 @@
     <link></link>
     <description><![CDATA[]]></description>
     <language>en</language>
-    <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Thu, 31 Mar 2022 16:10:58 +0000</lastBuildDate>
+    <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
+    <lastBuildDate>Tue, 12 Apr 2022 12:57:32 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -26,6 +26,95 @@
       <link></link>
     </image>
 
+    
+    <item>
+      <title>From Competition to Finished Game</title>
+      <link></link>
+      <author>author@mail.com (Blog Author)</author>
+      <guid isPermaLink="false"></guid>
+      <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>
+<b>Today's goal:</b> Continue hacking on our Ludum Dare 50 entry to turn it into a complete game!
+</p>
+
+<p>
+<div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WMwQMml2wb8" allowfullscreen></iframe> </div>
+</p>
+
+<div id="outline-container-updates" class="outline-2">
+<h2 id="updates">Updates</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>Had a great time streaming during Ludum Dare 50!</li>
+<li>"Silent Sypher" entry: <a href="https://ldjam.com/events/ludum-dare/50/$278582">https://ldjam.com/events/ludum-dare/50/$278582</a></li>
+</ul>
+
+<p>
+<b>Mesche progress:</b>
+</p>
+
+<ul class="org-ul">
+<li>Fixed a couple of nasty issues I found during the game competition:
+<ul class="org-ul">
+<li>Crashes when the game ends due to a strange (yet simple) GC bug</li>
+<li>Issue with <code>if</code> expressions in some functions, wasn't jumping correctly!</li>
+</ul></li>
+<li>Saving compiled bytecode to object files for the purpose of bundling with the executable</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-the-plan" class="outline-2">
+<h2 id="the-plan">The Plan</h2>
+<div class="outline-text-2">
+<p>
+Ludum Dare was a lot of fun!  It's given me the motivation to polish this game to a completed state and "release" it by the end of the year.
+</p>
+</div>
+
+
+
+<div id="outline-container-high-level-tasks" class="outline-3">
+<h3 id="high-level-tasks">High Level Tasks</h3>
+<div class="outline-text-3" id="text-high-level-tasks">
+</div>
+<div id="outline-container-polish-up-the-main-menu" class="outline-4">
+<h4 id="polish-up-the-main-menu"><span class="todo TODO">TODO</span> Polish up the main menu</h4>
+</div>
+<div id="outline-container-add-a-few-more-types-of-enemies" class="outline-4">
+<h4 id="add-a-few-more-types-of-enemies"><span class="todo TODO">TODO</span> Add a few more types of enemies</h4>
+</div>
+<div id="outline-container-add-powerups-that-are-dropped-randomly" class="outline-4">
+<h4 id="add-powerups-that-are-dropped-randomly"><span class="todo TODO">TODO</span> Add powerups that are dropped randomly</h4>
+</div>
+<div id="outline-container-more-weapons-for-the-player" class="outline-4">
+<h4 id="more-weapons-for-the-player"><span class="todo TODO">TODO</span> More weapons for the player?</h4>
+</div>
+<div id="outline-container-starfield-display-in-the-background" class="outline-4">
+<h4 id="starfield-display-in-the-background"><span class="todo TODO">TODO</span> Starfield display in the background</h4>
+</div>
+<div id="outline-container-create-sprite-graphics-for-everything-and-polish-them-over-time" class="outline-4">
+<h4 id="create-sprite-graphics-for-everything-and-polish-them-over-time"><span class="todo TODO">TODO</span> Create sprite graphics for everything and polish them over time</h4>
+</div>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
+</div>
+<div id="outline-container-fork-the-ld50-silent-sypher-code-to-a-new-repository" class="outline-3">
+<h3 id="fork-the-ld50-silent-sypher-code-to-a-new-repository"><span class="todo TODO">TODO</span> Fork the <code>ld50-silent-sypher</code> code to a new repository</h3>
+</div>
+<div id="outline-container-move-task-list-from-previous-slide-to-a-file-in-the-game-repo" class="outline-3">
+<h3 id="move-task-list-from-previous-slide-to-a-file-in-the-game-repo"><span class="todo TODO">TODO</span> Move task list from previous slide to a file in the game repo</h3>
+</div>
+<div id="outline-container-take-a-look-at-the-current-state-of-the-game" class="outline-3">
+<h3 id="take-a-look-at-the-current-state-of-the-game"><span class="todo TODO">TODO</span> Take a look at the current state of the game</h3>
+</div>
+</div>
+]]></description>
+    </item>
     
     <item>
       <title>Handling User Input Events</title>
