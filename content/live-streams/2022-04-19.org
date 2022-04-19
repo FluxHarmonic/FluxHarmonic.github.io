@@ -1,0 +1,25 @@
+#+title: Producing Powerful Pickups
+#+date: [2022-04-19]
+#+slug: 2022-04-19
+
+*Today's goal:* Finish our implementation of pickups that apply effects and add a few interesting ones!
+
+[[yt:Q_FtGbI_AlI][Watch the recording on YouTube!]]
+
+* Updates
+
+- Nothing this week!
+
+* Finishing the Pickup Design
+
+Last stream we successfully implemented one important part of pickup objects: the application of "effects" when they are applied.
+
+We also started writing the logic for displaying a pickup in the game world but we now need to finish collision detection so that the player can pick them up when touched!
+
+* Tasks
+
+** TODO Finish collision detection for pickups
+** TODO Make sure that "effects" are applied correctly
+** TODO Add a few pickup effects based on the ideas we discussed on the last stream
+** TODO Add random pickup drops when killing enemies (maybe indicate when an enemy has one?)
+** TODO Destroy pickups when they're shot by the player? (or enemies?)
