@@ -16,10 +16,25 @@ Last stream we successfully implemented one important part of pickup objects: th
 
 We also started writing the logic for displaying a pickup in the game world but we now need to finish collision detection so that the player can pick them up when touched!
 
+Check out the code:
+https://github.com/FluxHarmonic/syphon-break
+
 * Tasks
 
-** TODO Finish collision detection for pickups
-** TODO Make sure that "effects" are applied correctly
-** TODO Add a few pickup effects based on the ideas we discussed on the last stream
+** DONE Finish collision detection for pickups
+CLOSED: [2022-04-19 Tue 18:08]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-04-19 Tue 18:08]
+:END:
+** DONE Make sure that "effects" are applied correctly
+CLOSED: [2022-04-19 Tue 18:08]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-04-19 Tue 18:08]
+:END:
+** DONE Add a few pickup effects based on the ideas we discussed on the last stream
+CLOSED: [2022-04-19 Tue 19:10]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-04-19 Tue 19:10]
+:END:
 ** TODO Add random pickup drops when killing enemies (maybe indicate when an enemy has one?)
 ** TODO Destroy pickups when they're shot by the player? (or enemies?)
