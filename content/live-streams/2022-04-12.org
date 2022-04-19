@@ -9,6 +9,7 @@
 * Updates
 
 - Had a great time streaming during Ludum Dare 50!
+- Code can be found at: https://github.com/FluxHarmonic/ld50-silent-syphon
 - "Silent Sypher" entry: https://ldjam.com/events/ludum-dare/50/$278582
 
 *Mesche progress:*
@@ -22,19 +23,49 @@
 
 Ludum Dare was a lot of fun!  It's given me the motivation to polish this game to a completed state and "release" it by the end of the year.
 
-
-
 ** High Level Tasks
 
-*** TODO Polish up the main menu
-*** TODO Add a few more types of enemies
 *** TODO Add powerups that are dropped randomly
+**** TODO Speed boost
+**** TODO Energy recharge speed boost
+**** TODO General energy boost
+**** TODO Syphon range extender
+**** TODO Screen bomb
+*** TODO Polish up the main menu
+**** TODO High Score screen
+**** TODO Controller setup (or at least a help screen)
+**** TODO Credits screen?
+*** TODO Add a few more types of enemies
+**** TODO Especially those with more elaborate movement patterns or groupings
+**** TODO Also add end-level bosses?
+**** TODO More complex hitboxes (multiple spheres)
+*** TODO Create sprite graphics for everything and polish them over time
+**** TODO Sprites for bullets
+**** TODO Sprites for player and enemies
+**** TODO HUD sprite design
+*** TODO Visual effects with shaders
+**** TODO Add a CRT shader
+**** TODO Particle effects with blur?
 *** TODO More weapons for the player?
 *** TODO Starfield display in the background
-*** TODO Create sprite graphics for everything and polish them over time
+*** TODO Create a more interesting overall goal
+**** TODO Maybe finding pieces to repair your ship to escape the region
 
 * Tasks
 
-** TODO Fork the =ld50-silent-sypher= code to a new repository
-** TODO Move task list from previous slide to a file in the game repo
-** TODO Take a look at the current state of the game
+** DONE Take a look at the current state of the game
+CLOSED: [2022-04-12 Tue 17:35]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-04-12 Tue 17:35]
+:END:
+** DONE Fork the =ld50-silent-sypher= code to a new repository
+CLOSED: [2022-04-12 Tue 17:48]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-04-12 Tue 17:48]
+:END:
+** DONE Move task list from previous slide to a file in the game repo
+CLOSED: [2022-04-12 Tue 17:56]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-04-12 Tue 17:56]
+:END:
+** TODO Implement the basics of powerup drops
