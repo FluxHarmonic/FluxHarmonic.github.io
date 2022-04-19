@@ -17,8 +17,8 @@
     <link></link>
     <description><![CDATA[]]></description>
     <language>en</language>
-    <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Tue, 12 Apr 2022 12:57:32 +0000</lastBuildDate>
+    <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+    <lastBuildDate>Tue, 19 Apr 2022 12:34:02 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -26,6 +26,65 @@
       <link></link>
     </image>
 
+    
+    <item>
+      <title>Producing Powerful Pickups</title>
+      <link></link>
+      <author>author@mail.com (Blog Author)</author>
+      <guid isPermaLink="false"></guid>
+      <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>
+<b>Today's goal:</b> Finish our implementation of pickups that apply effects and add a few interesting ones!
+</p>
+
+<p>
+<div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Q_FtGbI_AlI" allowfullscreen></iframe> </div>
+</p>
+
+<div id="outline-container-updates" class="outline-2">
+<h2 id="updates">Updates</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li>Nothing this week!</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-finishing-the-pickup-design" class="outline-2">
+<h2 id="finishing-the-pickup-design">Finishing the Pickup Design</h2>
+<div class="outline-text-2">
+<p>
+Last stream we successfully implemented one important part of pickup objects: the application of "effects" when they are applied.
+</p>
+
+<p>
+We also started writing the logic for displaying a pickup in the game world but we now need to finish collision detection so that the player can pick them up when touched!
+</p>
+</div>
+</div>
+
+<div id="outline-container-tasks" class="outline-2">
+<h2 id="tasks">Tasks</h2>
+<div class="outline-text-2" id="text-tasks">
+</div>
+<div id="outline-container-finish-collision-detection-for-pickups" class="outline-3">
+<h3 id="finish-collision-detection-for-pickups"><span class="todo TODO">TODO</span> Finish collision detection for pickups</h3>
+</div>
+<div id="outline-container-make-sure-that-effects-are-applied-correctly" class="outline-3">
+<h3 id="make-sure-that-effects-are-applied-correctly"><span class="todo TODO">TODO</span> Make sure that "effects" are applied correctly</h3>
+</div>
+<div id="outline-container-add-a-few-pickup-effects-based-on-the-ideas-we-discussed-on-the-last-stream" class="outline-3">
+<h3 id="add-a-few-pickup-effects-based-on-the-ideas-we-discussed-on-the-last-stream"><span class="todo TODO">TODO</span> Add a few pickup effects based on the ideas we discussed on the last stream</h3>
+</div>
+<div id="outline-container-add-random-pickup-drops-when-killing-enemies-maybe-indicate-when-an-enemy-has-one" class="outline-3">
+<h3 id="add-random-pickup-drops-when-killing-enemies-maybe-indicate-when-an-enemy-has-one"><span class="todo TODO">TODO</span> Add random pickup drops when killing enemies (maybe indicate when an enemy has one?)</h3>
+</div>
+<div id="outline-container-destroy-pickups-when-they-re-shot-by-the-player-or-enemies" class="outline-3">
+<h3 id="destroy-pickups-when-they-re-shot-by-the-player-or-enemies"><span class="todo TODO">TODO</span> Destroy pickups when they're shot by the player? (or enemies?)</h3>
+</div>
+</div>
+]]></description>
+    </item>
     
     <item>
       <title>From Competition to Finished Game</title>
