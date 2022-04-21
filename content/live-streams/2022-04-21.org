@@ -1,0 +1,41 @@
+#+title: Crafting Particle Effects
+#+date: [2022-04-21]
+#+slug: 2022-04-21
+
+*Today's goal:* Implement a basic particle system in Substratic Engine to enable cool effects in Syphon Break!
+
+[[yt:_C-6q8wweVo][Watch the recording on YouTube!]]
+
+* Implementing a Particle System
+
+Particle systems are a very common feature of game engines which make it possible to render cool effects like fire, smoke, explosions, and more.
+
+Today we're going to implement a basic particle system in C which will be exposed up through Mesche to enable the game to add configurable effects anywhere they're needed!
+
+The design:
+
+- A particle system can have one or more particle "sources"
+- A particle source has a generation geometry with origin relative to the system
+- A particle source's can be configured to control how its particles get generated
+- A particle system's origin can be changed every frame (to follow game objects, etc)
+
+Particle factors:
+
+- Number of active particles
+- Particle lifetime (min and max)
+- Particle velocity (min and max)
+- Particle oscillation on x or y axis
+- Particle fade
+
+What else?
+
+Check out the code:
+https://github.com/FluxHarmonic/syphon-break
+
+* Tasks
+
+** TODO Create the basic particle system design in C
+** TODO Make it possible to define particle sources
+** TODO Expose the particle system in Mesche through a simple API with parameters
+** TODO Add particle effects to a couple of the powerups we added last time
+** TODO Make sure particle systems are being garbage collected properly
