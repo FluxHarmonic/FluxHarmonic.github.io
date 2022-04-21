@@ -25,6 +25,7 @@ Particle factors:
 - Particle lifetime (min and max)
 - Particle velocity (min and max)
 - Particle oscillation on x or y axis
+- Particle color
 - Particle fade
 
 What else?
@@ -34,8 +35,24 @@ https://github.com/FluxHarmonic/syphon-break
 
 * Tasks
 
-** TODO Create the basic particle system design in C
-** TODO Make it possible to define particle sources
-** TODO Expose the particle system in Mesche through a simple API with parameters
-** TODO Add particle effects to a couple of the powerups we added last time
+** DONE Create the basic particle system design in C
+CLOSED: [2022-04-21 Thu 19:16]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-04-21 Thu 19:16]
+:END:
+** DONE Make it possible to define particle sources
+CLOSED: [2022-04-21 Thu 19:17]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-04-21 Thu 19:17]
+:END:
+** DONE Expose the particle system in Mesche through a simple API with parameters
+CLOSED: [2022-04-21 Thu 19:17]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-04-21 Thu 19:17]
+:END:
+** DONE Add particle effects to a couple of the powerups we added last time
+CLOSED: [2022-04-21 Thu 19:17]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-04-21 Thu 19:17]
+:END:
 ** TODO Make sure particle systems are being garbage collected properly
