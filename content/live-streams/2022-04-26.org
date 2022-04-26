@@ -1,0 +1,28 @@
+#+title: Polishing the Particle System
+#+date: [2022-04-26]
+#+slug: 2022-04-26
+
+*Today's goal:* Add new features to particle system implementation and implement a few more effects!
+
+[[yt:_C-6q8wweVo][Watch the recording on YouTube!]]
+
+* It works!  Now what?
+
+In the last stream, we implemented a particle system from scratch and verified it worked by adding a ship booster effect for the player ship in Syphon Break.
+
+Today we'll expand on that implementation to add a few more features and then use it to add specific effects to make the game look more interesting.
+
+Check out the code:
+https://github.com/FluxHarmonic/syphon-break
+https://github.com/substratic/engine
+https://github.com/mesche-lang/compiler
+
+* Tasks
+
+** TODO Fix the garbage collector crashing issue
+** TODO Add color interpolation
+** TODO Add opacity interpolation
+** TODO Add an explosion effect when a ship is destroyed
+** TODO Add a speed boost effect
+** TODO Add a burning effect for heatwaved enemies
+** TODO Add particle effects for enemy ship boosters?
