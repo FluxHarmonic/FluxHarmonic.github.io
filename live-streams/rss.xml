@@ -18,7 +18,7 @@
     <description><![CDATA[]]></description>
     <language>en</language>
     <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Thu, 28 Apr 2022 12:14:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Apr 2022 14:22:19 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -38,7 +38,7 @@
 </p>
 
 <p>
-<div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_C-6q8wweVo" allowfullscreen></iframe> </div>
+<div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/upBZ0I_20aw" allowfullscreen></iframe> </div>
 </p>
 
 <div id="outline-container-is-it-really-the-end" class="outline-2">
@@ -129,7 +129,7 @@ The links to all those can be found on <a href="https://fluxharmonic.com">fluxha
 </p>
 
 <p>
-<div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_C-6q8wweVo" allowfullscreen></iframe> </div>
+<div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VxJ6C0s7ku0" allowfullscreen></iframe> </div>
 </p>
 
 <div id="outline-container-it-works-now-what" class="outline-2">
@@ -157,25 +157,34 @@ Check out the code:
 <div class="outline-text-2" id="text-tasks">
 </div>
 <div id="outline-container-fix-the-garbage-collector-crashing-issue" class="outline-3">
-<h3 id="fix-the-garbage-collector-crashing-issue"><span class="todo TODO">TODO</span> Fix the garbage collector crashing issue</h3>
+<h3 id="fix-the-garbage-collector-crashing-issue"><span class="done DONE">DONE</span> Fix the garbage collector crashing issue</h3>
+<div class="outline-text-3">
 </div>
-<div id="outline-container-add-color-interpolation" class="outline-3">
-<h3 id="add-color-interpolation"><span class="todo TODO">TODO</span> Add color interpolation</h3>
 </div>
 <div id="outline-container-add-opacity-interpolation" class="outline-3">
-<h3 id="add-opacity-interpolation"><span class="todo TODO">TODO</span> Add opacity interpolation</h3>
+<h3 id="add-opacity-interpolation"><span class="done DONE">DONE</span> Add opacity interpolation</h3>
+<div class="outline-text-3">
+</div>
+</div>
+<div id="outline-container-add-a-speed-boost-effect" class="outline-3">
+<h3 id="add-a-speed-boost-effect"><span class="done DONE">DONE</span> Add a speed boost effect</h3>
+<div class="outline-text-3">
+</div>
+</div>
+<div id="outline-container-add-an-option-for-a-particle-system-to-always-have-particles-follow-origin" class="outline-3">
+<h3 id="add-an-option-for-a-particle-system-to-always-have-particles-follow-origin"><span class="todo TODO">TODO</span> Add an option for a particle system to always have particles follow origin</h3>
 </div>
 <div id="outline-container-add-an-explosion-effect-when-a-ship-is-destroyed" class="outline-3">
 <h3 id="add-an-explosion-effect-when-a-ship-is-destroyed"><span class="todo TODO">TODO</span> Add an explosion effect when a ship is destroyed</h3>
-</div>
-<div id="outline-container-add-a-speed-boost-effect" class="outline-3">
-<h3 id="add-a-speed-boost-effect"><span class="todo TODO">TODO</span> Add a speed boost effect</h3>
 </div>
 <div id="outline-container-add-a-burning-effect-for-heatwaved-enemies" class="outline-3">
 <h3 id="add-a-burning-effect-for-heatwaved-enemies"><span class="todo TODO">TODO</span> Add a burning effect for heatwaved enemies</h3>
 </div>
 <div id="outline-container-add-particle-effects-for-enemy-ship-boosters" class="outline-3">
 <h3 id="add-particle-effects-for-enemy-ship-boosters"><span class="todo TODO">TODO</span> Add particle effects for enemy ship boosters?</h3>
+</div>
+<div id="outline-container-add-color-interpolation" class="outline-3">
+<h3 id="add-color-interpolation"><span class="todo TODO">TODO</span> Add color interpolation</h3>
 </div>
 </div>
 ]]></description>
