@@ -17,8 +17,8 @@
     <link></link>
     <description><![CDATA[]]></description>
     <language>en</language>
-    <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
-    <lastBuildDate>Tue, 26 Apr 2022 11:44:04 +0000</lastBuildDate>
+    <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+    <lastBuildDate>Thu, 28 Apr 2022 12:14:31 +0000</lastBuildDate>
     <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
     <image>
       <url>media/img/8bitme.png</url>
@@ -26,6 +26,97 @@
       <link></link>
     </image>
 
+    
+    <item>
+      <title>The End, For Now</title>
+      <link></link>
+      <author>author@mail.com (Blog Author)</author>
+      <guid isPermaLink="false"></guid>
+      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>
+<b>Today's goal:</b> Talk about the future of this channel and how I want to approach things going forward.
+</p>
+
+<p>
+<div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_C-6q8wweVo" allowfullscreen></iframe> </div>
+</p>
+
+<div id="outline-container-is-it-really-the-end" class="outline-2">
+<h2 id="is-it-really-the-end">Is it really the end?</h2>
+<div class="outline-text-2">
+<p>
+After today, I'm putting the regular Flux Harmonic streams on hiatus.
+</p>
+
+<p>
+I've been thinking about this for a while now and it's becoming increasingly clear that live streams are really not the most effective way for me to document the journey of building the projects on this channel.
+</p>
+
+<p>
+The truth is, it's difficult to make live coding interesting or fun when you try to do as much as you can on stream!  A lot of behind-the-scenes work is needed to keep things moving.
+</p>
+
+<p>
+It's also very difficult to grow an audience by only live-streaming when you don't have time to do other things like shorter edits of stream recordings or making standalone videos.  It's also not easy to share stream recordings!
+</p>
+
+<p>
+Since the goal is to grow the audience of this channel and get people excited about the things I'm building, it's clear to me that I need to come up with a better approach.
+</p>
+</div>
+</div>
+
+<div id="outline-container-the-new-plan" class="outline-2">
+<h2 id="the-new-plan">The new plan</h2>
+<div class="outline-text-2">
+<p>
+I'm not actually going to quit working on the projects we started!  I started these projects because I wanted to work on them, and that doesn't change if I don't stream it.
+</p>
+
+<p>
+My theory is that I can make this journey a lot more interesting by planning and recording more focused videos while I work on these projects so that I can cut out a lot (but not all!) of the slow moments and focus on what is actually being accomplished across a longer time scale.
+</p>
+
+<p>
+Imagine seeing a well-produced, 20 minute video that documents me building a cool feature from start to finish over the span of a couple of weeks.  That would be a lot more interesting and approachable for a viewer than watching 4 two-hour streams!
+</p>
+
+<p>
+This will also give me the ability to inject some well-prepared educational information into the videos to set context and teach viewers about what I learn.  I think it will make the videos more worthwhile and worth sharing.
+</p>
+
+<p>
+This doesn't mean I won't ever do a live stream again!  I love streaming and live coding so I plan to find a way to do it possibly once a week in a more unstructured way.  I'm not sure how i'll do that though, so let me know if you have any thoughts about it.
+</p>
+</div>
+</div>
+
+<div id="outline-container-thank-you" class="outline-2">
+<h2 id="thank-you">Thank you!</h2>
+<div class="outline-text-2">
+<p>
+I want to end the stream by saying <b>thank you</b> to all of you who have joined me while I've been doing these streams over the last 4 months!
+</p>
+
+<p>
+I hope that the new direction will make the channel and the projects more fun and interesting for all of you.
+</p>
+
+<p>
+Please let me know what you think about all of this!  If you've watched the streams in the past and eventually lost interest, let me know which projects or topics interested you more than the others.
+</p>
+
+<p>
+Also, join the Discord community and follow on Twitter if you haven't already.  Now that there won't be regular streams, I'll me more likely to use those channels to talk about the work that I'm doing on these projects in between videos.
+</p>
+
+<p>
+The links to all those can be found on <a href="https://fluxharmonic.com">fluxharmonic.com</a>.
+</p>
+</div>
+</div>
+]]></description>
+    </item>
     
     <item>
       <title>Polishing the Particle System</title>
