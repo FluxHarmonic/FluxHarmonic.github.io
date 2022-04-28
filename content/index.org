@@ -6,7 +6,7 @@ Flux Harmonic is a "creative label" for the various projects of [[https://twitte
 
 The work on these projects was performed [[https://youtube.com/FluxHarmonicLive][live on YouTube]] and [[https://twitch.tv/FluxHarmonicLive][Twitch]] *every Tuesday and Thursday from 3PM to 5PM UTC*.
 
-*NOTE*: The regular live streams are now on hiatus, see [[live-streams/2022-04-28/][this page]] for more details.
+*NOTE*: The regular live streams are now on hiatus, see [[/live-streams/2022-04-28/][this page]] for more details.
 
 Notes from [[/live-streams/][all previous streams]] are also available.
 
