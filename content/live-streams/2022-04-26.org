@@ -4,7 +4,7 @@
 
 *Today's goal:* Add new features to particle system implementation and implement a few more effects!
 
-[[yt:_C-6q8wweVo][Watch the recording on YouTube!]]
+[[yt:VxJ6C0s7ku0][Watch the recording on YouTube!]]
 
 * It works!  Now what?
 
@@ -19,10 +19,23 @@ https://github.com/mesche-lang/compiler
 
 * Tasks
 
-** TODO Fix the garbage collector crashing issue
-** TODO Add color interpolation
-** TODO Add opacity interpolation
+** DONE Fix the garbage collector crashing issue
+CLOSED: [2022-04-26 Tue 18:26]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-04-26 Tue 18:26]
+:END:
+** DONE Add opacity interpolation
+CLOSED: [2022-04-26 Tue 18:49]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-04-26 Tue 18:49]
+:END:
+** DONE Add a speed boost effect
+CLOSED: [2022-04-26 Tue 19:09]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-04-26 Tue 19:09]
+:END:
+** TODO Add an option for a particle system to always have particles follow origin
 ** TODO Add an explosion effect when a ship is destroyed
-** TODO Add a speed boost effect
 ** TODO Add a burning effect for heatwaved enemies
 ** TODO Add particle effects for enemy ship boosters?
+** TODO Add color interpolation
