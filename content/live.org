@@ -1,0 +1,31 @@
+#+title: Flux Harmonic Live
+
+Join uselive on [[https://youtube.com/@FluxHarmonicLive/live][YouTube]] and [[https://twitch.tv/FluxHarmonicLive][Twitch]]!
+
+You can watch live using =mpv= with =yt-dlp= installed: =mpv https://twitch.tv/FluxHarmonicLive=
+
+Live chat is conducted primarily over IRC, check out the embedded client below!
+
+* Watch Live!
+
+#+BEGIN_EXPORT html
+
+<div class="video" style="border:0; width:100%;">
+  <iframe
+      src="https://player.twitch.tv/?channel=fluxharmoniclive&parent=fluxharmonic.com"
+      allowfullscreen>
+  </iframe>
+</div>
+<br/>
+
+#+END_EXPORT
+
+* Live Chat
+
+Join our live chat via IRC in the room =#fluxharmonic= on =irc.libera.chat=!
+
+#+BEGIN_EXPORT html
+
+<iframe src="https://kiwiirc.com/nextclient/#irc://irc.libera.chat:+6697/#fluxharmonic" style="width:100%;height:450px;border:0;display:block"></iframe>
+
+#+END_EXPORT
