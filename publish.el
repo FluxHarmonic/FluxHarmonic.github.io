@@ -89,6 +89,15 @@
  :output "public/index.html"
  :url "/")
 
+;; Live page
+(weblorg-route
+ :name "live"
+ :site flux-site
+ :input-pattern "content/live.org"
+ :template "post.html"
+ :output "public/live/index.html"
+ :url "/live/")
+
 ;; Misc pages
 (weblorg-route
  :name "pages"
