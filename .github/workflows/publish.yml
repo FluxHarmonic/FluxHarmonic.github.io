@@ -4,29 +4,39 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
       - name: Check out
-        uses: actions/checkout@v1
+        uses: actions/checkout@v4
 
-      - name: Install Emacs
-        uses: purcell/setup-emacs@master
-        with:
-          version: 27.2
+      - name: Install Sigil
+        run: |
+          curl -fsSL -o sigil \
+            https://codeberg.org/sigil/sigil/releases/download/v0.17.1/sigil-linux-amd64-static
+          chmod +x sigil
+          sudo mv sigil /usr/local/bin/sigil
+          sigil --version
+
+      - name: Install dependencies
+        run: sigil deps install
 
       - name: Build the site
-        run: PROD=true emacs -Q --script ./publish.el
+        run: |
+          sigil build
+          sigil run -- build
 
-      - name: Link Checker
-        uses: lycheeverse/lychee-action@v1.0.8
-        with:
-          args: --verbose --no-progress ./public/**/*.html
+      - name: Preserve custom domain
+        run: cp CNAME public/CNAME
 
       - name: Publish generated content to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: public
