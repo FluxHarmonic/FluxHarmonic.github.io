@@ -1,0 +1,185 @@
+;; fluxharmonic.com landing page
+;; A complete HTML document, so Press emits it as-is (no theme wrapping).
+(html (@ (lang "en"))
+  (head
+    (meta (@ (charset "utf-8")))
+    (meta (@ (name "viewport") (content "width=device-width, initial-scale=1")))
+    (title "Flux Harmonic")
+    (meta (@ (name "description") (content "I build my own programming language, tools, games, and music, in the open.")))
+    (meta (@ (property "og:title") (content "Flux Harmonic")))
+    (meta (@ (property "og:description") (content "I build my own programming language, tools, games, and music, in the open.")))
+    (meta (@ (property "og:url") (content "https://fluxharmonic.com")))
+    (link (@ (rel "preconnect") (href "https://fonts.googleapis.com")))
+    (link (@ (rel "preconnect") (href "https://fonts.gstatic.com") (crossorigin "")))
+    (link (@ (rel "stylesheet") (href "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap")))
+    (script (@ (defer "") (data-domain "fluxharmonic.com") (src "https://plausible.io/js/plausible.js")))
+    (style "
+:root{
+  --bg:#0d0b07; --bg-soft:#15110a;
+  --ink:#ece3d4; --ink-dim:#9b8f78; --ink-faint:#6f6450;
+  --amber:#f88c00; --amber-bright:#ffc24d; --line:#2a2316;
+  --serif:'Lora',Georgia,serif; --mono:'Space Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:var(--serif);
+  font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:720px;margin:0 auto;padding:0 28px;}
+a{color:var(--amber);text-decoration:none;}
+a:hover{color:var(--amber-bright);}
+
+.hero{padding:90px 0 6px;text-align:center;}
+.hero img{width:min(400px,78%);height:auto;
+  filter:drop-shadow(0 0 28px rgba(248,140,0,.10));}
+
+.nav{display:flex;justify-content:center;gap:32px;padding:24px 0 4px;
+  font-family:var(--mono);font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;}
+.nav a{color:var(--ink-dim);}
+.nav a:hover{color:var(--amber-bright);}
+
+.intro{padding:36px 0 6px;}
+.intro p{font-size:1.18rem;line-height:1.62;color:var(--ink);max-width:60ch;}
+.intro p+p{margin-top:1.1rem;font-size:1.04rem;line-height:1.66;color:var(--ink-dim);}
+
+.projects{padding:38px 0 4px;border-top:1px solid var(--line);margin-top:44px;}
+.projects>h2,.live h2{font-family:var(--mono);font-size:.72rem;letter-spacing:.28em;
+  text-transform:uppercase;color:var(--amber);font-weight:700;margin-bottom:14px;}
+.projects>.section-desc{color:var(--ink-dim);font-size:1.05rem;margin-bottom:4px;max-width:54ch;}
+.group{margin-top:34px;}
+.group h3{font-family:var(--mono);font-size:1rem;letter-spacing:.02em;
+  color:var(--ink);font-weight:700;margin-bottom:6px;}
+.group .lede{color:var(--ink-dim);margin-bottom:16px;max-width:52ch;}
+
+.menu{display:flex;flex-direction:column;}
+.item{display:grid;grid-template-columns:9.5rem 1fr;gap:0 1.5rem;align-items:baseline;
+  padding:13px 12px;margin:0 -12px;border-radius:8px;color:var(--ink);transition:background .15s;}
+.item:hover{background:var(--bg-soft);}
+.item .name{font-family:var(--mono);font-size:.95rem;font-weight:700;color:var(--amber);}
+.item:hover .name{color:var(--amber-bright);}
+.item .desc{color:var(--ink-dim);font-size:1rem;}
+
+.live{padding:42px 0 0;border-top:1px solid var(--line);margin-top:44px;}
+.live p{font-size:1.12rem;color:var(--ink);max-width:50ch;}
+
+footer{padding:60px 0 72px;margin-top:54px;border-top:1px solid var(--line);text-align:center;}
+footer .social{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;font-family:var(--mono);
+  font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:22px;}
+footer .social a{color:var(--ink-dim);}
+footer .social a:hover{color:var(--amber-bright);}
+footer .colophon{color:var(--ink-faint);font-style:italic;font-size:.95rem;}
+footer .copyright{font-family:var(--mono);font-size:.72rem;color:var(--ink-faint);
+  margin-top:8px;letter-spacing:.04em;}
+
+@media(max-width:560px){
+  .hero{padding:62px 0 4px;}
+  .item{grid-template-columns:1fr;gap:2px;}
+}
+"))
+  (body
+    (div (@ (class "wrap"))
+      (div (@ (class "hero"))
+        (img (@ (src "/flux-harmonic-logo.png") (alt "Flux Harmonic"))))
+
+      (nav (@ (class "nav"))
+        (a (@ (href "#projects")) "Projects")
+        (a (@ (href "#community")) "Community")
+        (a (@ (href "#live")) "Watch Live"))
+
+      (div (@ (class "intro"))
+        (p "Flux Harmonic is a creative label for my projects, and a community for people who build their own tools, their own way, for their own use cases. It's for anyone with an idea they can't shake: the kind you have to make even when it seems foolish or infeasible.")
+        (p "My biggest challenge has always been having more ideas than I could ever build on my own. Now, with AI and my own ecosystem of tools, I've finally got a real shot at building what I always wanted to. Join me on this journey, and we'll figure out how to create authentically, even in the age of AI."))
+
+      (section (@ (class "projects") (id "projects"))
+        (h2 "Projects")
+        (p (@ (class "section-desc")) "Here are the projects we'll be working on over time.")
+
+        (div (@ (class "group"))
+          (h3 "The foundation")
+        (p (@ (class "lede")) "It all starts with the language.")
+        (div (@ (class "menu"))
+          (a (@ (class "item") (href "https://codeberg.org/sigil/sigil"))
+             (span (@ (class "name")) "Sigil")
+             (span (@ (class "desc")) "A custom Scheme implementation. Provides the foundation for all the other projects."))))
+
+        (div (@ (class "group"))
+          (h3 "Games & music")
+        (p (@ (class "lede")) "The creative side of programming.")
+        (div (@ (class "menu"))
+          (a (@ (class "item") (href "https://codeberg.org/sigil/cinder-cantata"))
+             (span (@ (class "name")) "Cinder Cantata")
+             (span (@ (class "desc")) "A music-reactive bullet-hell where the soundtrack drives the bullets."))
+          (a (@ (class "item") (href "https://codeberg.org/sigil/blackICE"))
+             (span (@ (class "name")) "blackICE")
+             (span (@ (class "desc")) "A cyberpunk Sokoban that runs in the browser, built on the Sigil WASM bridges."))
+          (a (@ (class "item") (href "https://codeberg.org/sigil/motif"))
+             (span (@ (class "name")) "Motif")
+             (span (@ (class "desc")) "A composition engine for writing music as code."))))
+
+        (div (@ (class "group"))
+          (h3 "Creative tools")
+        (p (@ (class "lede")) "The tools I use to make things and get them out into the world.")
+        (div (@ (class "menu"))
+          (a (@ (class "item") (href "https://codeberg.org/sigil/easel"))
+             (span (@ (class "name")) "Easel")
+             (span (@ (class "desc")) "Generate images with Sigil code."))
+          (a (@ (class "item") (href "https://codeberg.org/sigil/montage"))
+             (span (@ (class "name")) "Montage")
+             (span (@ (class "desc")) "Automated video production for the streams and the channel."))
+          (a (@ (class "item") (href "https://codeberg.org/SystemCrafters/live-crafter"))
+             (span (@ (class "name")) "Live Crafter")
+             (span (@ (class "desc")) "The Lisp automation that runs my live streams."))
+          (a (@ (class "item") (href "https://codeberg.org/sigil/press"))
+             (span (@ (class "name")) "Press")
+             (span (@ (class "desc")) "A static site generator built with Sigil. This page is made with it."))))
+
+        (div (@ (class "group"))
+          (h3 "The tools behind everything")
+        (p (@ (class "lede")) "The MCP servers and tools my AI agents use to run my day-to-day, custom built for my desired workflows.")
+        (div (@ (class "menu"))
+          (a (@ (class "item") (href "https://codeberg.org/sigil/folio"))
+             (span (@ (class "name")) "Folio")
+             (span (@ (class "desc")) "Notes, tasks, and projects in Markdown, managed by my AI agents."))
+          (a (@ (class "item") (href "https://codeberg.org/sigil/bureau"))
+             (span (@ (class "name")) "Bureau")
+             (span (@ (class "desc")) "Gives my AI agents access to my email and calendar."))
+          (a (@ (class "item") (href "https://codeberg.org/sigil/courier"))
+             (span (@ (class "name")) "Courier")
+             (span (@ (class "desc")) "Routes messages between my agents and reaches me on Telegram."))
+          (a (@ (class "item") (href "https://codeberg.org/sigil/minder"))
+             (span (@ (class "name")) "Minder")
+             (span (@ (class "desc")) "Schedules recurring tasks for my agents."))
+          (a (@ (class "item") (href "https://codeberg.org/sigil/enclave"))
+             (span (@ (class "name")) "Enclave")
+             (span (@ (class "desc")) "A self-hosted, modern IRCv3 server I built from scratch."))
+          (a (@ (class "item") (href "https://codeberg.org/sigil/apiary"))
+             (span (@ (class "name")) "Apiary")
+             (span (@ (class "desc")) "Coordinates a hive of AI worker agents over Enclave."))
+          (a (@ (class "item") (href "https://codeberg.org/sigil/fjo"))
+             (span (@ (class "name")) "Fjo")
+             (span (@ (class "desc")) "Lets my AI agents manage my Codeberg repositories.")))))
+
+      (section (@ (class "live") (id "community"))
+        (h2 "Community")
+        (p "Flux Harmonic is the people watching and building alongside me. When you show up, you're part of it: watching is participating. Right now the place to be is the weekly Friday streams, where we build together, trade ideas, and share what we're making. More ways to join are coming soon."))
+
+      (section (@ (class "live") (id "live"))
+        (h2 "Watch Live")
+        (p "Live every Friday at "
+           (a (@ (href "https://time.is/1800_in_Athens")) "6PM Athens time")
+           " (15:00 UTC). I build in the open: the language, the games, the music, whatever I'm making that week. Catch the streams on "
+           (a (@ (href "https://youtube.com/@FluxHarmonicLive")) "YouTube")
+           " and "
+           (a (@ (href "https://twitch.tv/FluxHarmonicLive")) "Twitch")
+           ", and come hang out."))
+
+      (footer
+        (div (@ (class "social"))
+          (a (@ (href "https://youtube.com/@FluxHarmonicLive")) "YouTube")
+          (a (@ (href "https://twitch.tv/FluxHarmonicLive")) "Twitch")
+          (a (@ (href "https://codeberg.org/sigil")) "Codeberg")
+          (a (@ (href "https://fosstodon.org/@daviwil")) "Mastodon"))
+        (p (@ (class "colophon")) "Built with "
+           (a (@ (href "https://usesigil.org")) "Sigil")
+           ", like everything else.")
+        (p (@ (class "copyright")) "© 2026 Flux Harmonic · made by "
+           (a (@ (href "https://daviwil.com")) "David Wilson"))))))

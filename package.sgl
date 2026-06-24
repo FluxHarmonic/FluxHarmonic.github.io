@@ -1,0 +1,30 @@
+;;; fluxharmonic.com
+;;;
+;;; David Wilson's creative home, built with Press.
+;;;
+;;; Usage:
+;;;   sigil deps install
+;;;   sigil run -- build     Build the site into public/
+;;;   sigil run -- serve     Dev server with live reload
+
+(package
+  name: "fluxharmonic-site"
+  version: "0.1.0"
+  sigil: "^0.17"
+  description: "fluxharmonic.com, built with Press"
+  url: "https://codeberg.org/FluxHarmonic/fluxharmonic.com"
+  license: "BSD-3-Clause"
+  authors: (list "David Wilson <david@daviwil.com>")
+
+  entry: '(fluxharmonic-site main)
+
+  configs: (list
+    (config
+      name: 'dev
+      output-dir: "build/dev"
+      debug?: #t
+      optimize: 0
+      bundle?: #f))
+
+  dependencies: (list
+    (from-git url: "codeberg:sigil/press" package: "press" version: "^0.1.0")))
