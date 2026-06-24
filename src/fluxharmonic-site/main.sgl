@@ -1,0 +1,24 @@
+;;; (fluxharmonic-site main) - fluxharmonic.com builder
+;;;
+;;; Builds the Flux Harmonic landing page from a single SXML source.
+;;; The page is a complete HTML document, so Press emits it as-is.
+;;;
+;;; Usage:
+;;;   sigil run -- build     Build the site into public/
+;;;   sigil run -- serve     Dev server with live reload
+
+(define-library (fluxharmonic-site main)
+  (import (sigil core)
+          (press))
+  (export main)
+
+  (begin
+    (define (main)
+      (run-publish
+        (site
+          title: "Flux Harmonic"
+          base-url: "https://fluxharmonic.com"
+          output-dir: "public"
+          content: "site/**/*.sxml"
+          assets: "assets/**/*"
+          watch-patterns: (list "site/**/*.sxml" "assets/**/*"))))))
