@@ -59,7 +59,7 @@ a:hover{color:var(--amber-bright);}
 .item .desc{color:var(--ink-dim);font-size:1rem;}
 
 .live{padding:42px 0 0;border-top:1px solid var(--line);margin-top:44px;}
-.live p{font-size:1.12rem;color:var(--ink);max-width:50ch;}
+.live p{font-size:1.12rem;color:var(--ink);max-width:60ch;}
 
 footer{padding:60px 0 72px;margin-top:54px;border-top:1px solid var(--line);text-align:center;}
 footer .social{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;font-family:var(--mono);
