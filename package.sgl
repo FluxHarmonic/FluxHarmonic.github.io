@@ -12,7 +12,7 @@
   version: "0.1.0"
   sigil: "^0.17"
   description: "fluxharmonic.com, built with Press"
-  url: "https://codeberg.org/FluxHarmonic/fluxharmonic.com"
+  url: "https://github.com/FluxHarmonic/fluxharmonic.github.io"
   license: "BSD-3-Clause"
   authors: (list "David Wilson <david@daviwil.com>")
 

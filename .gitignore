@@ -2,3 +2,8 @@ public/
 .packages/
 .sigil/
 build/
+# folio search index (local)
+folio/.folio-index.db
+
+# local MCP config (machine-specific absolute paths)
+.mcp.json
