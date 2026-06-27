@@ -93,6 +93,28 @@ Format:  - What got done ([`a1b2c3d`](https://codeberg.org/OWNER/REPO/commit/a1b
 per accomplishment with the commit(s) that make it up, each linked to the repo
 it landed in. Tidy into clean accomplishment-level entries at the end.
 
+## Stream lifecycle & `/weave-stream`
+
+Each episode runs through a repeatable cadence. Planning happens off-air in a
+separate private workspace (with full strategy context); only the sanitized
+stream note is published here. The stages:
+
+1. **Plan** (private) — decide the episode from the prior stream's *Next Time*,
+   the roadmap, and the project task lists.
+2. **Generate** (private → here) — the planning session writes the stream note's
+   title, News, and The Plan into `folio/notes/streams/<date>.md`.
+3. **Weave** (here) — run **`/weave-stream`** in this repo. It links the note
+   into this folio's graph: inserts `[[...]]` cross-refs, updates neighbors to
+   link back, runs `folio_status` for orphans, and does a final voice pass. This
+   step *must* run here, because only a session with this folio mounted can
+   resolve and create backlinks against it.
+4. **Stream** (on air) — build live; commits land across the relevant repos.
+5. **Log** (post-stream) — fill the Progress Log from the episode's commits, plus
+   *Next Time* and *Links*; commit and push to publish.
+
+So in practice: when a new note shows up under `folio/notes/streams/` with empty
+Progress Log/Next Time/Links, run `/weave-stream` to wire it in before the stream.
+
 ## Writing voice (anything public)
 
 All public-facing copy (stream descriptions, site pages, social posts) uses
