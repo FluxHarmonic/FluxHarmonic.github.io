@@ -48,7 +48,8 @@ Conventions:
 - **Use the folio MCP tools** (`folio_note-create`, `folio_note-edit`,
   `folio_note-patch`, `folio_task-*`, etc.) to edit folio notes, not bare
   `Edit`/`Write`. The MCP keeps the index and backlinks in sync.
-- **Wiki-links** between folio notes: `[[notes/streams/2026-06-26]]`.
+- **Wiki-links** between folio notes: `[[streams/2026-06-26]]`. Note names drop
+  the `notes/` prefix, so the tracked name starts at `streams/` or `topics/`.
   Backticks and markdown links don't create tracked backlinks.
 - Every note that should render as a page needs a **`title:`** field in its
   frontmatter so Press renders the page title correctly.
@@ -118,7 +119,7 @@ Progress Log/Next Time/Links, run `/weave-stream` to wire it in before the strea
 ## Writing voice (anything public)
 
 All public-facing copy (stream descriptions, site pages, social posts) uses
-David's voice. See [[notes/topics/writing-voice]] for the FH voice note.
+David's voice. See [[topics/writing-voice]] for the FH voice note.
 
 The load-bearing rules:
 
@@ -130,6 +131,33 @@ The load-bearing rules:
 - Conversational but technical, honest, not salesy. First person ("I'll show
   you…", "we can see…", "you might be wondering…"). Contractions are natural.
 - No corporate-speak ("leverage", "utilize", "empower", "unlock the power of").
+
+## Agent orchestration (leader / workers)
+
+This repo doubles as the **leader session** for coordinating autonomous workers
+across the Sigil projects. The whole system lives under `ops/`, and is
+deliberately focused: just **folio** (task briefs, Session Logs, knowledge) and
+**courier** (workers reporting back). No cron, no extra servers.
+
+- **`ops/leader-guide.md`** — your operating guide as the leader: when to spawn,
+  the project routing table, monitoring, review, cleanup. Read it when orchestrating.
+- **`ops/worker-guide.md`** — the protocol every worker reads at startup.
+- **`.claude/skills/`** — the leader's slash commands: `/assign-worker`,
+  `/check-workers`, `/close-worker`.
+- **`ops/scripts/launch-worker.sh`** — spawns a worker in a tmux window with its
+  own temp `.mcp.json` (folio + courier); the real project repo comes in via
+  `--add-dir`. Machine-specific paths live in `ops/.env` (gitignored; copy from
+  `ops/.env.example`).
+
+To receive worker status in real time, **launch the leader session with the
+courier channel**:
+
+```
+claude --dangerously-load-development-channels server:courier
+```
+
+Workers also keep their task-note Session Log current, so you can always
+reconstruct state from folio even without the channel.
 
 ## Building the site
 

@@ -9,3 +9,6 @@ folio/.folio-index.db-wal
 
 # local MCP config (machine-specific absolute paths)
 .mcp.json
+
+# agent-orchestration machine-specific config (binary paths, relay/log dirs)
+ops/.env
