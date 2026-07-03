@@ -4,6 +4,8 @@ public/
 build/
 # folio search index (local)
 folio/.folio-index.db
+folio/.folio-index.db-shm
+folio/.folio-index.db-wal
 
 # local MCP config (machine-specific absolute paths)
 .mcp.json

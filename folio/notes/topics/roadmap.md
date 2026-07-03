@@ -1,7 +1,8 @@
 ---
-title: "What We're Building"
+title: What We're Building
 tags:
   - roadmap
+last-updated: 2026-07-03
 ---
 
 # What We're Building
@@ -23,7 +24,7 @@ We'll build it in public, one stream at a time.
 - Make **interactive development** a joy: fast feedback and a real REPL-driven
   flow, the kind of live experience Lisp is supposed to have.
 - Work out a genuine workflow for **live-coding Sigil by hand with AI in the
-  loop**, where the human and the agent each do what they're best at.
+  loop**, where the human and the agent each do what they're best at. First real test: building a MUD live in [[streams/2026-07-04]].
 
 ## The gallery: games & music
 
